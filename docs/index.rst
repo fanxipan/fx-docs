@@ -1,6 +1,24 @@
 reStructureText experiment!
 ===========================
 
+Footnote references, like [5]_. 
+Note that footnotes may get 
+rearranged, e.g., to the bottom of 
+the "page".
+
+.. [5] A numerical footnote. Note 
+   there's no colon after the ``]``.
+
+A transition marker is a horizontal line 
+of 4 or more repeated punctuation 
+characters.
+
+------------
+
+A transition should not begin or end a 
+section or document, nor should two 
+transitions be immediately adjacent.
+
 Simple table:
 
 =====  =====  ====== 
