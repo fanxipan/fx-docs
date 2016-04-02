@@ -1,268 +1,127 @@
-reStructureText experiment!
-===========================
+Overview
+========
 
-An "empty comment" does not 
-consume following blocks. 
-(An empty comment is ".." with 
-blank lines before and after.)
+:Hello: This field has a short field name, so aligning the field
+        body with the first line is feasible.
 
-..
+:Number-of-African-swallows-required-to-carry-a-coconut: It would
+    be very difficult to align the field body with the left edge
+    of the first line.  It may even be preferable not to begin the
+    body on the same line as the marker.
 
-        So this block is not "lost", 
-        despite its indentation.
+- This is the first line of a bullet list
+  item's paragraph.  All lines must align
+  relative to the first line.  [1]_
 
-.. This text will not be shown 
-   (but, for instance, in HTML might be 
-   rendered as an HTML comment)
+      This indented paragraph is interpreted
+      as a block quote.
 
-The |biohazard| symbol must be used on containers used to dispose of medical waste.
+Because it is not sufficiently indented,
+this paragraph does not belong to the list
+item.
 
-.. |biohazard| image:: biohazard.png
+.. [1] Here's a footnote.  The second line is aligned
+   with the beginning of the footnote label.  The ".."
+   marker is what determines the indentation.
 
-For instance:
+This is a paragraph.  The lines of
+this paragraph are aligned at the left.
 
-.. image:: images/ball1.gif
+    This paragraph has problems.  The
+lines are not left-aligned.  In addition
+  to potential misinterpretation, warning
+    and/or error messages will be generated
+  by the parser.
 
-Titles are targets, too 
-======================= 
-Implict references, like `Titles are 
-targets, too`_.
+This is a top-level paragraph.
 
-Python_ is `my favourite 
-programming language`__.
+    This paragraph belongs to a first-level block quote.
 
-.. _Python: http://www.python.org/
+        This paragraph belongs to a second-level block quote.
 
-__ Python_
+Another top-level paragraph.
 
-Internal crossreferences, like example_.
+        This paragraph belongs to a second-level block quote.
 
-This is an example crossreference target.
+    This paragraph belongs to a first-level block quote.  The
+    second-level block quote above is inside this first-level
+    block quote.
 
-External hyperlinks, like `Python 
-<http://www.python.org/>`_.
+This is a top-level paragraph.
 
-External hyperlinks, like Python_.
+ This paragraph belongs to a first-level block quote.
 
-.. _Python: http://www.python.org/
+  This paragraph belongs to a first-level block quote.
 
-Citation references, like [CIT2002]_. 
-Note that citations may get 
-rearranged, e.g., to the bottom of 
-the "page".
+   This paragraph belongs to a first-level block quote.
 
-.. [CIT2002] A citation 
-   (as often used in journals).
+    This paragraph belongs to a first-level block quote.
 
-Citation labels contain alphanumerics, 
-underlines, hyphens and fullstops. 
-Case is not significant.
+    Paragraph 2 of the first-level block quote.
 
-Given a citation like [this]_, one 
-can also refer to it like this_.
-
-.. [this] here.
+.. _Python: http://www.python.org
 
 .. _example:
 
-Auto-symbol footnotes are also 
-possible, like this: [*]_ and [*]_ and [*]_.
+The "_example" target above points to this paragraph.
 
-.. [*] This is the first one. 
-.. [*] This is the second one.
-.. [*] What about this?
+.. [CIT2002] Just like a footnote, except the label is
+   textual.
 
+.. [1] A footnote contains body elements, consistently
+   indented by at least 3 spaces.
 
+====================  ==========  ==========
+Header row, column 1  Header 2    Header 3
+====================  ==========  ==========
+body row 1, column 1  column 2    column 3
+body row 2            Cells may span columns
+====================  ======================
 
-Autonumbered footnotes are 
-possible, like using [#]_ and [#]_.
++------------------------+------------+----------+
+| Header row, column 1   | Header 2   | Header 3 |
++========================+============+==========+
+| body row 1, column 1   | column 2   | column 3 |
++------------------------+------------+----------+
+| body row 2             | Cells may span        |
++------------------------+-----------------------+
 
-.. [#] This is the first one. 
-.. [#] This is the second one.
+>>> print 'Python-specific usage examples; begun with ">>>"'
+Python-specific usage examples; begun with ">>>"
+>>> print '(cut and pasted from interactive Python sessions)'
+(cut and pasted from interactive Python sessions)
 
-They may be assigned 'autonumber 
-labels' - for instance, 
-[#fourth]_ and [#third]_.
+Block quotes consist of indented body elements:
 
-.. [#third] a.k.a. third_
+    This theory, that is mine, is mine.
 
-.. [#fourth] a.k.a. fourth_
+    -- Anne Elk (Miss)
 
-Footnote references, like [4]_. 
-Note that footnotes may get 
-rearranged, e.g., to the bottom of 
-the "page".
+Literal blocks are either indented or line-prefix-quoted blocks,
+and indicated with a double-colon ("::") at the end of the
+preceding paragraph (right here -->)::
 
-.. [4] A numerical footnote. Note 
-   there's no colon after the ``]``.
+    if literal_block:
+        text = 'is left as-is'
+        spaces_and_linebreaks = 'are preserved'
+        markup_processing = None
 
-A transition marker is a horizontal line 
-of 4 or more repeated punctuation 
-characters.
+:what: Field lists map field names to field bodies, like
+       database records.  They are often part of an extension
+       syntax.
 
-------------
+:how: The field marker is a colon, the field name, and a
+      colon.
 
-A transition should not begin or end a 
-section or document, nor should two 
-transitions be immediately adjacent.
+      The field body may contain one or more body elements,
+      indented relative to the field marker.
 
-Simple table:
+Paragraphs contain text and may contain inline markup:
+*emphasis*, **strong emphasis**, `interpreted text`, ``inline
+literals``, standalone hyperlinks (http://www.python.org),
+external hyperlinks (Python_), internal cross-references
+(example_), footnote references ([1]_), citation references
+([CIT2002]_), substitution references (|example|), and _`inline
+internal targets`.
 
-=====  =====  ====== 
-   Inputs     Output 
-------------  ------ 
-  A      B    A or B 
-=====  =====  ====== 
-False  False  False 
-True   False  True 
-False  True   True 
-True   True   True 
-=====  =====  ======
-
-Grid table:
-
-+------------+------------+-----------+ 
-| Header 1   | Header 2   | Header 3  | 
-+============+============+===========+ 
-| body row 1 | column 2   | column 3  | 
-+------------+------------+-----------+ 
-| body row 2 | Cells may span columns.| 
-+------------+------------+-----------+ 
-| body row 3 | Cells may  | - Cells   | 
-+------------+ span rows. | - contain | 
-| body row 4 |            | - blocks. | 
-+------------+------------+-----------+
-
-Doctest blocks are interactive 
-Python sessions. They begin with 
-"``>>>``" and end with a blank line.
-
->>> print "This is a doctest block." 
-This is a doctest block.
-
-Block quotes are just:
-    Indented paragraphs,
-
-        and they may nest.
-
-Plain text	Typical result
-
-| Line blocks are useful for addresses, 
-| verse, and adornment-free lists. 
-| 
-| Each new line begins with a 
-| vertical bar ("|"). 
-|     Line breaks and initial indents 
-|     are preserved. 
-| Continuation lines are wrapped 
-  portions of long lines; they begin 
-| with spaces in place of vertical bars.
-|
-
-A paragraph containing only two colons 
-indicates that the following indented 
-or quoted text is a literal block. 
-
-:: 
-
-  Whitespace, newlines, blank lines, and 
-  all kinds of markup (like *this* or 
-  \this) is preserved by literal blocks. 
-
-  The paragraph containing only '::' 
-  will be omitted from the result. 
-
-The ``::`` may be tacked onto the very 
-end of any paragraph. The ``::`` will be 
-omitted if it is preceded by whitespace. 
-The ``::`` will be converted to a single 
-colon if preceded by text, like this:: 
-
-  It's very convenient to use this form. 
-
-Literal blocks end when text returns to 
-the preceding paragraph's indentation. 
-This means that something like this 
-is possible:: 
-
-      We start here 
-    and continue here 
-  and end here. 
-
-Per-line quoting can also be used on 
-unindented literal blocks:: 
-
-> Useful for quotes from email and 
-> for Haskell literate programming.
-
--a            command-line option "a" 
--b file       options can have arguments 
-              and long descriptions 
---long        options can be long also 
---input=file  long options can also have 
-              arguments 
-/V            DOS/VMS-style options too
-
-:Authors: 
-    Tony J. (Tibs) Ibbs, 
-    David Goodger
-
-    (and sundry other good-natured folks)
-
-:Version: 1.0 of 2001/08/08 
-:Dedication: To my father.
-
-Enumerated lists:
-
-3. This is the first item 
-4. This is the second item 
-5. Enumerators are arabic numbers, 
-   single letters, or roman numerals 
-6. List items should be sequentially 
-   numbered, but need not start at 1 
-   (although not all formatters will 
-   honour the first index). 
-#. This item is auto-enumerated
-
-Bullet lists:
-
-- This is item 1 
-- This is item 2
-
-- Bullets are "-", "*" or "+". 
-  Continuing text must be aligned 
-  after the bullet and whitespace.
-
-Note that a blank line is required 
-before the first item and after the 
-last, but is optional between items.
-
-===== 
-Title 
-===== 
-
-Subtitle 
---------
-
-Titles are underlined (or over- 
-and underlined) with a printing 
-nonalphanumeric 7-bit ASCII 
-character. Recommended choices 
-are "``= - ` : ' " ~ ^ _ * + # < >``". 
-The underline/overline must be at 
-least as long as the title text. 
-
-A lone top-level (sub)section 
-is lifted up to be the document's 
-(sub)title.
-
-\*escape* \``with`` "\\"		
-
-*escape* ``with`` "\"	
-
-http://docutils.sf.net/	
-
-|substitution reference|	
-``inline literal``	
-`interpreted text`	
-
+Paragraphs are separated by blank lines and are left-aligned.
