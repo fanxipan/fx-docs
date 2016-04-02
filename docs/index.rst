@@ -1,6 +1,100 @@
 Syntax details
 ==============
 
+The area of a circle is :math:`A_\text{c} = (\pi/4) d^2`.
+
+``text \ and \ backslashes``
+:literal:`text \ and \ backslashes`
+
+*text*
+:emphasis:`text`
+
+This is `interpreted text` using the default role.
+
+This is :title:`interpreted text` using an explicit role.
+
+.. raw:: latex
+
+   \setlength{\parindent}{0pt}
+
+.. raw:: html
+
+   <hr width=50 size=10>
+
+.. |date| date::
+.. |time| date:: %H:%M
+
+Today's date is |date|.
+
+This document was generated on |date| at |time|.
+
+.. |Python| replace:: Python, *the* best language around
+.. _Python: http://www.python.org/
+
+I recommend you try |Python|_.
+
+.. contents:: 
+   :backlinks: top
+
+.. header:: This space for rent.
+
+
+.. list-table:: Frozen Delights!
+   :widths: 15 10 30
+   :header-rows: 1
+
+   * - Treat
+     - Quantity
+     - Description
+   * - Albatross
+     - 2.99
+     - On a stick!
+   * - Crunchy Frog
+     - 1.49
+     - If we took the bones out, it wouldn't be
+       crunchy, now would it?
+   * - Gannet Ripple
+     - 1.99
+     - On a stick!
+
+.. csv-table:: Frozen Delights!
+   :header: "Treat", "Quantity", "Description"
+   :widths: 15, 10, 30
+
+   "Albatross", 2.99, "On a stick!"
+   "Crunchy Frog", 1.49, "If we took the bones out, it wouldn't be
+   crunchy, now would it?"
+   "Gannet Ripple", 1.99, "On a stick!"
+
+.. table:: Truth table for "not"
+
+   =====  =====
+     A    not A
+   =====  =====
+   False  True
+   True   False
+   =====  =====
+
+.. container:: custom
+
+   This paragraph might be rendered in a custom way.
+
+.. compound::
+
+   The 'rm' command is very dangerous.  If you are logged
+   in as root and enter ::
+
+       cd /
+       rm -rf *
+
+   you will erase the entire contents of your file system.
+
+.. epigraph::
+
+   No matter where you go, there you are.
+
+   -- Buckaroo Banzai
+
 .. code:: javascript
     
     var x = function () {
