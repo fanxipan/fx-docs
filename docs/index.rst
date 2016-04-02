@@ -1,6 +1,59 @@
 reStructureText experiment!
 ===========================
 
+Simple table:
+
+=====  =====  ====== 
+   Inputs     Output 
+------------  ------ 
+  A      B    A or B 
+=====  =====  ====== 
+False  False  False 
+True   False  True 
+False  True   True 
+True   True   True 
+=====  =====  ======
+
+Grid table:
+
++------------+------------+-----------+ 
+| Header 1   | Header 2   | Header 3  | 
++============+============+===========+ 
+| body row 1 | column 2   | column 3  | 
++------------+------------+-----------+ 
+| body row 2 | Cells may span columns.| 
++------------+------------+-----------+ 
+| body row 3 | Cells may  | - Cells   | 
++------------+ span rows. | - contain | 
+| body row 4 |            | - blocks. | 
++------------+------------+-----------+
+
+Doctest blocks are interactive 
+Python sessions. They begin with 
+"``>>>``" and end with a blank line.
+
+>>> print "This is a doctest block." 
+This is a doctest block.
+
+Block quotes are just:
+    Indented paragraphs,
+
+        and they may nest.
+
+Plain text	Typical result
+
+| Line blocks are useful for addresses, 
+| verse, and adornment-free lists. 
+| 
+| Each new line begins with a 
+| vertical bar ("|"). 
+|     Line breaks and initial indents 
+|     are preserved. 
+| Continuation lines are wrapped 
+  portions of long lines; they begin 
+| with spaces in place of vertical bars.
+|
+
 A paragraph containing only two colons 
 indicates that the following indented 
 or quoted text is a literal block. 
