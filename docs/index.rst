@@ -1,69 +1,42 @@
 Syntax details
 ==============
 
-.. note:: This is a paragraph
+.. image:: _static/images/songoku.jpg
 
-   - Here is a bullet list.
+.. admonition:: And, by the way...
 
-term 1
-    Definition 1.
+   You can make up your own admonition too.
 
-term 2
-    Definition 2, paragraph 1.
+.. note:: This is a note admonition.
+   This is the second line of the first paragraph.
 
-    Definition 2, paragraph 2.
+   - The note contains all indented body elements
+     following.
+   - It includes this bullet list.
 
-term 3 
-: classifier
-    Definition 3.
+.. attention::
+   Beware killer rabbits!
 
-: no
+.. caution::
+   Beware killer rabbits!
 
-term 4 : classifier one : classifier two
-    Definition 4.
+.. danger::
+   Beware killer rabbits!
 
-1. Item 1 initial text.
+.. error::
+   Beware killer rabbits!
 
-   a) Item 1a.
-   b) Item 1b.
+.. hint::
+   Beware killer rabbits!
 
-2. No Text?
+.. important::
+   Beware killer rabbits!
 
-   4) Item 2a.
-   5) Item 2b.
+.. note::
+   Beware killer rabbits!
 
-A. Einstein was a really smart dude.
+.. tip::
+   Beware killer rabbits!
 
-\A. Einstein was a really smart dude.
-
-1. First line
-
-2. Another line
-   
-   #. No?
-   #. Yes?
-      
-#. Another :|
-   
-Some normal paragraph
-
-#. Start new list.
-
-- This is the first bullet list item.  The blank line above the
-  first list item is required; blank lines between list items
-  (such as below this paragraph) are optional.
-
-- This is the first paragraph in the second item in the list.
-
-  This is the second paragraph in the second item in the list.
-  The blank line above this paragraph is required.  The left edge
-  of this paragraph lines up with the paragraph above, both
-  indented relative to the bullet.
-
-  - This is a sublist.  The bullet lines up with the left edge of
-    the text blocks above.  A sublist is a new list so requires a
-    blank line above and below.
-
-- This is the third item of the main list.
-
-This paragraph is not part of the list.
+.. warning::
+   Beware killer rabbits!
