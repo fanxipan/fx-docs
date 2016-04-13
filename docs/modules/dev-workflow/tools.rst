@@ -26,6 +26,11 @@ Vào `trang chủ Node.js`_ để tải. Chọn phiên bản 4 (tại thời đi
 .. _trang chủ Node.js: Node.js_
 .. _v4.4.3LTS: https://nodejs.org/dist/v4.4.3/node-v4.4.3-x64.msi
 
+.. figure:: /_static/images/dev-workflow/install_node_01.png
+   :alt: cài đặt nodejs
+
+   Để mặc định các lựa chọn khi cài đặt.
+
 .. _setup-cmder:
 
 Cmder (nên cài)
