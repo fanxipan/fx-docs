@@ -19,12 +19,11 @@ Node.js
 JavaScript. Một số ứng dụng cụ thể sẽ được dùng đến như `Bower <setup-bower_>`_, 
 `Gulp <setup-gulp_>`_...
 
-Vào `trang chủ Node.js`_ để tải. Chọn phiên bản 4 (tại thời điểm viết là 
-`v4.4.3LTS`_) tải về và cài đặt.
+Vào `trang chủ Node.js <nodejs-home_>`_ để tải. Chọn phiên bản 4 (tại thời điểm 
+viết là `node-v4.4.3LTS`_) tải về và cài đặt:
 
-.. _Node.js: https://nodejs.org/en/
-.. _trang chủ Node.js: Node.js_
-.. _v4.4.3LTS: https://nodejs.org/dist/v4.4.3/node-v4.4.3-x64.msi
+.. _nodejs-home: https://nodejs.org/en/
+.. _node-v4.4.3LTS: https://nodejs.org/dist/v4.4.3/node-v4.4.3-x64.msi
 
 .. figure:: /_static/images/dev-workflow/install_node_01.png
    :alt: cài đặt nodejs
@@ -46,6 +45,22 @@ Nếu thấy kết quả như sau thì đã thành công (tên version có thể
 
 Cmder (nên cài)
 ===============
+
+Các tool đang được cài đặt sẽ được dùng chủ yếu bằng cách viết lệnh, dùng
+``cmd`` của Windows nhiều khi tỏ ra rất bất tiện(*xấu*, khó thao tác...), do đó
+nên cài thêm `Cmder <cmder-home_>`_.
+
+Link tải `Cmder v1.2.9 <cmder-v1.2.9_>`_
+
+Tải về và cài đặt. Kết quả như sau:
+
+.. figure:: /_static/images/dev-workflow/install_cmder_01.png
+   :alt: sử dụng cmder
+
+   Y như cmder, nhưng đẹp hơn :D
+
+.. _cmder-home: http://cmder.net/
+.. _cmder-v1.2.9: https://github.com/cmderdev/cmder/releases/download/v1.2.9/cmder.zip
 
 .. _setup-bower:
 
