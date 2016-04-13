@@ -1,5 +1,5 @@
-|cmd-icon| Cmder (nên cài)
-==========================
+|cmder-icon| Cmder (nên cài)
+============================
 
 Các tool đang được cài đặt sẽ được dùng chủ yếu bằng cách viết lệnh, dùng
 ``cmd`` của Windows nhiều khi tỏ ra rất bất tiện(*xấu*, khó thao tác...), do đó
