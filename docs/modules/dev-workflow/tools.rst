@@ -31,6 +31,17 @@ Vào `trang chủ Node.js`_ để tải. Chọn phiên bản 4 (tại thời đi
 
    Để mặc định các lựa chọn khi cài đặt.
 
+Để kiểm tra đã cài đặt thành công hay chưa thì bật cmd và gõ lệnh::
+
+	node --version
+
+Nếu thấy kết quả như sau thì đã thành công (tên version có thể khác):
+
+.. figure:: /_static/images/dev-workflow/install_node_02.png
+   :alt: kiểm tra cài đặt nodejs
+
+   Hiển thị phiên bản ra console.
+
 .. _setup-cmder:
 
 Cmder (nên cài)
