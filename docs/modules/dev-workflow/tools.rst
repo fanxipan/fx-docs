@@ -12,20 +12,9 @@ Cần cài đặt các tool sau (một số tool có thể cài đặt hoặc kh
 - :ref:`setup-bower`
 - :ref:`setup-gulp`
 
-.. _setup-nodejs:
 .. include:: setup/setup_nodejs.rst
-
-.. _setup-npm:
 .. include:: setup/setup_npm.rst
-
-.. _setup-cmder:
 .. include:: setup/setup_cmder.rst
-
-.. _setup-git:
 .. include:: setup/setup_git.rst
-
-.. _setup-bower:
 .. include:: setup/setup_bower.rst
-
-.. _setup-gulp:
 .. include:: setup/setup_gulp.rst

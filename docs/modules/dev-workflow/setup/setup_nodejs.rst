@@ -1,3 +1,5 @@
+.. _setup-nodejs:
+
 |nodejs-icon| Node.js
 =====================
 

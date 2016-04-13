@@ -1,3 +1,5 @@
+.. _setup-git:
+
 |git-icon| Git
 ==============
 

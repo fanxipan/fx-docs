@@ -1,3 +1,5 @@
+.. _setup-gulp:
+
 |gulp-icon| Gulp
 ================
 

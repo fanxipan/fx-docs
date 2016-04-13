@@ -1,3 +1,5 @@
+.. _setup-bower:
+
 |bower-icon| Bower
 ==================
 

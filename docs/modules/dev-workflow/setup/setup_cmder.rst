@@ -1,3 +1,5 @@
+.. _setup-cmder:
+
 |cmder-icon| Cmder (nên cài)
 ============================
 
