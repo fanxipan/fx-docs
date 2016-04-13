@@ -1,5 +1,5 @@
-Node.js
-=======
+|nodejs-icon| Node.js
+====================
 
 |nodejs|_ là một platform dùng để phát triển các ứng dụng 
 bằng ngôn ngữ  JavaScript. Một số ứng dụng cụ thể sẽ được dùng đến như 
@@ -29,3 +29,5 @@ Nếu thấy kết quả như sau thì đã thành công (tên version có thể
 
 .. |nodejs| replace:: Node.js
 .. _nodejs: nodejs-home_
+
+.. |nodejs-icon| image:: /_static/icons/nodejs_64x64.png
