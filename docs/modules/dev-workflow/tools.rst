@@ -8,6 +8,7 @@ Cần cài đặt các tool sau (một số tool có thể cài đặt hoặc kh
 - :ref:`setup-nodejs`
 - :ref:`setup-npm`
 - :ref:`setup-cmder`
+- :ref:`setup-git`
 - :ref:`setup-bower`
 - :ref:`setup-gulp`
 
@@ -19,6 +20,9 @@ Cần cài đặt các tool sau (một số tool có thể cài đặt hoặc kh
 
 .. _setup-cmder:
 .. include:: setup/setup_cmder.rst
+
+.. _setup-git:
+.. include:: setup/setup_git.rst
 
 .. _setup-bower:
 .. include:: setup/setup_bower.rst

@@ -2,7 +2,7 @@
 ============================
 
 Các tool đang được cài đặt sẽ được dùng chủ yếu bằng cách viết lệnh, dùng
-``cmd`` của Windows nhiều khi tỏ ra rất bất tiện(*xấu*, khó thao tác...), do đó
+``cmd`` của Windows nhiều khi tỏ ra rất bất tiện (*xấu*, khó thao tác...), do đó
 nên cài thêm `Cmder <cmder-home_>`_.
 
 Link tải `Cmder v1.2.9 <cmder-v1.2.9_>`_
