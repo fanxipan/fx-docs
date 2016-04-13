@@ -7,4 +7,4 @@ Tài liệu phát triển phần mềm của FANXIPAN.
    :maxdepth: 2
    :caption: Phát triển sản phẩm
 
-   dev
+   modules/dev-workflow/dev
