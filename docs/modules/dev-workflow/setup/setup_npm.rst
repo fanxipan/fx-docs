@@ -1,8 +1,8 @@
 npm
 ===
 
-|npm|_ là chương trình quản lý thư viện cho |nodejs|_. Nó được tự động cài đặt
- cùng |nodejs|_.
+|npm|_ là chương trình quản lý thư viện cho |nodejs|_. Nó được tự động 
+cài đặt cùng |nodejs|_.
 
 Để kiểm tra xem |npm|_ đã được cài đặt hay chưa thì mở ``cmd`` của Windows
 và gõ lệnh::
