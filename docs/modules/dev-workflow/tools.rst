@@ -12,6 +12,8 @@ Cần cài đặt các tool sau (một số tool có thể cài đặt hoặc kh
 - :ref:`setup-bower`
 - :ref:`setup-gulp`
 
+.. role:: bg-highlight
+
 .. include:: setup/setup_nodejs.rst
 .. include:: setup/setup_npm.rst
 .. include:: setup/setup_cmder.rst

@@ -3,7 +3,9 @@
 |bower-icon| Bower
 ==================
 
-|bower|_
+|bower|_ là công cụ quản lý resource cho lập trình font-end. Sử dụng |bower|_
+để tự động hóa việc tìm kiếm, cài đặt, nâng cấp các gói thư viện thay vì 
+phải :bg-highlight:`làm thủ công bằng tay`.
 
 .. _bower-home: http://bower.io/
 
