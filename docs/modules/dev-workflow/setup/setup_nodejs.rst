@@ -5,7 +5,7 @@
 
 |nodejs|_ là một platform dùng để phát triển các ứng dụng 
 bằng ngôn ngữ  JavaScript. Một số ứng dụng cụ thể sẽ được dùng đến như 
-`Bower <setup-bower_>`_,  `Gulp <setup-gulp_>`_...
+`Gulp <setup-gulp_>`_...
 
 Vào `trang chủ Node.js <nodejs-home_>`_ để tải. Chọn phiên bản 4 (tại thời điểm 
 viết là `node-v4.4.3LTS`_) tải về và cài đặt:
