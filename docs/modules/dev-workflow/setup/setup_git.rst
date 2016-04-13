@@ -23,6 +23,8 @@ Tiến hành cài đặt, các options lựa chọn như sau:
 
    Chọn Use Git from the Windows Command Promt
 
+.. role:: bg-highlight
+
 :bg-highlight:`Các lựa chọn phía sau để mặc định.` Sau khi cài đặt xong kiểm
 tra lại bằng cách gõ lệnh::
 	
@@ -43,5 +45,3 @@ Nếu kết quả như sau là thành công:
 
 .. |git-icon| image:: /_static/icons/git_64x64.png
               :width: 64px
-
-.. role:: bg-highlight

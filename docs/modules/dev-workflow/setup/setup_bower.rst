@@ -3,6 +3,8 @@
 |bower-icon| Bower
 ==================
 
+Test
+
 .. _bower-home: http://bower.io/
 
 .. |bower| replace:: Bower
