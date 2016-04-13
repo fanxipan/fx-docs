@@ -31,3 +31,4 @@ Nếu thấy kết quả như sau thì đã thành công (tên version có thể
 .. _nodejs: nodejs-home_
 
 .. |nodejs-icon| image:: /_static/icons/nodejs_64x64.png
+                 :width: 64px
