@@ -10,5 +10,8 @@
 .. |bower| replace:: Bower
 .. _bower: bower-home_
 
+.. |bower-setup| replace:: Bower
+.. _bower-setup: setup-bower_
+
 .. |bower-icon| image:: /_static/icons/bower_64x64.png
                 :width: 64px
