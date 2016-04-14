@@ -5,8 +5,8 @@ AdminLTE
 
 * :ref:`admin-lte-setup`
 
-.. include:: /icons.rst
-.. include:: admin-lte/admin_lte_setup.rst
+.. toctree::
+   admin-lte/admin_lte_setup
 
 .. _admin-lte-preview: https://almsaeedstudio.com/themes/AdminLTE/index2.html
 

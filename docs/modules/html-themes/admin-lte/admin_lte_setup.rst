@@ -3,3 +3,5 @@
 |setup-icon| Cài đặt
 ====================
 
+.. include:: /icons.rst
+ 
