@@ -18,6 +18,3 @@ Tải về và cài đặt. Kết quả như sau:
 
 .. _cmder-home: http://cmder.net/
 .. _cmder-v1.2.9: https://github.com/cmderdev/cmder/releases/download/v1.2.9/cmder.zip
-
-.. |cmder-icon| image:: /_static/icons/cmder_64x64.png
-                :width: 64px

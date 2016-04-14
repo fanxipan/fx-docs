@@ -21,6 +21,3 @@ Nếu kết quả tương tự như sau là thành công:
 .. _npm-home: https://www.npmjs.com/
 .. |npm| replace:: npm
 .. _npm: npm-home_
-
-.. |npm-icon| image:: /_static/icons/npm_64x64.png
-              :width: 64px

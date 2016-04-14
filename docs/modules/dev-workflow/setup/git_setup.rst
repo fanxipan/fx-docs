@@ -40,6 +40,3 @@ Nếu kết quả như sau là thành công:
 
 .. |git| replace:: Git
 .. _git: git-home_
-
-.. |git-icon| image:: /_static/icons/git_64x64.png
-              :width: 64px

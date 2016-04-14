@@ -25,6 +25,3 @@ Kết quả:
 
 .. |gulp-setup| replace:: Gulp
 .. _gulp-setup: setup-bower_
-
-.. |gulp-icon| image:: /_static/icons/gulp_64x64.png
-               :width: 64px

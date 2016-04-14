@@ -81,7 +81,9 @@ exclude_patterns = [
     '_build', 
     'Thumbs.db', 
     '.DS_Store',
-    'modules/dev-workflow/setup'
+    'icons.rst'
+    'modules/dev-workflow/setup',
+    'modules/html-themes/admin-lte'
 ]
 
 # The reST default role (used for this markup: `text`) to use for all
