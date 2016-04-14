@@ -82,6 +82,7 @@ exclude_patterns = [
     'Thumbs.db', 
     '.DS_Store',
     'icons.rst',
+    'utils.rst',
     'modules/dev-workflow/setup'
 ]
 

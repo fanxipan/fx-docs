@@ -1,3 +1,6 @@
+.. include:: /icons.rst
+.. include:: /utils.rst
+
 .. _dev-workflow-tools:
 
 Cài đặt môi trường
@@ -12,7 +15,6 @@ Cần cài đặt các tool sau (một số tool có thể cài đặt hoặc kh
 - :ref:`setup-bower`
 - :ref:`setup-gulp`
 
-.. role:: bg-highlight
 
 .. include:: setup/nodejs_setup.rst
 .. include:: setup/npm_setup.rst
@@ -21,4 +23,3 @@ Cần cài đặt các tool sau (một số tool có thể cài đặt hoặc kh
 .. include:: setup/bower_setup.rst
 .. include:: setup/gulp_setup.rst
 
-.. include:: /icons.rst
