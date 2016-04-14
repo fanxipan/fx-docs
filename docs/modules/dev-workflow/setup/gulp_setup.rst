@@ -3,11 +3,11 @@
 |gulp-icon| Gulp
 ================
 
-|gulp| là một task runner được sử dụng để giảm thiểu các công việc lặp đi lặp
+|gulp|_ là một task runner được sử dụng để giảm thiểu các công việc lặp đi lặp
 lại (thường là gây ra nhàm chán) trong việc phát triển website. Ở đây chúng ta
 sẽ sử dụng |gulp| để gộp file js, deploy code lên server...
 
-Cài đặt |gulp| rất đơn giản, gõ dòng lệnh sau và ngồi chờ::
+Cài đặt |gulp|_ rất đơn giản, gõ dòng lệnh sau và ngồi chờ::
 
 	npm install -g gulp-cli
 

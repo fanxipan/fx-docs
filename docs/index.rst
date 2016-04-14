@@ -9,3 +9,9 @@ Tài liệu phát triển phần mềm của FANXIPAN.
 
    modules/dev-workflow/intro
    modules/dev-workflow/tools
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Các bộ theme
+
+   modules/html-themes/admin-lte.rst
