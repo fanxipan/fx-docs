@@ -9,7 +9,7 @@ Deploy lên Office 365
       :alt: Điền url của sharepoint site
 
 #. Mở console, ``cd`` đến thư mục project (thư mục chứa file ``gupfile.js``)
-#. Gõ lệnh ``gulp release``. Lệnh này sẽ tạo ra folder ``release``
+#. Gõ lệnh ``gulp release``, lệnh này sẽ tạo ra folder ``release``
 
    .. figure:: /_static/images/html-themes/admin-lte/lte_setup_deploy_online_02.png
       :alt: Điền url của sharepoint site
