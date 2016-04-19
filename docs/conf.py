@@ -83,7 +83,8 @@ exclude_patterns = [
     '.DS_Store',
     'icons.rst',
     'utils.rst',
-    'modules/dev-workflow/setup'
+    'modules/dev-workflow/setup',
+    'modules/html-themes/admin-lte/setup'
 ]
 
 # The reST default role (used for this markup: `text`) to use for all
