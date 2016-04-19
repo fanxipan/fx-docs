@@ -19,7 +19,7 @@ Copy template project
       :alt: Thư mục chứa solution
 
 #. :bg-highlight:`Copy` thư mục này sang thư mục cần làm (nên cho vào thư
-   mục nằm trong TFS). Ví dụ như copy vào thư mục gốc của TFS:
+   mục nằm trong TFS). Trong ví dụ là copy vào thư mục gốc của TFS:
 
    .. figure:: /_static/images/html-themes/admin-lte/lte_setup_copy_project_02.png
       :alt: Thư mục mới của solution
@@ -28,7 +28,7 @@ Copy template project
        Không chỉnh sửa vào project đã có sẵn.
 
 #. Mở solution :bg-strong-highlight:`vừa mới copy` bằng Visual Studio, chuột
-   phải vào node solution và chọn *Add Solution to Source Control...*
+   phải vào solution và chọn *Add Solution to Source Control...*
 
    .. figure:: /_static/images/html-themes/admin-lte/lte_setup_copy_project_03.png
       :alt: Add solution to source Control
