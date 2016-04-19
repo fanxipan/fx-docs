@@ -29,4 +29,15 @@ trong TFS). Ví dụ như copy vào thư mục gốc của TFS:
    Thư mục mới của solution
 
 .. danger::
-	Không chỉnh sửa vào project đã có sẵn. 
+	Không chỉnh sửa vào project đã có sẵn.
+
+Mở solution :bg-strong-highlight:`vừa mới copy` bằng Visual Studio, chuột phải 
+vào node solution và chọn *Add Solution to Source Control...*
+
+.. figure:: /_static/images/html-themes/admin-lte/lte_setup_copy_project_03.png
+   :alt: Add solution to source Control
+
+   Thêm solution vừa tạo vào TFS
+
+.. hint::
+	Nên check-in solution luôn sau này làm nhỡ bị lỗi thì đỡ phải làm lại nhiều.
