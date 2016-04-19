@@ -24,3 +24,21 @@ Deploy lên Office 365
       Cần chủ động *include* các file trong 3 thư mục ``app``, ``assets`` và 
       ``deps`` vì VS không tự add các file con nằm trong thư mục vào project. 
       Cách nhanh nhất là *exlucde* cả 3 thư mục này ra rồi *include* cả vào lại.
+
+#. Deploy project
+
+   .. figure:: /_static/images/html-themes/admin-lte/lte_setup_deploy_online_04.png
+      :alt: Deploy project
+
+   .. hint::
+      Có thể bấm ``Ctrl + F5`` để deploy.
+
+#. Vào *Site Contents* để mở app
+
+   .. figure:: /_static/images/html-themes/admin-lte/lte_setup_deploy_online_05.png
+      :alt: Vào site contents để mở app
+
+#. Kết quả
+
+   .. figure:: /_static/images/html-themes/admin-lte/lte_setup_deploy_online_06.png
+      :alt: Kết quả

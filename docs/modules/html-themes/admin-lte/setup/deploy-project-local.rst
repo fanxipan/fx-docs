@@ -43,7 +43,8 @@ Deploy vào webapp bằng Gulp
    vào lúc map ổ đã chọn tên ổ là gì thì bây giờ điền tên đó vào.
 
    .. hint::
-      Nếu chọn tên ổ là ``Y`` thì không cần gõ ``--path Y:/``
+      Nếu chọn tên ổ là ``Y`` thì không cần gõ ``--path Y:/``, chỉ cần gõ
+      ``gulp deploy-full``.
 
 #. Vào thư mục webapp, kiểm tra nếu có thư mục ``FX`` và file ``default.aspx``
    bị thay đổi là thành công
