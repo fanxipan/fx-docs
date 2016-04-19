@@ -4,6 +4,8 @@ AdminLTE
 |admin-lte|_ là bộ theme miễn phí được dùng khi làm các App cho SharePoint.
 
 .. toctree::
+   :maxdepth: 2
+
    admin-lte/admin_lte_setup
 
 .. _admin-lte-preview: https://almsaeedstudio.com/themes/AdminLTE/index2.html
