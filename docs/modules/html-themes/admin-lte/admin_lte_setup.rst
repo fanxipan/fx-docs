@@ -7,3 +7,4 @@
 ********************
 
 .. include:: setup/copy-project.rst
+.. include:: setup/deploy-project.rst
