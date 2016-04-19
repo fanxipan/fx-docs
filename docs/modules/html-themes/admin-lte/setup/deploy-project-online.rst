@@ -1,0 +1,26 @@
+.. _admin-lte-setup_deploy-online:
+
+Deploy lên Office 365
+=====================
+
+1. Mở tab *Properties* của project và điền url
+   
+   .. figure:: /_static/images/html-themes/admin-lte/lte_setup_deploy_online_01.png
+      :alt: Điền url của sharepoint site
+
+#. Mở console, ``cd`` đến thư mục project (thư mục chứa file ``gupfile.js``)
+#. Gõ lệnh ``gulp release``. Lệnh này sẽ tạo ra folder ``release``
+
+   .. figure:: /_static/images/html-themes/admin-lte/lte_setup_deploy_online_02.png
+      :alt: Điền url của sharepoint site
+
+#. Copy toàn bộ file và thư mục trong ``release`` vào module ``App`` trong
+   project
+
+   .. figure:: /_static/images/html-themes/admin-lte/lte_setup_deploy_online_03.png
+      :alt: Copy release vào app
+
+   .. note::
+      Cần chủ động *include* các file trong 3 thư mục ``app``, ``assets`` và 
+      ``deps`` vì VS không tự add các file con nằm trong thư mục vào project. 
+      Cách nhanh nhất là *exlucde* cả 3 thư mục này ra rồi *include* cả vào lại.

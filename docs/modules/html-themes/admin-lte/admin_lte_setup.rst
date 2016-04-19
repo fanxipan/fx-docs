@@ -7,4 +7,5 @@
 ********************
 
 .. include:: setup/copy-project.rst
-.. include:: setup/deploy-project.rst
+.. include:: setup/deploy-project-local.rst
+.. include:: setup/deploy-project-online.rst
