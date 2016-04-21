@@ -1,5 +1,4 @@
-.. include:: /icons.rst
-.. include:: /utils.rst
+.. include:: /refs/refs.rst
 
 .. _dev-workflow-tools:
 

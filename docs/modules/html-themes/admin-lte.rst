@@ -1,3 +1,5 @@
+.. include:: /refs/refs.rst
+
 AdminLTE
 ********
 
@@ -7,8 +9,4 @@ AdminLTE
    :maxdepth: 2
 
    admin-lte/admin_lte_setup
-
-.. _admin-lte-preview: https://almsaeedstudio.com/themes/AdminLTE/index2.html
-
-.. |admin-lte| replace:: AdminLTE
-.. _admin-lte: admin-lte-preview_
+   admin-lte/admin_lte_guide

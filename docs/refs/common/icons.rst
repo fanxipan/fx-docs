@@ -18,3 +18,6 @@
 
 .. |gulp-icon| image:: /_static/icons/gulp_64x64.png
                :width: 48px
+
+.. |guide-icon| image:: /_static/icons/guide_64x64.png
+                :width: 48px
