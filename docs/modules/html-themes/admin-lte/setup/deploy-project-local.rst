@@ -38,7 +38,7 @@ Deploy vào webapp bằng Gulp
    .. figure:: /_static/images/html-themes/admin-lte/lte_setup_deploy_local_04.png
       :alt: cd đến thư mục chưa project
 
-#. Gõ lệnh ``npm install & bower install``, chờ đến khi chạy xong.
+#. Gõ lệnh ``npm install && bower install``, chờ đến khi chạy xong.
 #. Gõ lệnh ``gulp deploy-full --path Y:/``. Lưu ý tên của ổ có thể thay đổi, tùy
    vào lúc map ổ đã chọn tên ổ là gì thì bây giờ điền tên đó vào.
 
