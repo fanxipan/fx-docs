@@ -2,7 +2,8 @@ body {
 	font-family: "Segoe UI","Lato","proxima-nova","Helvetica Neue",Arial,sans-serif
 }
 
-.bg-highlight, .bg-strong-highlight {
+.bg-highlight, 
+.bg-strong-highlight {
 	background-color: yellow
 }
 
