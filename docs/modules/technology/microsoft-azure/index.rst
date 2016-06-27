@@ -1,5 +1,3 @@
-.. include:: /refs/refs.rst
-
 Microsoft Azure
 ===============
 

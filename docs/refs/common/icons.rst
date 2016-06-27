@@ -21,3 +21,6 @@
 
 .. |guide-icon| image:: /_static/icons/guide_64x64.png
                 :width: 48px
+
+.. |azure-automation-icon| image:: /_static/icons/azure-automation_355x316.png
+                           :width: 54px

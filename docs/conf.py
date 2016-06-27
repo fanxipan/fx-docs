@@ -86,7 +86,8 @@ exclude_patterns = [
     'refs',
     'modules/dev-workflow/setup',
     'modules/html-themes/admin-lte/setup',
-    'modules/html-themes/admin-lte/guide'
+    'modules/html-themes/admin-lte/guide',
+    'modules/**/*.data.srt'
 ]
 
 # The reST default role (used for this markup: `text`) to use for all

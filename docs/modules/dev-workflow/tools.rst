@@ -21,4 +21,3 @@ Cần cài đặt các tool sau (một số tool có thể cài đặt hoặc kh
 .. include:: setup/git_setup.rst
 .. include:: setup/bower_setup.rst
 .. include:: setup/gulp_setup.rst
-
