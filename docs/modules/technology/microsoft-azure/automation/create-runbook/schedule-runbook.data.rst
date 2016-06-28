@@ -25,7 +25,7 @@ Lập lịch cho runbook
    #. Bấm ``OK``
 
 #. Bấm ``OK`` ở màn hình `Schedule Runbook`
-#. Có thể kiểm tra lại bằng cách bấm vào ``Schedule``
+#. Có thể kiểm tra lại bằng cách bấm vào ``Schedules``
 
   .. figure:: /_static/images/technology/microsoft-azure/automation/schedule_runbook_03.png
      :alt: Lập lịch runbook 2
