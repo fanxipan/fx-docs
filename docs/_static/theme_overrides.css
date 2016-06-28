@@ -10,3 +10,8 @@ body {
 .bg-strong-highlight {
 	color: red;
 }
+
+/* Margin for list and figure */
+ul.simple+div.figure {
+	margin-top: 12px;
+}
