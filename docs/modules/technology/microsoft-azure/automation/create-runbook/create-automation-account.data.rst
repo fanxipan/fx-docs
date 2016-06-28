@@ -10,3 +10,9 @@ Tạo Automation Account
 
    .. figure:: /_static/images/technology/microsoft-azure/automation/create_automation_account_01.png
       :alt: Mở automation accounts
+
+#. Ở màn hình `Automation Accounts`, bấm ``Add`` --> điền thông tin được
+   yêu cầu --> bấm ``Create``
+
+   .. figure:: /_static/images/technology/microsoft-azure/automation/create_automation_account_02.png
+      :alt: Tạo automation accounts
