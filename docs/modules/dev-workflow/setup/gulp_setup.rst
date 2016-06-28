@@ -18,10 +18,6 @@ Kết quả:
 
    Đơn giản gọn nhẹ trong vài thao tác
 
-.. _gulp-home: http://bower.io/
-
-.. |gulp| replace:: Gulp
-.. _gulp: gulp-home_
 
 .. |gulp-setup| replace:: Gulp
-.. _gulp-setup: setup-bower_
+.. _gulp-setup: setup-gulp_
