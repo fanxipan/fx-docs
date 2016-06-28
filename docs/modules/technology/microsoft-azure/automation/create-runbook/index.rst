@@ -33,15 +33,18 @@ Ví dụ dưới đây hướng dẫn cách tạo 1 runbook đơn giản: nhập
 - :ref:`create-automation-account`
 - :ref:`create-runbook`
 - :ref:`test-runbook`
-- :ref:`deploy-runbook`
+- :ref:`publish-runbook`
 - :ref:`run-runbook`
 - :ref:`schedule-runbook`
+
+.. hint::
+   Mở ảnh trong tab mới để xem ảnh rõ nét hơn.
 
 .. include:: login-azure.data.rst
 .. include:: create-automation-account.data.rst
 .. include:: create-runbook.data.rst
 .. include:: test-runbook.data.rst
-.. include:: deploy-runbook.data.rst
+.. include:: publish-runbook.data.rst
 .. include:: run-runbook.data.rst
 .. include:: schedule-runbook.data.rst
 
