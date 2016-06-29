@@ -7,3 +7,8 @@
 
 .. |azure-portal| replace:: Azure Portal
 .. _azure-portal: azure-portal-url_
+
+.. _sharepoint-csom-url: https://msdn.microsoft.com/en-us/library/office/ee537247(v=office.14).aspx
+
+.. |sharepoint-csom| replace:: SharePoint Client Object Model
+.. _sharepoint-csom: sharepoint-csom-url_
