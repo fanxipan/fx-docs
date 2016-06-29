@@ -2,3 +2,21 @@
 
 Tạo C# project bằng Visual Studio
 =================================
+
+Chúng ta cần tạo 2 project sau:
+
+1. ``Fx.AzureDemo``
+
+   - Class Library project
+   - Chứa code truy cập vào SharePoint Online site
+   - File ``Fx.AzureDemo.dll`` sẽ được import vào PowerShell module (bước 3)
+
+.. 
+
+2. ``Fx.AzureDemo.Test``
+
+   - Console Application project
+   - Dùng để test project trên
+
+.. figure:: /_static/images/technology/microsoft-azure/automation/csimpl_create_csharp_projects_01.png
+   :alt: Tạo CSharp project

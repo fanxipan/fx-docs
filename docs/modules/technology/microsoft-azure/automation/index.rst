@@ -1,6 +1,6 @@
 .. include:: /refs/refs.rst
 
-.. _azure-automation:
+.. _azure-automation-index:
 
 |azure-automation-icon| Automation
 **********************************
