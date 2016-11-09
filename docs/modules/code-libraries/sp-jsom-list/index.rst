@@ -3,4 +3,4 @@
 SharePoint JSOM List
 ********************
 
-`Docs url </_static/other/code-libraries/docs/index.html>`_
+`Docs url </_static/other/code-libraries/sp-jsom-list/docs/index.html>`_
