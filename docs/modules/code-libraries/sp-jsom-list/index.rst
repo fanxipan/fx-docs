@@ -1,7 +1,7 @@
 .. include:: /refs/refs.rst
 
-SharePoint JSOM List 1
-**********************
+SharePoint JSOM List
+********************
 
 Index: :jsom-index:`Test jsom index`
 
