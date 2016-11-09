@@ -39,11 +39,11 @@ extensions = [
     'sphinx.ext.autodoc',
     #'fx.code-libraries.sp-jsom-list.jsom-index',
     #'fx.code-libraries.sp-jsom-list.jsom-class'
-    'extensions.jsom-index',
-    'extensions.jsom-class',
-    'extensions.jsom-interface',
-    'extensions.jsom-class-member',
-    'extensions.jsom-interface-member'
+    'jsom-index',
+    'jsom-class',
+    'jsom-interface',
+    'jsom-class-member',
+    'jsom-interface-member'
 ]
 
 # base url for jsom docs
