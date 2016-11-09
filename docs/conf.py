@@ -39,7 +39,10 @@ extensions = [
     #'fx.code-libraries.sp-jsom-list.jsom-index',
     #'fx.code-libraries.sp-jsom-list.jsom-class'
     'jsom-index',
-    'jsom-class'
+    'jsom-class',
+    'jsom-interface',
+    'jsom-class-member',
+    'jsom-interface-member'
 ]
 
 # base url for jsom docs

@@ -6,17 +6,17 @@ from docutils.parsers.rst import directives
 on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 
 def setup(app):
-	app.add_role('jsom-class', jsomClassRole)
+	app.add_role('jsom-interface', jsomInterfaceRole)
 
-def jsomClassRole(name, rawtext, text, lineno, inliner, options={}, content=[]):
+def jsomInterfaceRole(name, rawtext, text, lineno, inliner, options={}, content=[]):
 	app = inliner.document.settings.env.app
 	docsBaseUrl = app.config.jsom_base_url
 
 	trunks = text.split('.')
-	className = trunks[len(trunks) - 1]
+	interfaceName = trunks[len(trunks) - 1]
 
-	linkUri = docsBaseUrl + "classes/" + text + ".html"
+	linkUri = docsBaseUrl + "interfaces/" + text + ".html"
 	if on_rtd: linkUri = "/en/latest" + linkUri
 
-	node = nodes.reference(rawtext, className, refuri = linkUri, **options)
+	node = nodes.reference(rawtext, interfaceName, refuri = linkUri, **options)
 	return [node], []

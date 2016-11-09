@@ -6,10 +6,10 @@ from docutils.parsers.rst import directives
 on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 
 def setup(app):
-	app.add_role('jsom-index', jsomindex_role)
+	app.add_role('jsom-index', jsomIndexRole)
 	app.add_config_value('jsom_base_url', None, 'html')
 
-def jsomindex_role(name, rawtext, text, lineno, inliner, options={}, content=[]):
+def jsomIndexRole(name, rawtext, text, lineno, inliner, options={}, content=[]):
 	app = inliner.document.settings.env.app
 	docsBaseUrl = app.config.jsom_base_url
 
