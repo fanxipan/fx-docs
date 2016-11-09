@@ -9,7 +9,10 @@ SharePoint JSOM List Library
    setup/index.rst
    basic-usage/index.rst
    advance-usage/index.rst
+   faqs/index.rst
    api-document/index.rst
+
+Test api document:
 
 Index: :jsom-index:`Test jsom index`
 

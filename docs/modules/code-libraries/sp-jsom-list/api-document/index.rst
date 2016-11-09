@@ -5,4 +5,6 @@
 API Document
 ************
 
-:jsom-index:`Bấm vào đây để chuyển sang trang api document.`
+.. note::
+
+	:jsom-index:`CHÚ Ý: Bấm vào đây để chuyển sang trang api document.`
