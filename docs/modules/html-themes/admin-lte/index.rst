@@ -8,5 +8,5 @@ AdminLTE
 .. toctree::
    :maxdepth: 2
 
-   guide/index.rst
    setup/index.rst
+   guide/index.rst

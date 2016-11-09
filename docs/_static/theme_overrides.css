@@ -9,6 +9,7 @@ body {
 
 .bg-strong-highlight {
 	color: red;
+	font-weight: bold;
 }
 
 /* Margin for list and figure */
