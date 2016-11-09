@@ -19,7 +19,7 @@ def jsomInterfaceMemberRole(name, rawtext, text, lineno, inliner, options={}, co
 	interfaceTrunks = interfaceFullName.split('.')
 	interfaceName = interfaceTrunks[len(interfaceTrunks) - 1]
 
-	linkUri = docsBaseUrl + "interfaces/" + interfaceFullName + ".html#" + memberName.lower()
+	linkUri = docsBaseUrl + "interfaces/" + interfaceFullName.lower() + ".html#" + memberName.lower()
 	if on_rtd: linkUri = "/en/latest" + linkUri
 
 	node = nodes.reference(rawtext, interfaceName + '.' + memberName, refuri = linkUri, **options)

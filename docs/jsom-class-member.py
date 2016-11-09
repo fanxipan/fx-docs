@@ -19,7 +19,7 @@ def jsomClassMemberRole(name, rawtext, text, lineno, inliner, options={}, conten
 	classTrunks = classFullName.split('.')
 	className = classTrunks[len(classTrunks) - 1]
 
-	linkUri = docsBaseUrl + "classes/" + classFullName + ".html#" + memberName.lower()
+	linkUri = docsBaseUrl + "classes/" + classFullName.lower() + ".html#" + memberName.lower()
 	if on_rtd: linkUri = "/en/latest" + linkUri
 
 	node = nodes.reference(rawtext, className + '.' + memberName, refuri = linkUri, **options)

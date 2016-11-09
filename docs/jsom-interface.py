@@ -15,7 +15,7 @@ def jsomInterfaceRole(name, rawtext, text, lineno, inliner, options={}, content=
 	trunks = text.split('.')
 	interfaceName = trunks[len(trunks) - 1]
 
-	linkUri = docsBaseUrl + "interfaces/" + text + ".html"
+	linkUri = docsBaseUrl + "interfaces/" + text.lower() + ".html"
 	if on_rtd: linkUri = "/en/latest" + linkUri
 
 	node = nodes.reference(rawtext, interfaceName, refuri = linkUri, **options)
