@@ -19,7 +19,7 @@ import os
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
-#sys.path.append(os.path.abspath('extensions'))
+sys.path.append(os.path.abspath('extensions'))
 
 # -- General configuration ------------------------------------------------
 
@@ -30,9 +30,9 @@ import os
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinx.ext.autodoc'#,
-    #'fx.code-libraries.sp-jsom-list.jsom-index',
-    #'fx.code-libraries.sp-jsom-list.jsom-class'
+    'sphinx.ext.autodoc',
+    'fx.code-libraries.sp-jsom-list.jsom-index',
+    'fx.code-libraries.sp-jsom-list.jsom-class'
 ]
 
 # base url for jsom docs
