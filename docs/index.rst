@@ -19,6 +19,12 @@ Tài liệu phát triển phần mềm của FANXIPAN.
 
 .. toctree::
    :maxdepth: 2
+   :caption: Các bộ thư viện
+
+   modules/code-libraries/sp-jsom-list/index.rst
+
+.. toctree::
+   :maxdepth: 2
    :caption: Công nghệ
 
    modules/technology/microsoft-azure/index.rst
