@@ -7,3 +7,6 @@ Cài đặt
 
 Thêm thẻ script vào html
 ========================
+
+Thêm module vào app
+===================
