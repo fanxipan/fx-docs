@@ -81,11 +81,7 @@ exclude_patterns = [
     '_build', 
     'Thumbs.db', 
     '.DS_Store',
-    'icons.rst',
-    'utils.rst',
     'refs',
-    'modules/html-themes/admin-lte/setup',
-    'modules/html-themes/admin-lte/guide',
     'modules/**/*.data.rst'
 ]
 

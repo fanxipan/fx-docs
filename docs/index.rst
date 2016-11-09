@@ -14,8 +14,8 @@ Tài liệu phát triển phần mềm của FANXIPAN.
    :maxdepth: 2
    :caption: Các bộ theme
 
-   modules/html-themes/admin-lte.rst
-   modules/html-themes/metronic.rst
+   modules/html-themes/admin-lte/index.rst
+   modules/html-themes/metronic/index.rst
 
 .. toctree::
    :maxdepth: 2

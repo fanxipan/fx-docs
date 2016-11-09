@@ -5,4 +5,4 @@
 |guide-icon| Sử dụng
 ********************
 
-.. include:: guide/interface-structure.rst
+.. include:: interface-structure.data.rst
