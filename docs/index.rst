@@ -7,8 +7,8 @@ Tài liệu phát triển phần mềm của FANXIPAN.
    :maxdepth: 2
    :caption: Phát triển sản phẩm
 
-   modules/dev-workflow/intro.rst
-   modules/dev-workflow/tools.rst
+   modules/dev-workflow/intro/index.rst
+   modules/dev-workflow/setup/index.rst
 
 .. toctree::
    :maxdepth: 2

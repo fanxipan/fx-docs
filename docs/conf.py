@@ -84,7 +84,6 @@ exclude_patterns = [
     'icons.rst',
     'utils.rst',
     'refs',
-    'modules/dev-workflow/setup',
     'modules/html-themes/admin-lte/setup',
     'modules/html-themes/admin-lte/guide',
     'modules/**/*.data.rst'
