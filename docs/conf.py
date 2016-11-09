@@ -17,8 +17,7 @@ import sys
 import os
 import logging
 
-logger = logging.getLogger("test")
-logger.warning("test abc")
+logging.warning("test abc")
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
