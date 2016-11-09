@@ -31,7 +31,8 @@ sys.path.append(os.path.abspath('extensions'))
 # ones.
 extensions = [
     'sphinx.ext.autodoc',
-    'fx.code-libraries.sp-jsom-list.jsom-index'
+    'fx.code-libraries.sp-jsom-list.jsom-index',
+    'fx.code-libraries.sp-jsom-list.jsom-class'
 ]
 
 # base url for jsom docs
