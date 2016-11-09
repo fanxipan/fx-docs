@@ -16,5 +16,5 @@ def jsomindex_role(name, rawtext, text, lineno, inliner, options={}, content=[])
 	linkUri = docsBaseUrl + 'index.html'
 	if on_rtd: linkUri = "/en/latest" + linkUri
 
-	node = nodes.reference(rawtext, text, refuri = docsBaseUrl + 'index.html', **options)
+	node = nodes.reference(rawtext, text, refuri = linkUri, **options)
 	return [node], []

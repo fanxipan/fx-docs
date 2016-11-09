@@ -3,4 +3,6 @@
 SharePoint JSOM List test
 *************************
 
-:jsom-index:`Test jsom index`
+Index: :jsom-index:`Test jsom index`
+
+Class: :jsom-class:`Fx.SharePoint.Caml.CamlElement`
