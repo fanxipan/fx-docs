@@ -1,4 +1,4 @@
 .. _jsom-basic-usage-create-operations:
 
-Thêm item
----------
+Tạo mới item
+------------

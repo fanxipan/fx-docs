@@ -4,7 +4,7 @@ SharePoint JSOM List Library
 ****************************
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
 
    setup/index.rst
    basic-usage/index.rst
