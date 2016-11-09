@@ -15,6 +15,7 @@
 
 import sys
 import os
+import logging
 
 logger = logging.getLogger("test")
 logger.warning("test abc")
