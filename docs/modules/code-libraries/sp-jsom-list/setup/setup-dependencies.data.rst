@@ -3,6 +3,8 @@
 Thêm các thư viện cần thiết
 ===========================
 
+.. hint:: Xem ví đầy đủ ở cuối bài
+
 Thư viện của SharePoint
 -----------------------
 
