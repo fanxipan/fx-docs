@@ -3,6 +3,9 @@
 SharePoint JSOM List Library
 ****************************
 
+Là thư viện hỗ trợ các thao tác với list / document library thông qua
+|sharepoint-jsom|_.
+
 .. toctree::
    :maxdepth: 3
 
