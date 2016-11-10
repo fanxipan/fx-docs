@@ -17,3 +17,8 @@
 
 .. |angularjs| replace:: AngularJS
 .. _angularjs: angularjs-home_
+
+.. _dirty-markup-home: https://dirtymarkup.com/
+
+.. |dirty-markup| replace:: Dirty Markup
+.. _dirty-markup: dirty-markup-home_

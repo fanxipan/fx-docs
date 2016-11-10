@@ -11,3 +11,4 @@ hiện các bước sau:
 .. include:: download-library.data.rst
 .. include:: setup-dependencies.data.rst
 .. include:: setup-module.data.rst
+.. include:: complete-html-example.data.rst

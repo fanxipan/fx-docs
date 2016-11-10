@@ -3,7 +3,7 @@
 Thêm các thư viện cần thiết
 ===========================
 
-.. hint:: Xem ví đầy đủ ở cuối bài
+.. hint:: Xem `ví dụ đầy đủ <complete-html-example_>`_ ở cuối bài
 
 Thư viện của SharePoint
 -----------------------
