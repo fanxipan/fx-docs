@@ -5,6 +5,7 @@ Ví dụ mẫu
 
 .. code-block:: javascript
    :linenos:
+   :emphasize-lines: 2-3
 
    function MainCtrl($fxList) {
       var serviceContext = $fxList.createContext();

@@ -1,4 +1,5 @@
 .. include:: /refs/refs.rst
+.. include:: ../refs/jsom-entities.data.rst
 
 .. _jsom-basic-usage:
 
