@@ -3,7 +3,9 @@
 File ``default.aspx`` hoàn chỉnh
 ================================
 
-.. code:: html
+.. code-block:: python
+   :linenos:
+   :emphasize-lines: 2,15-18,20-22,24,30-33
 
    <%@ Page Language="C#" %>
    <%@ Register TagPrefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>

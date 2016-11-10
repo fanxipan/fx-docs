@@ -22,6 +22,6 @@ abbr[title] {
 }
 
 /* Make 2 adjacent download element to be seperated on 2 lines */
-a[download] + a[download] {
+a.reference.download.internal + a.reference.download.internal {
 	display: block;
 }
