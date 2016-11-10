@@ -12,7 +12,7 @@ Tạo ServiceContext object
 
      .. note::
 
-        Xem thêm phần :ref:`jsom-advance-usage-single-and-batch-request`
+        Xem thêm phần :ref:`jsom-advance-usage-single-and-batch-request`.
 
 Để tạo một |ServiceContext| object:
 
