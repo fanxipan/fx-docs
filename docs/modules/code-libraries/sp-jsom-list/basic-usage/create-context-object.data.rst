@@ -10,6 +10,10 @@ Tạo ServiceContext object
      tạo mới 1 item + thay đổi property của 1 item khác, sau đó gọi 1 request
      duy nhất để cập nhật các thay đổi này lên server
 
+     .. note::
+
+        Xem thêm phần :ref:`jsom-advance-usage-single-and-batch-request`
+
 Để tạo một |ServiceContext| object:
 
    #. Inject service |FxListService| vào trong controller
