@@ -20,3 +20,8 @@ ul.simple + div.figure {
 abbr[title] {
 	cursor: help;
 }
+
+/* Make 2 adjacent download element to be seperated on 2 lines */
+a[download] + a[download] {
+	display: block;
+}
