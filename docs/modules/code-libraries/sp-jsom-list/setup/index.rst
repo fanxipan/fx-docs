@@ -5,6 +5,11 @@
 Cài đặt
 *******
 
+Tải các file cần thiết:
+
+:download:`fx.sharepoint.lists.js </_static/other/code-libraries/sp-jsom-list/libs/fx.sharepoint.lists.jsom/js/fx.sharepoint.lists.jsom.js>`
+:download:`fx.sharepoint.lists.js.map </_static/other/code-libraries/sp-jsom-list/libs/fx.sharepoint.lists.jsom/js/fx.sharepoint.lists.jsom.js.map>`
+
 Để sử dụng được thư viện Fanxipan SharePoint JSOM List (|FSJL|) cần phải thực 
 hiện các bước sau:
 
@@ -48,8 +53,32 @@ với server:
       <asp:ScriptManager runat="server" ScriptMode="Debug" />
    </SharePoint:SharePointForm>
 
+.. note::
+
+   Thẻ ``asp:ScriptManager`` trên nhằm mục đích debug code của SharePoint, nếu
+   thấy không cần thiết thì có thể bỏ đi.
+
 Thư viện JavaScript khác
 ------------------------
+
+|FSJL| phụ thuộc vào |lodash|_, |jquery|_ và |angularjs|_:
+
+.. code:: html
+
+   <script src="/path/to/lodash.js"></script>
+   <script src="/path/to/jquery.js"></script>
+   <script src="/path/to/angular.js"></script>
+
+Thư viện |FSJL|
+---------------
+
+.. code:: html
+
+   <script src="/path/to/fx.sharepoint.lists.jsom.js"></script>
+
+.. warning::
+
+   Thêm file này vào sau khi đã thêm hết tất cả các thư viện trên.
 
 Thêm module vào app
 ===================
