@@ -5,7 +5,8 @@ Thêm module vào app
 
 Thêm đoạn code sau vào ``app.js``:
 
-.. code:: javascript
+.. code-block:: javascript
+   :linenos:
    
    var appDeps = [
       "fx.sharepoint.lists.jsom"

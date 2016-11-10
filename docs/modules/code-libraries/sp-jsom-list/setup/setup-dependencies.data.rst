@@ -10,14 +10,16 @@ Thư viện của SharePoint
 
 Định nghĩa SharePoint `tag prefix`:
 
-.. code:: html
+.. code-block:: html
+   :linenos:
   
    <%@ Register TagPrefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
 
 Vì |FSJL| sử dụng |sharepoint-jsom|_ nên cần phải thêm các file sau của 
 SharePoint vào  file ``default.aspx``:
 
-.. code:: html
+.. code-block:: html
+   :linenos:
 
    <SharePoint:ScriptLink runat="server" Language="javascript" Name="MicrosoftAjax.js" OnDemand="false" Defer="false" Localizable="false" />
    <SharePoint:ScriptLink runat="server" Language="javascript" Name="SP.Core.js" OnDemand="false" Defer="false" Localizable="false" />
@@ -33,7 +35,8 @@ SharePoint vào  file ``default.aspx``:
 Định nghĩa ``FormDigest`` element, SharePoint dùng form digest để authenticate 
 với server:
 
-.. code:: html
+.. code-block:: html
+   :linenos:
 
    <SharePoint:SharePointForm runat="server"> 
       <SharePoint:FormDigest runat="server" />
@@ -50,7 +53,8 @@ Thư viện JavaScript khác
 
 |FSJL| phụ thuộc vào |lodash|_, |jquery|_ và |angularjs|_:
 
-.. code:: html
+.. code-block:: html
+   :linenos:
 
    <script src="/path/to/lodash.js"></script>
    <script src="/path/to/jquery.js"></script>
@@ -59,7 +63,8 @@ Thư viện JavaScript khác
 Thư viện |FSJL|
 ---------------
 
-.. code:: html
+.. code-block:: html
+   :linenos:
 
    <script src="/path/to/fx.sharepoint.lists.jsom.js"></script>
 

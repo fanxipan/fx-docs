@@ -3,7 +3,7 @@
 File ``default.aspx`` hoàn chỉnh
 ================================
 
-.. code-block:: python
+.. code-block:: html
    :linenos:
    :emphasize-lines: 2,15-18,20-22,24,30-33
 
