@@ -11,6 +11,7 @@
 .. |List.getByIdAsync| replace:: :jsom-class-member:`Fx.SharePoint.Client.List#getByIdAsync`
 .. |List.getManyAsync| replace:: :jsom-class-member:`Fx.SharePoint.Client.List#getManyAsync`
 .. |List.createItemAsync| replace:: :jsom-class-member:`Fx.SharePoint.Client.List#createItemAsync`
+.. |List.deleteItemAsync| replace:: :jsom-class-member:`Fx.SharePoint.Client.List#deleteItemAsync`
 
 .. |ListItem| replace:: :jsom-class:`Fx.SharePoint.Client.ListItem`
 
