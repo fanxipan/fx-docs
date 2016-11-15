@@ -8,7 +8,10 @@
 
 .. |List| replace:: :jsom-class:`Fx.SharePoint.Client.List`
 .. |List.getByIdAsync| replace:: :jsom-class-member:`Fx.SharePoint.Client.List#getByIdAsync`
+.. |List.getManyAsync| replace:: :jsom-class-member:`Fx.SharePoint.Client.List#getManyAsync`
 
 .. |ListItem| replace:: :jsom-class:`Fx.SharePoint.Client.ListItem`
 
 .. |IListConfigLiteral| replace:: :jsom-interface:`Fx.SharePoint.Client.IListConfigLiteral`
+
+.. |Query| replace:: :jsom-class:`Fx.SharePoint.Caml.Lists.Query`
