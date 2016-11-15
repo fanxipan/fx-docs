@@ -3,6 +3,11 @@
 .. |sharepoint-jsom| replace:: SharePoint JavaScript Object Model
 .. _sharepoint-jsom: sharepoint-jsom-guide_
 
+.. _caml-query-home: https://msdn.microsoft.com/en-us/library/office/ms467521.aspx
+
+.. |caml-query| replace:: CAML Query
+.. _caml-query: caml-query-home_
+
 .. _lodash-home: https://lodash.com/
 
 .. |lodash| replace:: Lodash

@@ -7,6 +7,8 @@
 .. |ListBase.defaultFieldsLiteral| replace:: :jsom-class-member:`Fx.SharePoint.Client.ListBase#defaultFieldsLiteral`
 
 .. |List| replace:: :jsom-class:`Fx.SharePoint.Client.List`
+.. |List.getByIdAsync| replace:: :jsom-class-member:`Fx.SharePoint.Client.List#getByIdAsync`
+
 .. |ListItem| replace:: :jsom-class:`Fx.SharePoint.Client.ListItem`
 
 .. |IListConfigLiteral| replace:: :jsom-interface:`Fx.SharePoint.Client.IListConfigLiteral`
