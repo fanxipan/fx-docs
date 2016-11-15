@@ -10,6 +10,7 @@
 .. |List| replace:: :jsom-class:`Fx.SharePoint.Client.List`
 .. |List.getByIdAsync| replace:: :jsom-class-member:`Fx.SharePoint.Client.List#getByIdAsync`
 .. |List.getManyAsync| replace:: :jsom-class-member:`Fx.SharePoint.Client.List#getManyAsync`
+.. |List.createItemAsync| replace:: :jsom-class-member:`Fx.SharePoint.Client.List#createItemAsync`
 
 .. |ListItem| replace:: :jsom-class:`Fx.SharePoint.Client.ListItem`
 

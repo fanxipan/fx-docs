@@ -201,16 +201,23 @@
 					<a name="getlookupitem" class="tsd-anchor"></a>
 					<h3>get<wbr>Lookup<wbr>Item</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Lookup<wbr>Item<span class="tsd-signature-symbol">(</span>itemId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, listId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, fields<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ng.IPromise</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Lookup<wbr>Item<span class="tsd-signature-symbol">(</span>itemId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, listId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, fields<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IPromise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/fx.sharepoint.client.ilistitem.html" class="tsd-signature-type">IListItem</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.igetlistitemsessioncontext.html">IGetListItemSessionContext</a>.<a href="../interfaces/fx.sharepoint.client.igetlistitemsessioncontext.html#getlookupitem">getLookupItem</a></p>
 								<ul>
-									<li>Defined in src/core/context/session/GetListItemSessionContext.ts:30</li>
+									<li>Defined in src/core/context/session/GetListItemSessionContext.ts:43</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Lấy lisitem của 1 trường lookup.</p>
+								</div>
+								<p><strong>Lưu ý:</strong> thông tin về item cần lấy sẽ được thêm vào queue. Promise của hàm này
+								sẽ được resolve sau khi gọi hàm <a href="fx.sharepoint.client.getlistitemsessioncontext.html#retrievedata">retrieveData</a>.</p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -218,12 +225,19 @@
 								</li>
 								<li>
 									<h5>listId: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>id của list chứa item cần lấy</p>
+									</div>
 								</li>
 								<li>
 									<h5>fields: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>mảng tên các field cần lấy cho list item, ví dụ: <code>{88687b6a-ff23-40bb-8c76-d2f53ea04017}</code>.
+										<em>Lưu ý:</em> không truyền vào DisplayName của list.</p>
+									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ng.IPromise</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IPromise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/fx.sharepoint.client.ilistitem.html" class="tsd-signature-type">IListItem</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -275,12 +289,12 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.igetlistitemsessioncontext.html">IGetListItemSessionContext</a>.<a href="../interfaces/fx.sharepoint.client.igetlistitemsessioncontext.html#retrievedata">retrieveData</a></p>
 								<ul>
-									<li>Defined in src/core/context/session/GetListItemSessionContext.ts:37</li>
+									<li>Defined in src/core/context/session/GetListItemSessionContext.ts:50</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Get all data for pending request from server.</p>
+									<p>Thực hiện lấy data cho các item đã được queue khi gọi hàm <a href="fx.sharepoint.client.getlistitemsessioncontext.html#getlookupitem">getLookupItem</a>.</p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IPromise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
