@@ -3,6 +3,7 @@
 
 .. |ServiceContext| replace:: :jsom-class:`Fx.SharePoint.Client.ServiceContext`
 .. |ServiceContext.getList| replace:: :jsom-class-member:`Fx.SharePoint.Client.ServiceContext#getList`
+.. |ServiceContext.commitChanges| replace:: :jsom-class-member:`Fx.SharePoint.Client.ServiceContext#commitChanges`
 
 .. |ListBase.defaultFieldsLiteral| replace:: :jsom-class-member:`Fx.SharePoint.Client.ListBase#defaultFieldsLiteral`
 
