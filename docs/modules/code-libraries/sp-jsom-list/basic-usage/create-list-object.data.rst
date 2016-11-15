@@ -55,3 +55,6 @@ Trong ví dụ trên thì object ``customer`` sẽ có dạng như sau:
    
    Để chỉ định chính xác những trường nào sẽ được lấy về cho item, xem thêm phần
    :ref:`jsom-advance-usage-list-definition-fields-config`
+
+   Để thay đổi giá trị các field của list item khi trả về cho user hoặc trước 
+   khi push lên server, xem thêm phần :ref:`jsom-advance-usage-list-definition-fields-parsing`
