@@ -121,7 +121,9 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="fx.sharepoint.client.list.html#createcamlquery" class="tsd-kind-icon">create<wbr>Caml<wbr>Query</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="fx.sharepoint.client.list.html#createitemasync" class="tsd-kind-icon">create<wbr>Item<wbr>Async</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected"><a href="fx.sharepoint.client.list.html#createitemasyncimpl" class="tsd-kind-icon">create<wbr>Item<wbr>Async<wbr>Impl</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="fx.sharepoint.client.list.html#deleteitemasync" class="tsd-kind-icon">delete<wbr>Item<wbr>Async</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected"><a href="fx.sharepoint.client.list.html#deleteitemasyncimpl" class="tsd-kind-icon">delete<wbr>Item<wbr>Async<wbr>Impl</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="fx.sharepoint.client.list.html#getbyidasync" class="tsd-kind-icon">get<wbr>ById<wbr>Async</a></li>
@@ -155,7 +157,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="fx.sharepoint.client.listbase.html">ListBase</a>.<a href="fx.sharepoint.client.listbase.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in src/core/list/ListBase.ts:49</li>
+									<li>Defined in src/core/list/ListBase.ts:50</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -181,7 +183,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="fx.sharepoint.client.listbase.html">ListBase</a>.<a href="fx.sharepoint.client.listbase.html#initpromise">initPromise</a></p>
 						<ul>
-							<li>Defined in src/core/list/ListBase.ts:44</li>
+							<li>Defined in src/core/list/ListBase.ts:45</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -197,7 +199,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="fx.sharepoint.client.listbase.html">ListBase</a>.<a href="fx.sharepoint.client.listbase.html#splist">spList</a></p>
 						<ul>
-							<li>Defined in src/core/list/ListBase.ts:28</li>
+							<li>Defined in src/core/list/ListBase.ts:29</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -221,7 +223,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="fx.sharepoint.client.listbase.html">ListBase</a>.<a href="fx.sharepoint.client.listbase.html#clientcontext">clientContext</a></p>
 								<ul>
-									<li>Defined in src/core/list/ListBase.ts:74</li>
+									<li>Defined in src/core/list/ListBase.ts:75</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ClientContext</span></h4>
@@ -231,6 +233,32 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="createcamlquery" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> create<wbr>Caml<wbr>Query</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Caml<wbr>Query<span class="tsd-signature-symbol">(</span>query<span class="tsd-signature-symbol">: </span><a href="fx.sharepoint.caml.lists.query.html" class="tsd-signature-type">Query</a>, options<span class="tsd-signature-symbol">: </span><a href="../interfaces/fx.sharepoint.client.ilistoperationoptions.html" class="tsd-signature-type">IListOperationOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CamlQuery</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in src/core/list/List.ts:143</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>query: <a href="fx.sharepoint.caml.lists.query.html" class="tsd-signature-type">Query</a></h5>
+								</li>
+								<li>
+									<h5>options: <a href="../interfaces/fx.sharepoint.client.ilistoperationoptions.html" class="tsd-signature-type">IListOperationOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">CamlQuery</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="createitemasync" class="tsd-anchor"></a>
 					<h3>create<wbr>Item<wbr>Async</h3>
@@ -243,7 +271,31 @@
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilist.html">IList</a>.<a href="../interfaces/fx.sharepoint.client.ilist.html#createitemasync">createItemAsync</a></p>
 								<p>Inherited from <a href="fx.sharepoint.client.listbase.html">ListBase</a>.<a href="fx.sharepoint.client.listbase.html#createitemasync">createItemAsync</a></p>
 								<ul>
-									<li>Defined in src/core/list/ListBase.ts:232</li>
+									<li>Defined in src/core/list/ListBase.ts:234</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>itemData: <a href="../interfaces/fx.sharepoint.client.ilistitemcreationliteral.html" class="tsd-signature-type">IListItemCreationLiteral</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IPromise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/fx.sharepoint.client.ilistitem.html" class="tsd-signature-type">IListItem</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
+					<a name="createitemasyncimpl" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> create<wbr>Item<wbr>Async<wbr>Impl</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Item<wbr>Async<wbr>Impl<span class="tsd-signature-symbol">(</span>itemData<span class="tsd-signature-symbol">: </span><a href="../interfaces/fx.sharepoint.client.ilistitemcreationliteral.html" class="tsd-signature-type">IListItemCreationLiteral</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IPromise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/fx.sharepoint.client.ilistitem.html" class="tsd-signature-type">IListItem</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overwrites <a href="fx.sharepoint.client.listbase.html">ListBase</a>.<a href="fx.sharepoint.client.listbase.html#createitemasyncimpl">createItemAsyncImpl</a></p>
+								<ul>
+									<li>Defined in src/core/list/List.ts:85</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -268,7 +320,7 @@
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilist.html">IList</a>.<a href="../interfaces/fx.sharepoint.client.ilist.html#deleteitemasync">deleteItemAsync</a></p>
 								<p>Inherited from <a href="fx.sharepoint.client.listbase.html">ListBase</a>.<a href="fx.sharepoint.client.listbase.html#deleteitemasync">deleteItemAsync</a></p>
 								<ul>
-									<li>Defined in src/core/list/ListBase.ts:236</li>
+									<li>Defined in src/core/list/ListBase.ts:238</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -292,7 +344,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="fx.sharepoint.client.listbase.html">ListBase</a>.<a href="fx.sharepoint.client.listbase.html#deleteitemasyncimpl">deleteItemAsyncImpl</a></p>
 								<ul>
-									<li>Defined in src/core/list/List.ts:73</li>
+									<li>Defined in src/core/list/List.ts:103</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -317,7 +369,7 @@
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilist.html">IList</a>.<a href="../interfaces/fx.sharepoint.client.ilist.html#getbyidasync">getByIdAsync</a></p>
 								<p>Inherited from <a href="fx.sharepoint.client.listbase.html">ListBase</a>.<a href="fx.sharepoint.client.listbase.html#getbyidasync">getByIdAsync</a></p>
 								<ul>
-									<li>Defined in src/core/list/ListBase.ts:220</li>
+									<li>Defined in src/core/list/ListBase.ts:222</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -378,7 +430,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="fx.sharepoint.client.listbase.html">ListBase</a>.<a href="fx.sharepoint.client.listbase.html#getfieldbyname">getFieldByName</a></p>
 								<ul>
-									<li>Defined in src/core/list/ListBase.ts:118</li>
+									<li>Defined in src/core/list/ListBase.ts:120</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -408,7 +460,7 @@
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilist.html">IList</a>.<a href="../interfaces/fx.sharepoint.client.ilist.html#getmanyasync">getManyAsync</a></p>
 								<p>Inherited from <a href="fx.sharepoint.client.listbase.html">ListBase</a>.<a href="fx.sharepoint.client.listbase.html#getmanyasync">getManyAsync</a></p>
 								<ul>
-									<li>Defined in src/core/list/ListBase.ts:228</li>
+									<li>Defined in src/core/list/ListBase.ts:230</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -442,7 +494,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="fx.sharepoint.client.listbase.html">ListBase</a>.<a href="fx.sharepoint.client.listbase.html#getmanyasyncimpl">getManyAsyncImpl</a></p>
 								<ul>
-									<li>Defined in src/core/list/List.ts:51</li>
+									<li>Defined in src/core/list/List.ts:68</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -468,7 +520,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/core/list/List.ts:82</li>
+									<li>Defined in src/core/list/List.ts:112</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -493,7 +545,7 @@
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilist.html">IList</a>.<a href="../interfaces/fx.sharepoint.client.ilist.html#get_defaultfieldconfigs">get_defaultFieldConfigs</a></p>
 								<p>Inherited from <a href="fx.sharepoint.client.listbase.html">ListBase</a>.<a href="fx.sharepoint.client.listbase.html#get_defaultfieldconfigs">get_defaultFieldConfigs</a></p>
 								<ul>
-									<li>Defined in src/core/list/ListBase.ts:193</li>
+									<li>Defined in src/core/list/ListBase.ts:195</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -517,7 +569,7 @@
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilist.html">IList</a>.<a href="../interfaces/fx.sharepoint.client.ilist.html#get_fields">get_fields</a></p>
 								<p>Inherited from <a href="fx.sharepoint.client.listbase.html">ListBase</a>.<a href="fx.sharepoint.client.listbase.html#get_fields">get_fields</a></p>
 								<ul>
-									<li>Defined in src/core/list/ListBase.ts:182</li>
+									<li>Defined in src/core/list/ListBase.ts:184</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/fx.sharepoint.client.ilistfieldcollection.html" class="tsd-signature-type">IListFieldCollection</a></h4>
@@ -536,7 +588,7 @@
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilist.html">IList</a>.<a href="../interfaces/fx.sharepoint.client.ilist.html#get_listconfig">get_listConfig</a></p>
 								<p>Inherited from <a href="fx.sharepoint.client.listbase.html">ListBase</a>.<a href="fx.sharepoint.client.listbase.html#get_listconfig">get_listConfig</a></p>
 								<ul>
-									<li>Defined in src/core/list/ListBase.ts:178</li>
+									<li>Defined in src/core/list/ListBase.ts:180</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/fx.sharepoint.client.ilistconfig.html" class="tsd-signature-type">IListConfig</a></h4>
@@ -555,7 +607,7 @@
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilist.html">IList</a>.<a href="../interfaces/fx.sharepoint.client.ilist.html#get_logger">get_logger</a></p>
 								<p>Inherited from <a href="fx.sharepoint.client.listbase.html">ListBase</a>.<a href="fx.sharepoint.client.listbase.html#get_logger">get_logger</a></p>
 								<ul>
-									<li>Defined in src/core/list/ListBase.ts:211</li>
+									<li>Defined in src/core/list/ListBase.ts:213</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/fx.sharepoint.client.ilogger.html" class="tsd-signature-type">ILogger</a></h4>
@@ -574,7 +626,7 @@
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilist.html">IList</a>.<a href="../interfaces/fx.sharepoint.client.ilist.html#get_servicecontext">get_serviceContext</a></p>
 								<p>Inherited from <a href="fx.sharepoint.client.listbase.html">ListBase</a>.<a href="fx.sharepoint.client.listbase.html#get_servicecontext">get_serviceContext</a></p>
 								<ul>
-									<li>Defined in src/core/list/ListBase.ts:186</li>
+									<li>Defined in src/core/list/ListBase.ts:188</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/fx.sharepoint.client.iservicecontext.html" class="tsd-signature-type">IServiceContext</a></h4>
@@ -592,7 +644,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="fx.sharepoint.client.listbase.html">ListBase</a>.<a href="fx.sharepoint.client.listbase.html#getdefaultfields">getDefaultFields</a></p>
 								<ul>
-									<li>Defined in src/core/list/ListBase.ts:99</li>
+									<li>Defined in src/core/list/ListBase.ts:100</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../modules/fx.sharepoint.client.html#tindexdedfieldconfigliteral" class="tsd-signature-type">TIndexdedFieldConfigLiteral</a></h4>
@@ -610,7 +662,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="fx.sharepoint.client.listbase.html">ListBase</a>.<a href="fx.sharepoint.client.listbase.html#setdefaultfields">setDefaultFields</a></p>
 								<ul>
-									<li>Defined in src/core/list/ListBase.ts:95</li>
+									<li>Defined in src/core/list/ListBase.ts:96</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -676,8 +728,14 @@
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 								<a href="fx.sharepoint.client.list.html#clientcontext" class="tsd-kind-icon">client<wbr>Context</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="fx.sharepoint.client.list.html#createcamlquery" class="tsd-kind-icon">create<wbr>Caml<wbr>Query</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="fx.sharepoint.client.list.html#createitemasync" class="tsd-kind-icon">create<wbr>Item<wbr>Async</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
+								<a href="fx.sharepoint.client.list.html#createitemasyncimpl" class="tsd-kind-icon">create<wbr>Item<wbr>Async<wbr>Impl</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="fx.sharepoint.client.list.html#deleteitemasync" class="tsd-kind-icon">delete<wbr>Item<wbr>Async</a>

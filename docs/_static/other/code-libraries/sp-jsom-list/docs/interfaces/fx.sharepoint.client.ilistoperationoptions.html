@@ -92,6 +92,7 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="fx.sharepoint.client.ilistoperationoptions.html#defer" class="tsd-kind-icon">defer</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="fx.sharepoint.client.ilistoperationoptions.html#itemperrequest" class="tsd-kind-icon">item<wbr>Per<wbr>Request</a></li>
 							</ul>
 						</section>
 					</div>
@@ -112,6 +113,22 @@
 						<div class="lead">
 							<p>If true, push this request operation to a queue.
 							Default: false</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="itemperrequest" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> item<wbr>Per<wbr>Request</h3>
+					<div class="tsd-signature tsd-kind-icon">item<wbr>Per<wbr>Request<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in src/core/list/IListOperationOptions.ts:15</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Số lượng tối đa item sẽ được lấy về mỗi request. Giá trị này sẽ được gán vào
+							<em>RowLimit</em> của Caml Query.</p>
 						</div>
 					</div>
 				</section>
@@ -158,6 +175,9 @@
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="fx.sharepoint.client.ilistoperationoptions.html#defer" class="tsd-kind-icon">defer</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="fx.sharepoint.client.ilistoperationoptions.html#itemperrequest" class="tsd-kind-icon">item<wbr>Per<wbr>Request</a>
 							</li>
 						</ul>
 					</li>
