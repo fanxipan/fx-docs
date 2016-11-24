@@ -143,10 +143,13 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="fx.sharepoint.client.listbase.html#deleteitemasyncimpl" class="tsd-kind-icon">delete<wbr>Item<wbr>Async<wbr>Impl</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fx.sharepoint.client.listbase.html#getbyidasync" class="tsd-kind-icon">get<wbr>ById<wbr>Async</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="fx.sharepoint.client.listbase.html#getbyidasyncimpl" class="tsd-kind-icon">get<wbr>ById<wbr>Async<wbr>Impl</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fx.sharepoint.client.listbase.html#getdefaultviewasync" class="tsd-kind-icon">get<wbr>Default<wbr>View<wbr>Async</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fx.sharepoint.client.listbase.html#getfieldbyname" class="tsd-kind-icon">get<wbr>Field<wbr>ByName</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="fx.sharepoint.client.listbase.html#getfieldconfigs" class="tsd-kind-icon">get<wbr>Field<wbr>Configs</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fx.sharepoint.client.listbase.html#getmanyasync" class="tsd-kind-icon">get<wbr>Many<wbr>Async</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="fx.sharepoint.client.listbase.html#getmanyasyncimpl" class="tsd-kind-icon">get<wbr>Many<wbr>Async<wbr>Impl</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fx.sharepoint.client.listbase.html#getviewbyidasync" class="tsd-kind-icon">get<wbr>View<wbr>ById<wbr>Async</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="fx.sharepoint.client.listbase.html#getviewimpl" class="tsd-kind-icon">get<wbr>View<wbr>Impl</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fx.sharepoint.client.listbase.html#get_defaultfieldconfigs" class="tsd-kind-icon">get_<wbr>default<wbr>Field<wbr>Configs</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fx.sharepoint.client.listbase.html#get_fields" class="tsd-kind-icon">get_<wbr>fields</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fx.sharepoint.client.listbase.html#get_listconfig" class="tsd-kind-icon">get_<wbr>list<wbr>Config</a></li>
@@ -333,7 +336,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilist.html">IList</a>.<a href="../interfaces/fx.sharepoint.client.ilist.html#createitemasync">createItemAsync</a></p>
 								<ul>
-									<li>Defined in src/core/list/ListBase.ts:234</li>
+									<li>Defined in src/core/list/ListBase.ts:269</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -380,7 +383,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilist.html">IList</a>.<a href="../interfaces/fx.sharepoint.client.ilist.html#deleteitemasync">deleteItemAsync</a></p>
 								<ul>
-									<li>Defined in src/core/list/ListBase.ts:238</li>
+									<li>Defined in src/core/list/ListBase.ts:273</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -427,7 +430,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilist.html">IList</a>.<a href="../interfaces/fx.sharepoint.client.ilist.html#getbyidasync">getByIdAsync</a></p>
 								<ul>
-									<li>Defined in src/core/list/ListBase.ts:222</li>
+									<li>Defined in src/core/list/ListBase.ts:250</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -473,6 +476,24 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IPromise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/fx.sharepoint.client.ilistitem.html" class="tsd-signature-type">IListItem</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getdefaultviewasync" class="tsd-anchor"></a>
+					<h3>get<wbr>Default<wbr>View<wbr>Async</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Default<wbr>View<wbr>Async<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IPromise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/fx.sharepoint.client.ilistview.html" class="tsd-signature-type">IListView</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilist.html">IList</a>.<a href="../interfaces/fx.sharepoint.client.ilist.html#getdefaultviewasync">getDefaultViewAsync</a></p>
+								<ul>
+									<li>Defined in src/core/list/ListBase.ts:281</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IPromise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/fx.sharepoint.client.ilistview.html" class="tsd-signature-type">IListView</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -525,14 +546,15 @@
 					<a name="getmanyasync" class="tsd-anchor"></a>
 					<h3>get<wbr>Many<wbr>Async</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Many<wbr>Async<span class="tsd-signature-symbol">(</span>query<span class="tsd-signature-symbol">: </span><a href="fx.sharepoint.caml.lists.query.html" class="tsd-signature-type">Query</a>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/fx.sharepoint.client.ilistoperationoptions.html" class="tsd-signature-type">IListOperationOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IPromise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/fx.sharepoint.client.ilistitemcollection.html" class="tsd-signature-type">IListItemCollection</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Many<wbr>Async<span class="tsd-signature-symbol">(</span>query<span class="tsd-signature-symbol">: </span><a href="fx.sharepoint.caml.lists.query.html" class="tsd-signature-type">Query</a>, options<span class="tsd-signature-symbol">: </span><a href="../interfaces/fx.sharepoint.client.ilistoperationoptions.html" class="tsd-signature-type">IListOperationOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IPromise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/fx.sharepoint.client.ilistitemcollection.html" class="tsd-signature-type">IListItemCollection</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Many<wbr>Async<span class="tsd-signature-symbol">(</span>queryString<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">: </span><a href="../interfaces/fx.sharepoint.client.ilistoperationoptions.html" class="tsd-signature-type">IListOperationOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IPromise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/fx.sharepoint.client.ilistitemcollection.html" class="tsd-signature-type">IListItemCollection</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilist.html">IList</a>.<a href="../interfaces/fx.sharepoint.client.ilist.html#getmanyasync">getManyAsync</a></p>
 								<ul>
-									<li>Defined in src/core/list/ListBase.ts:230</li>
+									<li>Defined in src/core/list/ListBase.ts:256</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -546,8 +568,37 @@
 									<h5>query: <a href="fx.sharepoint.caml.lists.query.html" class="tsd-signature-type">Query</a></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> options: <a href="../interfaces/fx.sharepoint.client.ilistoperationoptions.html" class="tsd-signature-type">IListOperationOptions</a><span class="tsd-signature-symbol"> =&nbsp;DEFAULT_OPTIONS</span></h5>
+									<h5>options: <a href="../interfaces/fx.sharepoint.client.ilistoperationoptions.html" class="tsd-signature-type">IListOperationOptions</a></h5>
 									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IPromise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/fx.sharepoint.client.ilistitemcollection.html" class="tsd-signature-type">IListItemCollection</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilist.html">IList</a>.<a href="../interfaces/fx.sharepoint.client.ilist.html#getmanyasync">getManyAsync</a></p>
+								<ul>
+									<li>Defined in src/core/list/ListBase.ts:257</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get list item by fileter.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>queryString: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>options: <a href="../interfaces/fx.sharepoint.client.ilistoperationoptions.html" class="tsd-signature-type">IListOperationOptions</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+										</div>
 									</div>
 								</li>
 							</ul>
@@ -559,7 +610,7 @@
 					<a name="getmanyasyncimpl" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> get<wbr>Many<wbr>Async<wbr>Impl</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Many<wbr>Async<wbr>Impl<span class="tsd-signature-symbol">(</span>query<span class="tsd-signature-symbol">: </span><a href="fx.sharepoint.caml.lists.query.html" class="tsd-signature-type">Query</a>, options<span class="tsd-signature-symbol">: </span><a href="../interfaces/fx.sharepoint.client.ilistoperationoptions.html" class="tsd-signature-type">IListOperationOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IPromise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/fx.sharepoint.client.ilistitemcollection.html" class="tsd-signature-type">IListItemCollection</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Many<wbr>Async<wbr>Impl<span class="tsd-signature-symbol">(</span>query<span class="tsd-signature-symbol">: </span><a href="fx.sharepoint.caml.lists.query.html" class="tsd-signature-type">Query</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">: </span><a href="../interfaces/fx.sharepoint.client.ilistoperationoptions.html" class="tsd-signature-type">IListOperationOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IPromise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/fx.sharepoint.client.ilistitemcollection.html" class="tsd-signature-type">IListItemCollection</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -571,13 +622,60 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>query: <a href="fx.sharepoint.caml.lists.query.html" class="tsd-signature-type">Query</a></h5>
+									<h5>query: <a href="fx.sharepoint.caml.lists.query.html" class="tsd-signature-type">Query</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
 									<h5>options: <a href="../interfaces/fx.sharepoint.client.ilistoperationoptions.html" class="tsd-signature-type">IListOperationOptions</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IPromise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/fx.sharepoint.client.ilistitemcollection.html" class="tsd-signature-type">IListItemCollection</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getviewbyidasync" class="tsd-anchor"></a>
+					<h3>get<wbr>View<wbr>ById<wbr>Async</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>View<wbr>ById<wbr>Async<span class="tsd-signature-symbol">(</span>viewGuid<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IPromise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/fx.sharepoint.client.ilistview.html" class="tsd-signature-type">IListView</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilist.html">IList</a>.<a href="../interfaces/fx.sharepoint.client.ilist.html#getviewbyidasync">getViewByIdAsync</a></p>
+								<ul>
+									<li>Defined in src/core/list/ListBase.ts:285</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>viewGuid: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IPromise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/fx.sharepoint.client.ilistview.html" class="tsd-signature-type">IListView</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="getviewimpl" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>View<wbr>Impl</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>View<wbr>Impl<span class="tsd-signature-symbol">(</span>viewGuid<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IPromise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/fx.sharepoint.client.ilistview.html" class="tsd-signature-type">IListView</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in src/core/list/ListBase.ts:176</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> viewGuid: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IPromise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/fx.sharepoint.client.ilistview.html" class="tsd-signature-type">IListView</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -592,7 +690,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilist.html">IList</a>.<a href="../interfaces/fx.sharepoint.client.ilist.html#get_defaultfieldconfigs">get_defaultFieldConfigs</a></p>
 								<ul>
-									<li>Defined in src/core/list/ListBase.ts:195</li>
+									<li>Defined in src/core/list/ListBase.ts:219</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -615,7 +713,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilist.html">IList</a>.<a href="../interfaces/fx.sharepoint.client.ilist.html#get_fields">get_fields</a></p>
 								<ul>
-									<li>Defined in src/core/list/ListBase.ts:184</li>
+									<li>Defined in src/core/list/ListBase.ts:208</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/fx.sharepoint.client.ilistfieldcollection.html" class="tsd-signature-type">IListFieldCollection</a></h4>
@@ -633,7 +731,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilist.html">IList</a>.<a href="../interfaces/fx.sharepoint.client.ilist.html#get_listconfig">get_listConfig</a></p>
 								<ul>
-									<li>Defined in src/core/list/ListBase.ts:180</li>
+									<li>Defined in src/core/list/ListBase.ts:204</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/fx.sharepoint.client.ilistconfig.html" class="tsd-signature-type">IListConfig</a></h4>
@@ -651,7 +749,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilist.html">IList</a>.<a href="../interfaces/fx.sharepoint.client.ilist.html#get_logger">get_logger</a></p>
 								<ul>
-									<li>Defined in src/core/list/ListBase.ts:213</li>
+									<li>Defined in src/core/list/ListBase.ts:237</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/fx.sharepoint.client.ilogger.html" class="tsd-signature-type">ILogger</a></h4>
@@ -669,7 +767,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilist.html">IList</a>.<a href="../interfaces/fx.sharepoint.client.ilist.html#get_servicecontext">get_serviceContext</a></p>
 								<ul>
-									<li>Defined in src/core/list/ListBase.ts:188</li>
+									<li>Defined in src/core/list/ListBase.ts:212</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/fx.sharepoint.client.iservicecontext.html" class="tsd-signature-type">IServiceContext</a></h4>
@@ -850,6 +948,9 @@
 								<a href="fx.sharepoint.client.listbase.html#getbyidasyncimpl" class="tsd-kind-icon">get<wbr>ById<wbr>Async<wbr>Impl</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="fx.sharepoint.client.listbase.html#getdefaultviewasync" class="tsd-kind-icon">get<wbr>Default<wbr>View<wbr>Async</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="fx.sharepoint.client.listbase.html#getfieldbyname" class="tsd-kind-icon">get<wbr>Field<wbr>ByName</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
@@ -860,6 +961,12 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
 								<a href="fx.sharepoint.client.listbase.html#getmanyasyncimpl" class="tsd-kind-icon">get<wbr>Many<wbr>Async<wbr>Impl</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="fx.sharepoint.client.listbase.html#getviewbyidasync" class="tsd-kind-icon">get<wbr>View<wbr>ById<wbr>Async</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="fx.sharepoint.client.listbase.html#getviewimpl" class="tsd-kind-icon">get<wbr>View<wbr>Impl</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="fx.sharepoint.client.listbase.html#get_defaultfieldconfigs" class="tsd-kind-icon">get_<wbr>default<wbr>Field<wbr>Configs</a>

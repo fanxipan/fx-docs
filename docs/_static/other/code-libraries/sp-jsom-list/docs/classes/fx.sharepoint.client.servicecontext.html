@@ -104,6 +104,7 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="fx.sharepoint.client.servicecontext.html#clientcontext" class="tsd-kind-icon">client<wbr>Context</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="fx.sharepoint.client.servicecontext.html#commitqueue" class="tsd-kind-icon">commit<wbr>Queue</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="fx.sharepoint.client.servicecontext.html#pendingqueue" class="tsd-kind-icon">pending<wbr>Queue</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="fx.sharepoint.client.servicecontext.html#sessioncontextmanager" class="tsd-kind-icon">session<wbr>Context<wbr>Manager</a></li>
 							</ul>
@@ -112,6 +113,7 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fx.sharepoint.client.servicecontext.html#addpending" class="tsd-kind-icon">add<wbr>Pending</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="fx.sharepoint.client.servicecontext.html#addtocommitqueue" class="tsd-kind-icon">add<wbr>ToCommit<wbr>Queue</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fx.sharepoint.client.servicecontext.html#commitchanges" class="tsd-kind-icon">commit<wbr>Changes</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="fx.sharepoint.client.servicecontext.html#commitchangesinternal" class="tsd-kind-icon">commit<wbr>Changes<wbr>Internal</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fx.sharepoint.client.servicecontext.html#finalizesession" class="tsd-kind-icon">finalize<wbr>Session</a></li>
@@ -134,7 +136,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/core/ServiceContext.ts:8</li>
+									<li>Defined in src/core/ServiceContext.ts:10</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -157,7 +159,17 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/fx.sharepoint.client.iservicecontext.html">IServiceContext</a>.<a href="../interfaces/fx.sharepoint.client.iservicecontext.html#clientcontext">clientContext</a></p>
 						<ul>
-							<li>Defined in src/core/ServiceContext.ts:25</li>
+							<li>Defined in src/core/ServiceContext.ts:27</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="commitqueue" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> commit<wbr>Queue</h3>
+					<div class="tsd-signature tsd-kind-icon">commit<wbr>Queue<span class="tsd-signature-symbol">:</span> <a href="fx.sharepoint.client.queue.html" class="tsd-signature-type">Queue</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IDeferred</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Queue&lt;angular.IDeferred&lt;void&gt;&gt;()</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in src/core/ServiceContext.ts:10</li>
 						</ul>
 					</aside>
 				</section>
@@ -195,7 +207,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.iservicecontext.html">IServiceContext</a>.<a href="../interfaces/fx.sharepoint.client.iservicecontext.html#addpending">addPending</a></p>
 								<ul>
-									<li>Defined in src/core/ServiceContext.ts:87</li>
+									<li>Defined in src/core/ServiceContext.ts:126</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -205,6 +217,23 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="addtocommitqueue" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> add<wbr>ToCommit<wbr>Queue</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>ToCommit<wbr>Queue<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IPromise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in src/core/ServiceContext.ts:73</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IPromise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -219,13 +248,17 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.iservicecontext.html">IServiceContext</a>.<a href="../interfaces/fx.sharepoint.client.iservicecontext.html#commitchanges">commitChanges</a></p>
 								<ul>
-									<li>Defined in src/core/ServiceContext.ts:61</li>
+									<li>Defined in src/core/ServiceContext.ts:101</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> invokeQueue: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IPromise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -242,13 +275,23 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/core/ServiceContext.ts:34</li>
+									<li>Defined in src/core/ServiceContext.ts:49</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Call ClientContext.executeQueryAsync().</p>
+									<p>Gọi ClientContext.executeQueryAsync().</p>
 								</div>
+								<p>Mỗi lần gọi đến ClientContext.executeQueryAsync() -&gt; JSOM sẽ gửi tất cả thông tin
+									của các lần gọi ClientContext.load() -&gt; gọi ServiceContext.commitChanges() liên tục
+								sẽ xảy ra vấn đề:</p>
+								<p>Giả sử gọi (ClientContext.load() &gt; ServiceContext.commitChanges()) x3.
+									Mong muốn kết quả đạt được phải như sau: (load &gt; commitChanges &gt; executeQueryAsync) x3
+									Thực tế có thể xảy ra: (load &gt; commitChanges) x3 &gt; executeQueryAsync x3
+									Điều này dẫn đến 3 lần gọi commitChanges() nhưng chỉ push data lên server 1 lần duy nhất
+								(lần đầu tiên), các lần sau ko push gì lên cả (và JSOM cũng ko gây ra lỗi).</p>
+								<p>=&gt; Cần phải queue các lần gọi commitChanges(), đợi khi nào ClientContext.executeQueryAsync()
+								được gọi rồi mới xử lý commitChanges() tiếp theo.</p>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IPromise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
@@ -265,7 +308,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.iservicecontext.html">IServiceContext</a>.<a href="../interfaces/fx.sharepoint.client.iservicecontext.html#finalizesession">finalizeSession</a></p>
 								<ul>
-									<li>Defined in src/core/ServiceContext.ts:91</li>
+									<li>Defined in src/core/ServiceContext.ts:130</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -289,7 +332,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.iservicecontext.html">IServiceContext</a>.<a href="../interfaces/fx.sharepoint.client.iservicecontext.html#getgetlistitemsessioncontext">getGetListItemSessionContext</a></p>
 								<ul>
-									<li>Defined in src/core/ServiceContext.ts:95</li>
+									<li>Defined in src/core/ServiceContext.ts:134</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -313,7 +356,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.iservicecontext.html">IServiceContext</a>.<a href="../interfaces/fx.sharepoint.client.iservicecontext.html#getlist">getList</a></p>
 								<ul>
-									<li>Defined in src/core/ServiceContext.ts:53</li>
+									<li>Defined in src/core/ServiceContext.ts:89</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -374,6 +417,9 @@
 								<a href="fx.sharepoint.client.servicecontext.html#clientcontext" class="tsd-kind-icon">client<wbr>Context</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="fx.sharepoint.client.servicecontext.html#commitqueue" class="tsd-kind-icon">commit<wbr>Queue</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="fx.sharepoint.client.servicecontext.html#pendingqueue" class="tsd-kind-icon">pending<wbr>Queue</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
@@ -381,6 +427,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="fx.sharepoint.client.servicecontext.html#addpending" class="tsd-kind-icon">add<wbr>Pending</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="fx.sharepoint.client.servicecontext.html#addtocommitqueue" class="tsd-kind-icon">add<wbr>ToCommit<wbr>Queue</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="fx.sharepoint.client.servicecontext.html#commitchanges" class="tsd-kind-icon">commit<wbr>Changes</a>

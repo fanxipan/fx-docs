@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IPendingQueue | fx.sharepoint.lists.typed</title>
+	<title>ListViewAggregation | fx.sharepoint.lists.typed</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -66,10 +66,10 @@
 					<a href="../modules/fx.sharepoint.client.html">Client</a>
 				</li>
 				<li>
-					<a href="fx.sharepoint.client.ipendingqueue.html">IPendingQueue</a>
+					<a href="fx.sharepoint.client.listviewaggregation.html">ListViewAggregation</a>
 				</li>
 			</ul>
-			<h1>Interface IPendingQueue</h1>
+			<h1>Class ListViewAggregation</h1>
 		</div>
 	</div>
 </header>
@@ -80,158 +80,114 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="fx.sharepoint.client.iqueue.html" class="tsd-signature-type">IQueue</a><span class="tsd-signature-symbol">&lt;</span><a href="fx.sharepoint.client.icommitoperation.html" class="tsd-signature-type">ICommitOperation</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>
-						<ul class="tsd-hierarchy">
-							<li>
-								<span class="target">IPendingQueue</span>
-							</li>
-						</ul>
+						<span class="target">ListViewAggregation</span>
 					</li>
 				</ul>
 			</section>
 			<section class="tsd-panel">
-				<h3>Implemented by</h3>
+				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../classes/fx.sharepoint.client.pendingqueue.html" class="tsd-signature-type">PendingQueue</a></li>
+					<li><a href="../interfaces/fx.sharepoint.client.ilistviewaggregation.html" class="tsd-signature-type">IListViewAggregation</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section tsd-is-inherited">
-							<h3>Methods</h3>
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="fx.sharepoint.client.ipendingqueue.html#dequeue" class="tsd-kind-icon">dequeue</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="fx.sharepoint.client.ipendingqueue.html#dequeueall" class="tsd-kind-icon">dequeue<wbr>All</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="fx.sharepoint.client.ipendingqueue.html#enqueue" class="tsd-kind-icon">enqueue</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="fx.sharepoint.client.ipendingqueue.html#isempty" class="tsd-kind-icon">is<wbr>Empty</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="fx.sharepoint.client.ipendingqueue.html#peek" class="tsd-kind-icon">peek</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="fx.sharepoint.client.listviewaggregation.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="fx.sharepoint.client.listviewaggregation.html#__data" class="tsd-kind-icon">$$data</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Accessors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="fx.sharepoint.client.listviewaggregation.html#fieldname" class="tsd-kind-icon">field<wbr>Name</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="fx.sharepoint.client.listviewaggregation.html#type" class="tsd-kind-icon">type</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
-				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-					<a name="dequeue" class="tsd-anchor"></a>
-					<h3>dequeue</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">dequeue<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="fx.sharepoint.client.icommitoperation.html" class="tsd-signature-type">ICommitOperation</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>List<wbr>View<wbr>Aggregation<span class="tsd-signature-symbol">(</span>$$data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="fx.sharepoint.client.listviewaggregation.html" class="tsd-signature-type">ListViewAggregation</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="fx.sharepoint.client.iqueue.html">IQueue</a>.<a href="fx.sharepoint.client.iqueue.html#dequeue">dequeue</a></p>
 								<ul>
-									<li>Defined in src/infrastructure/IQueue[T].ts:13</li>
+									<li>Defined in src/core/view/ListViewAggregation.ts:3</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Remove an item from queue.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <a href="fx.sharepoint.client.icommitoperation.html" class="tsd-signature-type">ICommitOperation</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-					<a name="dequeueall" class="tsd-anchor"></a>
-					<h3>dequeue<wbr>All</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">dequeue<wbr>All<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="fx.sharepoint.client.icommitoperation.html" class="tsd-signature-type">ICommitOperation</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="fx.sharepoint.client.iqueue.html">IQueue</a>.<a href="fx.sharepoint.client.iqueue.html#dequeueall">dequeueAll</a></p>
-								<ul>
-									<li>Defined in src/infrastructure/IQueue[T].ts:18</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Remove all items from queue.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <a href="fx.sharepoint.client.icommitoperation.html" class="tsd-signature-type">ICommitOperation</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-					<a name="enqueue" class="tsd-anchor"></a>
-					<h3>enqueue</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">enqueue<span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><a href="fx.sharepoint.client.icommitoperation.html" class="tsd-signature-type">ICommitOperation</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="fx.sharepoint.client.iqueue.html">IQueue</a>.<a href="fx.sharepoint.client.iqueue.html#enqueue">enqueue</a></p>
-								<ul>
-									<li>Defined in src/infrastructure/IQueue[T].ts:8</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Add an item to the queue.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>item: <a href="fx.sharepoint.client.icommitoperation.html" class="tsd-signature-type">ICommitOperation</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>$$data: <span class="tsd-signature-type">HTMLElement</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="fx.sharepoint.client.listviewaggregation.html" class="tsd-signature-type">ListViewAggregation</a></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-					<a name="isempty" class="tsd-anchor"></a>
-					<h3>is<wbr>Empty</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Empty<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="__data" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> $$data</h3>
+					<div class="tsd-signature tsd-kind-icon">$$data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLElement</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in src/core/view/ListViewAggregation.ts:7</li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="fieldname" class="tsd-anchor"></a>
+					<h3>field<wbr>Name</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> fieldName<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="fx.sharepoint.client.iqueue.html">IQueue</a>.<a href="fx.sharepoint.client.iqueue.html#isempty">isEmpty</a></p>
 								<ul>
-									<li>Defined in src/infrastructure/IQueue[T].ts:28</li>
+									<li>Defined in src/core/view/ListViewAggregation.ts:15</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Check if this queue is empty.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-					<a name="peek" class="tsd-anchor"></a>
-					<h3>peek</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">peek<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="fx.sharepoint.client.icommitoperation.html" class="tsd-signature-type">ICommitOperation</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="type" class="tsd-anchor"></a>
+					<h3>type</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> type<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/fx.sharepoint.client.html#aggregationtype" class="tsd-signature-type">AggregationType</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="fx.sharepoint.client.iqueue.html">IQueue</a>.<a href="fx.sharepoint.client.iqueue.html#peek">peek</a></p>
 								<ul>
-									<li>Defined in src/infrastructure/IQueue[T].ts:23</li>
+									<li>Defined in src/core/view/ListViewAggregation.ts:19</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Get the first item of the queue but not remove it from the queue.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <a href="fx.sharepoint.client.icommitoperation.html" class="tsd-signature-type">ICommitOperation</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/fx.sharepoint.client.html#aggregationtype" class="tsd-signature-type">AggregationType</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -273,23 +229,20 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="fx.sharepoint.client.ipendingqueue.html" class="tsd-kind-icon">IPending<wbr>Queue</a>
+					<li class="current tsd-kind-class tsd-parent-kind-module">
+						<a href="fx.sharepoint.client.listviewaggregation.html" class="tsd-kind-icon">List<wbr>View<wbr>Aggregation</a>
 						<ul>
-							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="fx.sharepoint.client.ipendingqueue.html#dequeue" class="tsd-kind-icon">dequeue</a>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="fx.sharepoint.client.listviewaggregation.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="fx.sharepoint.client.ipendingqueue.html#dequeueall" class="tsd-kind-icon">dequeue<wbr>All</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="fx.sharepoint.client.listviewaggregation.html#__data" class="tsd-kind-icon">$$data</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="fx.sharepoint.client.ipendingqueue.html#enqueue" class="tsd-kind-icon">enqueue</a>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="fx.sharepoint.client.listviewaggregation.html#fieldname" class="tsd-kind-icon">field<wbr>Name</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="fx.sharepoint.client.ipendingqueue.html#isempty" class="tsd-kind-icon">is<wbr>Empty</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="fx.sharepoint.client.ipendingqueue.html#peek" class="tsd-kind-icon">peek</a>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="fx.sharepoint.client.listviewaggregation.html#type" class="tsd-kind-icon">type</a>
 							</li>
 						</ul>
 					</li>
