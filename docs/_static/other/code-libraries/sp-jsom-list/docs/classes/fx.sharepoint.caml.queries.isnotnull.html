@@ -105,7 +105,7 @@
 						<section class="tsd-index-section tsd-is-inherited">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="fx.sharepoint.caml.queries.isnotnull.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><a href="fx.sharepoint.caml.queries.isnotnull.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-inherited">
@@ -126,6 +126,7 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="fx.sharepoint.caml.queries.isnotnull.html#tostring" class="tsd-kind-icon">to<wbr>String</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-static"><a href="fx.sharepoint.caml.queries.isnotnull.html#from" class="tsd-kind-icon">from</a></li>
 							</ul>
 						</section>
 					</div>
@@ -133,34 +134,24 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
 				<h2>Constructors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>IsNot<wbr>Null<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">{ attrs?: TAttrs; } &amp; TContent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="fx.sharepoint.caml.queries.isnotnull.html" class="tsd-signature-type">IsNotNull</a></li>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>IsNot<wbr>Null<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">?: </span><a href="../modules/fx.sharepoint.caml.html#tconfig" class="tsd-signature-type">TConfig</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="fx.sharepoint.caml.queries.isnotnull.html" class="tsd-signature-type">IsNotNull</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="fx.sharepoint.caml.queries.comparisonoperator.html">ComparisonOperator</a>.<a href="fx.sharepoint.caml.queries.comparisonoperator.html#constructor">constructor</a></p>
-								<p>Overwrites <a href="fx.sharepoint.caml.camlelement.html">CamlElement</a>.<a href="fx.sharepoint.caml.camlelement.html#constructor">constructor</a></p>
+								<p>Inherited from <a href="fx.sharepoint.caml.camlelement.html">CamlElement</a>.<a href="fx.sharepoint.caml.camlelement.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in src/caml/query/base/ComparisonOperator.ts:14</li>
+									<li>Defined in src/caml/CamlElement.ts:16</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Make config parameter required.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>config: <span class="tsd-signature-type">{ attrs?: TAttrs; } &amp; TContent</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-										</div>
-									</div>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> config: <a href="../modules/fx.sharepoint.caml.html#tconfig" class="tsd-signature-type">TConfig</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="fx.sharepoint.caml.queries.isnotnull.html" class="tsd-signature-type">IsNotNull</a></h4>
@@ -178,7 +169,7 @@
 						<p>Implementation of <a href="../interfaces/fx.sharepoint.caml.icamlelement.html">ICamlElement</a>.<a href="../interfaces/fx.sharepoint.caml.icamlelement.html#attrs">attrs</a></p>
 						<p>Inherited from <a href="fx.sharepoint.caml.camlelement.html">CamlElement</a>.<a href="fx.sharepoint.caml.camlelement.html#attrs">attrs</a></p>
 						<ul>
-							<li>Defined in src/caml/CamlElement.ts:84</li>
+							<li>Defined in src/caml/CamlElement.ts:108</li>
 						</ul>
 					</aside>
 				</section>
@@ -190,7 +181,7 @@
 						<p>Implementation of <a href="../interfaces/fx.sharepoint.caml.icamlelement.html">ICamlElement</a>.<a href="../interfaces/fx.sharepoint.caml.icamlelement.html#content">content</a></p>
 						<p>Inherited from <a href="fx.sharepoint.caml.camlelement.html">CamlElement</a>.<a href="fx.sharepoint.caml.camlelement.html#content">content</a></p>
 						<ul>
-							<li>Defined in src/caml/CamlElement.ts:85</li>
+							<li>Defined in src/caml/CamlElement.ts:109</li>
 						</ul>
 					</aside>
 				</section>
@@ -202,7 +193,7 @@
 						<p>Implementation of <a href="../interfaces/fx.sharepoint.caml.icamlelement.html">ICamlElement</a>.<a href="../interfaces/fx.sharepoint.caml.icamlelement.html#parent">parent</a></p>
 						<p>Inherited from <a href="fx.sharepoint.caml.camlelement.html">CamlElement</a>.<a href="fx.sharepoint.caml.camlelement.html#parent">parent</a></p>
 						<ul>
-							<li>Defined in src/caml/CamlElement.ts:83</li>
+							<li>Defined in src/caml/CamlElement.ts:107</li>
 						</ul>
 					</aside>
 				</section>
@@ -249,6 +240,31 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-static">
+					<a name="from" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> from</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">from<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">JQuery</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="fx.sharepoint.caml.queries.unaryoperator.html" class="tsd-signature-type">UnaryOperator</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/fx.sharepoint.caml.queries.iunaryoperatorattrs.html" class="tsd-signature-type">IUnaryOperatorAttrs</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/fx.sharepoint.caml.queries.iunaryoperatorcontent.html" class="tsd-signature-type">IUnaryOperatorContent</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="fx.sharepoint.caml.queries.unaryoperator.html">UnaryOperator</a>.<a href="fx.sharepoint.caml.queries.unaryoperator.html#from">from</a></p>
+								<p>Overwrites <a href="fx.sharepoint.caml.queries.comparisonoperator.html">ComparisonOperator</a>.<a href="fx.sharepoint.caml.queries.comparisonoperator.html#from">from</a></p>
+								<ul>
+									<li>Defined in src/caml/query/base/UnaryOperator.ts:15</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>data: <span class="tsd-signature-type">JQuery</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="fx.sharepoint.caml.queries.unaryoperator.html" class="tsd-signature-type">UnaryOperator</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/fx.sharepoint.caml.queries.iunaryoperatorattrs.html" class="tsd-signature-type">IUnaryOperatorAttrs</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/fx.sharepoint.caml.queries.iunaryoperatorcontent.html" class="tsd-signature-type">IUnaryOperatorContent</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -290,7 +306,7 @@
 					<li class="current tsd-kind-class tsd-parent-kind-module">
 						<a href="fx.sharepoint.caml.queries.isnotnull.html" class="tsd-kind-icon">Is<wbr>Not<wbr>Null</a>
 						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
 								<a href="fx.sharepoint.caml.queries.isnotnull.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
@@ -307,6 +323,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="fx.sharepoint.caml.queries.isnotnull.html#tostring" class="tsd-kind-icon">to<wbr>String</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-static">
+								<a href="fx.sharepoint.caml.queries.isnotnull.html#from" class="tsd-kind-icon">from</a>
 							</li>
 						</ul>
 					</li>

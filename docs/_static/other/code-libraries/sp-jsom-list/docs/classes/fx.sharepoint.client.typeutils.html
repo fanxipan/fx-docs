@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IValueContent | fx.sharepoint.lists.typed</title>
+	<title>TypeUtils | fx.sharepoint.lists.typed</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -63,16 +63,13 @@
 					<a href="../modules/fx.sharepoint.html">SharePoint</a>
 				</li>
 				<li>
-					<a href="../modules/fx.sharepoint.caml.html">Caml</a>
+					<a href="../modules/fx.sharepoint.client.html">Client</a>
 				</li>
 				<li>
-					<a href="../modules/fx.sharepoint.caml.queries.html">Queries</a>
-				</li>
-				<li>
-					<a href="fx.sharepoint.caml.queries.ivaluecontent.html">IValueContent</a>
+					<a href="fx.sharepoint.client.typeutils.html">TypeUtils</a>
 				</li>
 			</ul>
-			<h1>Interface IValueContent</h1>
+			<h1>Class TypeUtils</h1>
 		</div>
 	</div>
 </header>
@@ -83,12 +80,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="fx.sharepoint.caml.ielementcontent.html" class="tsd-signature-type">IElementContent</a>
-						<ul class="tsd-hierarchy">
-							<li>
-								<span class="target">IValueContent</span>
-							</li>
-						</ul>
+						<span class="target">TypeUtils</span>
 					</li>
 				</ul>
 			</section>
@@ -97,25 +89,62 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Properties</h3>
+							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="fx.sharepoint.caml.queries.ivaluecontent.html#value" class="tsd-kind-icon">value</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="fx.sharepoint.client.typeutils.html#stringtoboolean" class="tsd-kind-icon">string<wbr>ToBoolean</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="fx.sharepoint.client.typeutils.html#stringtonumber" class="tsd-kind-icon">string<wbr>ToNumber</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="value" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> value</h3>
-					<div class="tsd-signature tsd-kind-icon">value<span class="tsd-signature-symbol">:</span> <a href="../modules/fx.sharepoint.caml.queries.html#camlvaluetype" class="tsd-signature-type">CamlValueType</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in src/caml/query/common/IValueContent.ts:7</li>
-						</ul>
-					</aside>
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="stringtoboolean" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> string<wbr>ToBoolean</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">string<wbr>ToBoolean<span class="tsd-signature-symbol">(</span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in src/utils/TypeUtils.ts:5</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>text: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="stringtonumber" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> string<wbr>ToNumber</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">string<wbr>ToNumber<span class="tsd-signature-symbol">(</span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in src/utils/TypeUtils.ts:18</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>text: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -137,13 +166,13 @@
 					<li class=" tsd-kind-module tsd-parent-kind-module">
 						<a href="../modules/fx.sharepoint.caml.lists.html">Fx.<wbr>Share<wbr>Point.<wbr>Caml.<wbr>Lists</a>
 					</li>
-					<li class="current tsd-kind-module tsd-parent-kind-module">
+					<li class=" tsd-kind-module tsd-parent-kind-module">
 						<a href="../modules/fx.sharepoint.caml.queries.html">Fx.<wbr>Share<wbr>Point.<wbr>Caml.<wbr>Queries</a>
 					</li>
 					<li class=" tsd-kind-module tsd-parent-kind-module">
 						<a href="../modules/fx.sharepoint.caml.views.html">Fx.<wbr>Share<wbr>Point.<wbr>Caml.<wbr>Views</a>
 					</li>
-					<li class=" tsd-kind-module tsd-parent-kind-module">
+					<li class="current tsd-kind-module tsd-parent-kind-module">
 						<a href="../modules/fx.sharepoint.client.html">Fx.<wbr>Share<wbr>Point.<wbr>Client</a>
 					</li>
 					<li class=" tsd-kind-module tsd-is-not-exported">
@@ -155,11 +184,14 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="fx.sharepoint.caml.queries.ivaluecontent.html" class="tsd-kind-icon">IValue<wbr>Content</a>
+					<li class="current tsd-kind-class tsd-parent-kind-module">
+						<a href="fx.sharepoint.client.typeutils.html" class="tsd-kind-icon">Type<wbr>Utils</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="fx.sharepoint.caml.queries.ivaluecontent.html#value" class="tsd-kind-icon">value</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="fx.sharepoint.client.typeutils.html#stringtoboolean" class="tsd-kind-icon">string<wbr>ToBoolean</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="fx.sharepoint.client.typeutils.html#stringtonumber" class="tsd-kind-icon">string<wbr>ToNumber</a>
 							</li>
 						</ul>
 					</li>
