@@ -3,12 +3,12 @@
 Lấy item theo id
 ----------------
 
-Sử dụng hàm |List.getByIdAsync| và truyền vào id của item cần lấy:
+Sử dụng hàm |List.getItemByIdAsync| và truyền vào id của item cần lấy:
 
 .. code-block:: javascript
    :linenos:
 
-   customerList.getByIdAsync(1).then(function (customer) {
+   customerList.getItemByIdAsync(1).then(function (customer) {
       console.log(customer);
    });
 

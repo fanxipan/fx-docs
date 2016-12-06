@@ -27,7 +27,7 @@ Với |List| object được tạo như trên, khi lấy item từ server:
 
 thì các trường sau của SharePoint list sẽ được lấy về cho |ListItem|:
 
-   - Các trường được định nghĩa ở |ListBase.defaultFieldsLiteral|
+   - Các trường được định nghĩa ở |List.defaultFieldsLiteral|
    - Các trường người dùng định nghĩa thêm vào SharePoint list
      
 Trong ví dụ trên thì object ``customer`` sẽ có dạng như sau:

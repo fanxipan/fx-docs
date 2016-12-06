@@ -26,12 +26,12 @@ Lấy item theo |caml-query|_
          })
       });
 
-2. Gọi hàm |List.getManyAsync| và truyền đối tượng ``query`` ở trên vào:
+2. Gọi hàm |List.getManyItemsAsync| và truyền đối tượng ``query`` ở trên vào:
    
    .. code-block:: javascript
       :linenos:
 
-      customerList.getManyAsync(query).then(function (customers) {
+      customerList.getManyItemsAsync(query).then(function (customers) {
          console.log(customers);
       });
 
