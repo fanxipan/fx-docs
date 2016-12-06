@@ -30,7 +30,6 @@ Truyền thuộc tính của list item muốn thay đổi vào trong hàm |List.
    :linenos:
    :emphasize-lines: 4
 
-   customer.customerName = "New customer name"; // not 'Jubei' anymore
    customerList
       .updateItemAsync(customer, {
          customerName: "New customer name"
