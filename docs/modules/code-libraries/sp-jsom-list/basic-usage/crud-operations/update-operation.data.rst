@@ -116,6 +116,13 @@ field của nó vào 1 object:
    Khi sử dụng các cách cập nhật item thông qua ``id``, nếu trong SharePoint list
    không tồn tại item có ``id`` như vậy thì object ``updatedItem`` có giá trị là ``null``.
 
+Cách 6:
++++++++
+
+Sử dụng hàm |ServiceContext.commitChanges|:
+
+
+
 .. note::
    
    Trong ví dụ trên sử dụng hàm |ServiceContext.commitChanges| để cập nhật tất
