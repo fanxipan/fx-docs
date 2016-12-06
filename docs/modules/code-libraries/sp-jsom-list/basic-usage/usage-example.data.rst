@@ -13,20 +13,32 @@ Ví dụ mẫu
 
       var currentItem;
 
+      // Tạo mới 1 list item
+      customerList
+         .createItemAsync({
+            customerName: "Leonard"
+         })
+         .then(function (listItem) {
+            console.log(listItem);
+            // {
+            //    id: 1,
+            //    customerName: "Leonard"
+            // }
+         });
+
       // Lấy list item theo id
-      customerList.getByIdAsync(1)
+      customerList.getItemByIdAsync(1)
          .then(function(item) {
             currentItem = item;
          })
          // Cập nhật thuộc tính của list item
          .then(function() {
             currentItem.customerName = "Jubei";
-            return serviceContext.commitChanges();
+            return customerList.updateItemAsync(currentItem);
          })
          // Xóa list item
          .then(function() {
-            currentItem.deleteObject();
-            return serviceContext.commitChanges();
+            return customerList.deleteItemAsync(currentItem);
          });	
    }
 
