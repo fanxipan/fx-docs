@@ -113,7 +113,7 @@ field của nó vào 1 object:
 .. note::
 
    Khi sử dụng các cách cập nhật item thông qua ``id``, nếu trong SharePoint list
-   không tồn tại item có ``id`` như vậy thì object ``updatedItem`` có giá trị là ``null``.
+   không tồn tại item có ``id`` như vậy thì object ``updatedCustomer`` có giá trị là ``null``.
 
 Cách 6:
 +++++++
