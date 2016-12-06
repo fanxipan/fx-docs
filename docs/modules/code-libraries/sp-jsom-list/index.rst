@@ -14,3 +14,4 @@ Là thư viện hỗ trợ các thao tác với list / document library thông q
    advance-usage/index.rst
    faqs/index.rst
    api-document/index.rst
+   changelog/index.rst
