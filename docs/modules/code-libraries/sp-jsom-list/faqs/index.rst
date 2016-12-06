@@ -4,3 +4,7 @@
 
 Câu hỏi thường gặp
 ******************
+
+1. :ref:`jsom-faqs-check-version`
+
+.. include:: how-to-check-version.data.rst
