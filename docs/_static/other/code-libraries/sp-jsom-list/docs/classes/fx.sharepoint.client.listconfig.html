@@ -3,11 +3,10 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ListConfig | fx.sharepoint.lists.typed</title>
+	<title>ListConfig | fx.sharepoint.lists.jsom</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
-	<script src="../assets/js/modernizr.js"></script>
 </head>
 <body>
 <header>
@@ -23,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">fx.sharepoint.lists.typed</a>
+					<a href="../index.html" class="title">fx.sharepoint.lists.jsom</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -187,18 +186,18 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilistconfig.html">IListConfig</a>.<a href="../interfaces/fx.sharepoint.client.ilistconfig.html#defaultfields">defaultFields</a></p>
 						<ul>
-							<li>Defined in src/core/list/config/ListConfig.ts:152</li>
+							<li>Defined in src/core/list/config/ListConfig.ts:154</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="fields" class="tsd-anchor"></a>
 					<h3>fields</h3>
-					<div class="tsd-signature tsd-kind-icon">fields<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><a href="../modules/fx.sharepoint.client.html#tfieldconfig" class="tsd-signature-type">TFieldConfig</a></div>
+					<div class="tsd-signature tsd-kind-icon">fields<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../modules/fx.sharepoint.client.html#tfieldconfig" class="tsd-signature-type">TFieldConfig</a></div>
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilistconfig.html">IListConfig</a>.<a href="../interfaces/fx.sharepoint.client.ilistconfig.html#fields">fields</a></p>
 						<ul>
-							<li>Defined in src/core/list/config/ListConfig.ts:151</li>
+							<li>Defined in src/core/list/config/ListConfig.ts:153</li>
 						</ul>
 					</aside>
 				</section>
@@ -219,7 +218,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilistconfig.html">IListConfig</a>.<a href="../interfaces/fx.sharepoint.client.ilistconfig.html#listname">listName</a></p>
 						<ul>
-							<li>Defined in src/core/list/config/ListConfig.ts:149</li>
+							<li>Defined in src/core/list/config/ListConfig.ts:151</li>
 						</ul>
 					</aside>
 				</section>
@@ -230,7 +229,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilistconfig.html">IListConfig</a>.<a href="../interfaces/fx.sharepoint.client.ilistconfig.html#userfields">userFields</a></p>
 						<ul>
-							<li>Defined in src/core/list/config/ListConfig.ts:153</li>
+							<li>Defined in src/core/list/config/ListConfig.ts:155</li>
 						</ul>
 					</aside>
 				</section>
@@ -311,7 +310,7 @@
 					<a name="getfieldconfig" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Field<wbr>Config</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Field<wbr>Config<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/fx.sharepoint.client.html#tfieldconfig" class="tsd-signature-type">TFieldConfig</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Field<wbr>Config<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/fx.sharepoint.client.html#tfieldconfig" class="tsd-signature-type">TFieldConfig</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -333,7 +332,10 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../modules/fx.sharepoint.client.html#tfieldconfig" class="tsd-signature-type">TFieldConfig</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/fx.sharepoint.client.html#tfieldconfig" class="tsd-signature-type">TFieldConfig</a>
+								<span class="tsd-signature-symbol"> | </span>
+								<span class="tsd-signature-type">null</span>
+							</h4>
 						</li>
 					</ul>
 				</section>
@@ -348,7 +350,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilistconfig.html">IListConfig</a>.<a href="../interfaces/fx.sharepoint.client.ilistconfig.html#getlist">getList</a></p>
 								<ul>
-									<li>Defined in src/core/list/config/ListConfig.ts:155</li>
+									<li>Defined in src/core/list/config/ListConfig.ts:157</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/fx.sharepoint.client.ilist.html" class="tsd-signature-type">IList</a></h4>
@@ -365,7 +367,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/core/list/config/ListConfig.ts:115</li>
+									<li>Defined in src/core/list/config/ListConfig.ts:117</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -387,7 +389,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/core/list/config/ListConfig.ts:131</li>
+									<li>Defined in src/core/list/config/ListConfig.ts:133</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -409,7 +411,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/core/list/config/ListConfig.ts:100</li>
+									<li>Defined in src/core/list/config/ListConfig.ts:102</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -584,7 +586,7 @@
 	</div>
 </footer>
 <div class="container tsd-generator">
-	<p>Generated using <a href="http://typedoc.io" target="_blank">TypeDoc</a></p>
+	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
 <script src="../assets/js/main.js"></script>

@@ -3,11 +3,10 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ListFieldDateTime | fx.sharepoint.lists.typed</title>
+	<title>ListFieldDateTime | fx.sharepoint.lists.jsom</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
-	<script src="../assets/js/modernizr.js"></script>
 </head>
 <body>
 <header>
@@ -23,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">fx.sharepoint.lists.typed</a>
+					<a href="../index.html" class="title">fx.sharepoint.lists.jsom</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -121,6 +120,7 @@
 								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="fx.sharepoint.client.listfielddatetime.html#id" class="tsd-kind-icon">id</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="fx.sharepoint.client.listfielddatetime.html#internalname" class="tsd-kind-icon">internal<wbr>Name</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="fx.sharepoint.client.listfielddatetime.html#listname" class="tsd-kind-icon">list<wbr>Name</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="fx.sharepoint.client.listfielddatetime.html#normname" class="tsd-kind-icon">norm<wbr>Name</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="fx.sharepoint.client.listfielddatetime.html#readonlyfield" class="tsd-kind-icon">read<wbr>Only<wbr>Field</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="fx.sharepoint.client.listfielddatetime.html#required" class="tsd-kind-icon">required</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="fx.sharepoint.client.listfielddatetime.html#schemaxml" class="tsd-kind-icon">schema<wbr>Xml</a></li>
@@ -155,7 +155,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overwrites <a href="fx.sharepoint.client.listfield.html">ListField</a>.<a href="fx.sharepoint.client.listfield.html#constructor">constructor</a></p>
+								<p>Overrides <a href="fx.sharepoint.client.listfield.html">ListField</a>.<a href="fx.sharepoint.client.listfield.html#constructor">constructor</a></p>
 								<ul>
 									<li>Defined in src/core/field/type/ListFieldDateTime.ts:7</li>
 								</ul>
@@ -186,7 +186,7 @@
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in src/core/field/type/ListFieldDateTime.ts:7</li>
-							<li>Defined in src/core/field/type/ListField.ts:20</li>
+							<li>Defined in src/core/field/type/ListField.ts:14</li>
 						</ul>
 					</aside>
 				</section>
@@ -204,7 +204,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="fx.sharepoint.client.listfield.html">ListField</a>.<a href="fx.sharepoint.client.listfield.html#contexturl">contextUrl</a></p>
 								<ul>
-									<li>Defined in src/core/field/type/ListField.ts:40</li>
+									<li>Defined in src/core/field/type/ListField.ts:34</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -222,7 +222,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="fx.sharepoint.client.listfield.html">ListField</a>.<a href="fx.sharepoint.client.listfield.html#displayname">displayName</a></p>
 								<ul>
-									<li>Defined in src/core/field/type/ListField.ts:181</li>
+									<li>Defined in src/core/field/type/ListField.ts:177</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -258,7 +258,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="fx.sharepoint.client.listfield.html">ListField</a>.<a href="fx.sharepoint.client.listfield.html#id">id</a></p>
 								<ul>
-									<li>Defined in src/core/field/type/ListField.ts:173</li>
+									<li>Defined in src/core/field/type/ListField.ts:169</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -276,7 +276,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="fx.sharepoint.client.listfield.html">ListField</a>.<a href="fx.sharepoint.client.listfield.html#internalname">internalName</a></p>
 								<ul>
-									<li>Defined in src/core/field/type/ListField.ts:177</li>
+									<li>Defined in src/core/field/type/ListField.ts:173</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -294,7 +294,25 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="fx.sharepoint.client.listfield.html">ListField</a>.<a href="fx.sharepoint.client.listfield.html#listname">listName</a></p>
 								<ul>
-									<li>Defined in src/core/field/type/ListField.ts:36</li>
+									<li>Defined in src/core/field/type/ListField.ts:30</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+					<a name="normname" class="tsd-anchor"></a>
+					<h3>norm<wbr>Name</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> normName<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="fx.sharepoint.client.listfield.html">ListField</a>.<a href="fx.sharepoint.client.listfield.html#normname">normName</a></p>
+								<ul>
+									<li>Defined in src/core/field/type/ListField.ts:181</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -362,14 +380,14 @@
 					<a name="getlogger" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> get<wbr>Logger</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Logger<span class="tsd-signature-symbol">(</span>listItem<span class="tsd-signature-symbol">?: </span><a href="../interfaces/fx.sharepoint.client.ilistitem.html" class="tsd-signature-type">IListItem</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/fx.sharepoint.client.ilogger.html" class="tsd-signature-type">ILogger</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Logger<span class="tsd-signature-symbol">(</span>listItem<span class="tsd-signature-symbol">?: </span><a href="../interfaces/fx.sharepoint.client.ilistitem.html" class="tsd-signature-type">IListItem</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/fx.sharepoint.client.ilogger.html" class="tsd-signature-type">ILogger</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="fx.sharepoint.client.listfield.html">ListField</a>.<a href="fx.sharepoint.client.listfield.html#getlogger">getLogger</a></p>
 								<ul>
-									<li>Defined in src/core/field/type/ListField.ts:98</li>
+									<li>Defined in src/core/field/type/ListField.ts:92</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -380,7 +398,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> listItem: <a href="../interfaces/fx.sharepoint.client.ilistitem.html" class="tsd-signature-type">IListItem</a><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> listItem: <a href="../interfaces/fx.sharepoint.client.ilistitem.html" class="tsd-signature-type">IListItem</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> =&nbsp;undefined</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/fx.sharepoint.client.ilogger.html" class="tsd-signature-type">ILogger</a></h4>
@@ -396,7 +414,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overwrites <a href="fx.sharepoint.client.listfield.html">ListField</a>.<a href="fx.sharepoint.client.listfield.html#getvalueoverride">getValueOverride</a></p>
+								<p>Overrides <a href="fx.sharepoint.client.listfield.html">ListField</a>.<a href="fx.sharepoint.client.listfield.html#getvalueoverride">getValueOverride</a></p>
 								<ul>
 									<li>Defined in src/core/field/type/ListFieldDateTime.ts:26</li>
 								</ul>
@@ -423,7 +441,7 @@
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilistfielddatetime.html">IListFieldDateTime</a>.<a href="../interfaces/fx.sharepoint.client.ilistfielddatetime.html#get_fieldconfig">get_fieldConfig</a></p>
 								<p>Inherited from <a href="fx.sharepoint.client.listfield.html">ListField</a>.<a href="fx.sharepoint.client.listfield.html#get_fieldconfig">get_fieldConfig</a></p>
 								<ul>
-									<li>Defined in src/core/field/type/ListField.ts:115</li>
+									<li>Defined in src/core/field/type/ListField.ts:109</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/fx.sharepoint.client.ifieldconfig.html" class="tsd-signature-type">IFieldConfig</a></h4>
@@ -442,7 +460,7 @@
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilistfielddatetime.html">IListFieldDateTime</a>.<a href="../interfaces/fx.sharepoint.client.ilistfielddatetime.html#get_list">get_list</a></p>
 								<p>Inherited from <a href="fx.sharepoint.client.listfield.html">ListField</a>.<a href="fx.sharepoint.client.listfield.html#get_list">get_list</a></p>
 								<ul>
-									<li>Defined in src/core/field/type/ListField.ts:111</li>
+									<li>Defined in src/core/field/type/ListField.ts:105</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/fx.sharepoint.client.ilist.html" class="tsd-signature-type">IList</a></h4>
@@ -460,7 +478,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="fx.sharepoint.client.listfield.html">ListField</a>.<a href="fx.sharepoint.client.listfield.html#isfieldvaluechanged">isFieldValueChanged</a></p>
 								<ul>
-									<li>Defined in src/core/field/type/ListField.ts:91</li>
+									<li>Defined in src/core/field/type/ListField.ts:85</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -488,7 +506,7 @@
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilistfielddatetime.html">IListFieldDateTime</a>.<a href="../interfaces/fx.sharepoint.client.ilistfielddatetime.html#parserequest">parseRequest</a></p>
 								<p>Inherited from <a href="fx.sharepoint.client.listfield.html">ListField</a>.<a href="fx.sharepoint.client.listfield.html#parserequest">parseRequest</a></p>
 								<ul>
-									<li>Defined in src/core/field/type/ListField.ts:148</li>
+									<li>Defined in src/core/field/type/ListField.ts:142</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -518,7 +536,7 @@
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilistfielddatetime.html">IListFieldDateTime</a>.<a href="../interfaces/fx.sharepoint.client.ilistfielddatetime.html#parseresponse">parseResponse</a></p>
 								<p>Inherited from <a href="fx.sharepoint.client.listfield.html">ListField</a>.<a href="fx.sharepoint.client.listfield.html#parseresponse">parseResponse</a></p>
 								<ul>
-									<li>Defined in src/core/field/type/ListField.ts:122</li>
+									<li>Defined in src/core/field/type/ListField.ts:116</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -547,7 +565,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="fx.sharepoint.client.listfield.html">ListField</a>.<a href="fx.sharepoint.client.listfield.html#setfield">setField</a></p>
 								<ul>
-									<li>Defined in src/core/field/type/ListField.ts:73</li>
+									<li>Defined in src/core/field/type/ListField.ts:67</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -578,7 +596,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="fx.sharepoint.client.listfield.html">ListField</a>.<a href="fx.sharepoint.client.listfield.html#setvalueinternal">setValueInternal</a></p>
 								<ul>
-									<li>Defined in src/core/field/type/ListField.ts:81</li>
+									<li>Defined in src/core/field/type/ListField.ts:75</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -608,7 +626,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overwrites <a href="fx.sharepoint.client.listfield.html">ListField</a>.<a href="fx.sharepoint.client.listfield.html#setvalueoverride">setValueOverride</a></p>
+								<p>Overrides <a href="fx.sharepoint.client.listfield.html">ListField</a>.<a href="fx.sharepoint.client.listfield.html#setvalueoverride">setValueOverride</a></p>
 								<ul>
 									<li>Defined in src/core/field/type/ListFieldDateTime.ts:32</li>
 								</ul>
@@ -690,6 +708,9 @@
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 								<a href="fx.sharepoint.client.listfielddatetime.html#listname" class="tsd-kind-icon">list<wbr>Name</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+								<a href="fx.sharepoint.client.listfielddatetime.html#normname" class="tsd-kind-icon">norm<wbr>Name</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
 								<a href="fx.sharepoint.client.listfielddatetime.html#readonlyfield" class="tsd-kind-icon">read<wbr>Only<wbr>Field</a>
@@ -799,7 +820,7 @@
 	</div>
 </footer>
 <div class="container tsd-generator">
-	<p>Generated using <a href="http://typedoc.io" target="_blank">TypeDoc</a></p>
+	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
 <script src="../assets/js/main.js"></script>

@@ -3,11 +3,10 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Client | fx.sharepoint.lists.typed</title>
+	<title>Client | fx.sharepoint.lists.jsom</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
-	<script src="../assets/js/modernizr.js"></script>
 </head>
 <body>
 <header>
@@ -23,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">fx.sharepoint.lists.typed</a>
+					<a href="../index.html" class="title">fx.sharepoint.lists.jsom</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -92,6 +91,7 @@
 								<li class="tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter"><a href="../classes/fx.sharepoint.client.commitoperation.html" class="tsd-kind-icon">Commit<wbr>Operation</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/fx.sharepoint.client.defaultfieldconfigexception.html" class="tsd-kind-icon">Default<wbr>Field<wbr>Config<wbr>Exception</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module tsd-is-external"><a href="../classes/fx.sharepoint.client.defaultfieldsconfigparser.html" class="tsd-kind-icon">Default<wbr>Fields<wbr>Config<wbr>Parser</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter"><a href="../classes/fx.sharepoint.client.defervalue.html" class="tsd-kind-icon">Defer<wbr>Value</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/fx.sharepoint.client.exception.html" class="tsd-kind-icon">Exception</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/fx.sharepoint.client.fieldconfig.html" class="tsd-kind-icon">Field<wbr>Config</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/fx.sharepoint.client.fieldconfigcreationexception.html" class="tsd-kind-icon">Field<wbr>Config<wbr>Creation<wbr>Exception</a></li>
@@ -100,7 +100,6 @@
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/fx.sharepoint.client.fxlistservice.html" class="tsd-kind-icon">Fx<wbr>List<wbr>Service</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/fx.sharepoint.client.getlistitemsessioncontext.html" class="tsd-kind-icon">Get<wbr>List<wbr>Item<wbr>Session<wbr>Context</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/fx.sharepoint.client.list.html" class="tsd-kind-icon">List</a></li>
-								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/fx.sharepoint.client.listbase.html" class="tsd-kind-icon">List<wbr>Base</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/fx.sharepoint.client.listconfig.html" class="tsd-kind-icon">List<wbr>Config</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/fx.sharepoint.client.listfield.html" class="tsd-kind-icon">List<wbr>Field</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/fx.sharepoint.client.listfieldboolean.html" class="tsd-kind-icon">List<wbr>Field<wbr>Boolean</a></li>
@@ -122,9 +121,11 @@
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/fx.sharepoint.client.listfielduservalueprivatedata.html" class="tsd-kind-icon">List<wbr>Field<wbr>User<wbr>Value<wbr>Private<wbr>Data</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/fx.sharepoint.client.listitem.html" class="tsd-kind-icon">List<wbr>Item</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/fx.sharepoint.client.listitemprivatedata.html" class="tsd-kind-icon">List<wbr>Item<wbr>Private<wbr>Data</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/fx.sharepoint.client.listitemproviderdelegate.html" class="tsd-kind-icon">List<wbr>Item<wbr>Provider<wbr>Delegate</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/fx.sharepoint.client.listitemupdatecommitoperation.html" class="tsd-kind-icon">List<wbr>Item<wbr>Update<wbr>Commit<wbr>Operation</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/fx.sharepoint.client.listview.html" class="tsd-kind-icon">List<wbr>View</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/fx.sharepoint.client.listviewaggregation.html" class="tsd-kind-icon">List<wbr>View<wbr>Aggregation</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/fx.sharepoint.client.listviewproviderdelegate.html" class="tsd-kind-icon">List<wbr>View<wbr>Provider<wbr>Delegate</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/fx.sharepoint.client.logger.html" class="tsd-kind-icon">Logger</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module tsd-is-external"><a href="../classes/fx.sharepoint.client.mergedfieldsconfigparser.html" class="tsd-kind-icon">Merged<wbr>Fields<wbr>Config<wbr>Parser</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/fx.sharepoint.client.pendingqueue.html" class="tsd-kind-icon">Pending<wbr>Queue</a></li>
@@ -134,6 +135,7 @@
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/fx.sharepoint.client.sessioncontextmanager.html" class="tsd-kind-icon">Session<wbr>Context<wbr>Manager</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/fx.sharepoint.client.typeutils.html" class="tsd-kind-icon">Type<wbr>Utils</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module tsd-is-external"><a href="../classes/fx.sharepoint.client.userfieldsconfigparser.html" class="tsd-kind-icon">User<wbr>Fields<wbr>Config<wbr>Parser</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/fx.sharepoint.client.utils.html" class="tsd-kind-icon">Utils</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -149,6 +151,7 @@
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/fx.sharepoint.client.ifieldparsinghandler.html" class="tsd-kind-icon">IField<wbr>Parsing<wbr>Handler</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/fx.sharepoint.client.ifieldsconfigparser.html" class="tsd-kind-icon">IFields<wbr>Config<wbr>Parser</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/fx.sharepoint.client.igetlistitemsessioncontext.html" class="tsd-kind-icon">IGet<wbr>List<wbr>Item<wbr>Session<wbr>Context</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/fx.sharepoint.client.iidlistitemliteral.html" class="tsd-kind-icon">IId<wbr>List<wbr>Item<wbr>Literal</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/fx.sharepoint.client.ilist.html" class="tsd-kind-icon">IList</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/fx.sharepoint.client.ilistconfig.html" class="tsd-kind-icon">IList<wbr>Config</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/fx.sharepoint.client.ilistconfigliteral.html" class="tsd-kind-icon">IList<wbr>Config<wbr>Literal</a></li>
@@ -174,12 +177,15 @@
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/fx.sharepoint.client.ilistitem.html" class="tsd-kind-icon">IList<wbr>Item</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/fx.sharepoint.client.ilistitemcollection.html" class="tsd-kind-icon">IList<wbr>Item<wbr>Collection</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/fx.sharepoint.client.ilistitemcreationliteral.html" class="tsd-kind-icon">IList<wbr>Item<wbr>Creation<wbr>Literal</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/fx.sharepoint.client.ilistitemliteral.html" class="tsd-kind-icon">IList<wbr>Item<wbr>Literal</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/fx.sharepoint.client.ilistitemprivatedata.html" class="tsd-kind-icon">IList<wbr>Item<wbr>Private<wbr>Data</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/fx.sharepoint.client.ilistitemprovider.html" class="tsd-kind-icon">IList<wbr>Item<wbr>Provider</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/fx.sharepoint.client.ilistitemproviderdelegate.html" class="tsd-kind-icon">IList<wbr>Item<wbr>Provider<wbr>Delegate</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/fx.sharepoint.client.ilistoperationoptions.html" class="tsd-kind-icon">IList<wbr>Operation<wbr>Options</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/fx.sharepoint.client.ilistview.html" class="tsd-kind-icon">IList<wbr>View</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/fx.sharepoint.client.ilistviewaggregation.html" class="tsd-kind-icon">IList<wbr>View<wbr>Aggregation</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/fx.sharepoint.client.ilistviewprovider.html" class="tsd-kind-icon">IList<wbr>View<wbr>Provider</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/fx.sharepoint.client.ilistviewproviderdelegate.html" class="tsd-kind-icon">IList<wbr>View<wbr>Provider<wbr>Delegate</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/fx.sharepoint.client.ilogoptions.html" class="tsd-kind-icon">ILog<wbr>Options</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/fx.sharepoint.client.ilogger.html" class="tsd-kind-icon">ILogger</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/fx.sharepoint.client.iloggercreationcontext.html" class="tsd-kind-icon">ILogger<wbr>Creation<wbr>Context</a></li>
@@ -197,7 +203,6 @@
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="fx.sharepoint.client.html#aggregationtype" class="tsd-kind-icon">Aggregation<wbr>Type</a></li>
-								<li class="tsd-kind-type-alias tsd-parent-kind-module tsd-is-not-exported"><a href="fx.sharepoint.client.html#parsefn" class="tsd-kind-icon">Parse<wbr>Fn</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="fx.sharepoint.client.html#tfieldconfig" class="tsd-kind-icon">TField<wbr>Config</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="fx.sharepoint.client.html#tfieldconfigliteral" class="tsd-kind-icon">TField<wbr>Config<wbr>Literal</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="fx.sharepoint.client.html#tfieldhashconfig" class="tsd-kind-icon">TField<wbr>Hash<wbr>Config</a></li>
@@ -260,21 +265,6 @@
 							<li>Defined in src/core/view/IListViewAggregation.ts:3</li>
 						</ul>
 					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module tsd-is-not-exported">
-					<a name="parsefn" class="tsd-anchor"></a>
-					<h3>Parse<wbr>Fn</h3>
-					<div class="tsd-signature tsd-kind-icon">Parse<wbr>Fn<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in src/core/field/type/ListField.ts:5</li>
-						</ul>
-					</aside>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-						</ul>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
 					<a name="tfieldconfig" class="tsd-anchor"></a>
@@ -410,7 +400,7 @@
 					<div class="tsd-signature tsd-kind-icon">Eq<span class="tsd-signature-symbol">:</span> <a href="../classes/fx.sharepoint.caml.queries.eq.html" class="tsd-signature-type">Eq</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/core/list/List.ts:8</li>
+							<li>Defined in src/core/list/delegate/ListItemProviderDelegate.ts:8</li>
 						</ul>
 					</aside>
 				</section>
@@ -420,7 +410,7 @@
 					<div class="tsd-signature tsd-kind-icon">Field<wbr>RefL<span class="tsd-signature-symbol">:</span> <a href="../classes/fx.sharepoint.caml.lists.fieldref.html" class="tsd-signature-type">FieldRef</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/core/list/List.ts:13</li>
+							<li>Defined in src/core/list/delegate/ListItemProviderDelegate.ts:13</li>
 						</ul>
 					</aside>
 				</section>
@@ -430,7 +420,7 @@
 					<div class="tsd-signature tsd-kind-icon">Field<wbr>RefQ<span class="tsd-signature-symbol">:</span> <a href="../classes/fx.sharepoint.caml.queries.fieldref.html" class="tsd-signature-type">FieldRef</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/core/list/List.ts:12</li>
+							<li>Defined in src/core/list/delegate/ListItemProviderDelegate.ts:12</li>
 						</ul>
 					</aside>
 				</section>
@@ -456,7 +446,7 @@
 					<div class="tsd-signature tsd-kind-icon">Query<span class="tsd-signature-symbol">:</span> <a href="../classes/fx.sharepoint.caml.lists.query.html" class="tsd-signature-type">Query</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/core/list/List.ts:6</li>
+							<li>Defined in src/core/list/delegate/ListItemProviderDelegate.ts:6</li>
 						</ul>
 					</aside>
 				</section>
@@ -466,7 +456,7 @@
 					<div class="tsd-signature tsd-kind-icon">Row<wbr>Limit<span class="tsd-signature-symbol">:</span> <a href="../classes/fx.sharepoint.caml.lists.rowlimit.html" class="tsd-signature-type">RowLimit</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/core/list/List.ts:10</li>
+							<li>Defined in src/core/list/delegate/ListItemProviderDelegate.ts:10</li>
 						</ul>
 					</aside>
 				</section>
@@ -476,7 +466,7 @@
 					<div class="tsd-signature tsd-kind-icon">Value<span class="tsd-signature-symbol">:</span> <a href="../classes/fx.sharepoint.caml.queries.value.html" class="tsd-signature-type">Value</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/core/list/List.ts:9</li>
+							<li>Defined in src/core/list/delegate/ListItemProviderDelegate.ts:9</li>
 						</ul>
 					</aside>
 				</section>
@@ -486,7 +476,7 @@
 					<div class="tsd-signature tsd-kind-icon">View<span class="tsd-signature-symbol">:</span> <a href="../classes/fx.sharepoint.caml.lists.view.html" class="tsd-signature-type">View</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/core/list/List.ts:5</li>
+							<li>Defined in src/core/list/delegate/ListItemProviderDelegate.ts:5</li>
 						</ul>
 					</aside>
 				</section>
@@ -496,7 +486,7 @@
 					<div class="tsd-signature tsd-kind-icon">View<wbr>Fields<span class="tsd-signature-symbol">:</span> <a href="../classes/fx.sharepoint.caml.lists.viewfields.html" class="tsd-signature-type">ViewFields</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/core/list/List.ts:11</li>
+							<li>Defined in src/core/list/delegate/ListItemProviderDelegate.ts:11</li>
 						</ul>
 					</aside>
 				</section>
@@ -506,7 +496,7 @@
 					<div class="tsd-signature tsd-kind-icon">Where<span class="tsd-signature-symbol">:</span> <a href="../classes/fx.sharepoint.caml.queries.where.html" class="tsd-signature-type">Where</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/core/list/List.ts:7</li>
+							<li>Defined in src/core/list/delegate/ListItemProviderDelegate.ts:7</li>
 						</ul>
 					</aside>
 				</section>
@@ -546,7 +536,7 @@
 					<div class="tsd-signature tsd-kind-icon">l<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Lists</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/core/list/List.ts:16</li>
+							<li>Defined in src/core/list/delegate/ListItemProviderDelegate.ts:16</li>
 						</ul>
 					</aside>
 				</section>
@@ -566,7 +556,7 @@
 					<div class="tsd-signature tsd-kind-icon">q<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Queries</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/core/list/List.ts:15</li>
+							<li>Defined in src/core/list/delegate/ListItemProviderDelegate.ts:15</li>
 						</ul>
 					</aside>
 				</section>
@@ -611,7 +601,7 @@
 					<a name="_name" class="tsd-anchor"></a>
 					<h3>_name</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">_name<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon">_name<span class="tsd-signature-symbol">(</span>this<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -620,6 +610,12 @@
 									<li>Defined in src/utils/FunctionName.ts:15</li>
 								</ul>
 							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>this: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
@@ -687,7 +683,7 @@
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
 						<a name="default_configs.fields" class="tsd-anchor"></a>
 						<h3>fields</h3>
-						<div class="tsd-signature tsd-kind-icon">fields<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
+						<div class="tsd-signature tsd-kind-icon">fields<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> =&nbsp;undefined</span></div>
 						<aside class="tsd-sources">
 							<ul>
 								<li>Defined in src/core/list/config/ListConfig.ts:7</li>
@@ -707,7 +703,7 @@
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
 						<a name="default_configs.listname" class="tsd-anchor"></a>
 						<h3>list<wbr>Name</h3>
-						<div class="tsd-signature tsd-kind-icon">list<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> =&nbsp;undefined</span></div>
+						<div class="tsd-signature tsd-kind-icon">list<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
 								<li>Defined in src/core/list/config/ListConfig.ts:6</li>
@@ -717,7 +713,7 @@
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
 						<a name="default_configs.name" class="tsd-anchor"></a>
 						<h3>name</h3>
-						<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> =&nbsp;undefined</span></div>
+						<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
 								<li>Defined in src/core/field/config/FieldConfig.ts:6</li>
@@ -741,7 +737,7 @@
 					<div class="tsd-signature tsd-kind-icon">DEFAULT_<wbr>OPTIONS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/core/list/ListBase.ts:5</li>
+							<li>Defined in src/core/list/delegate/ListItemProviderDelegate.ts:38</li>
 						</ul>
 					</aside>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
@@ -750,17 +746,17 @@
 						<div class="tsd-signature tsd-kind-icon">defer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/core/list/ListBase.ts:6</li>
+								<li>Defined in src/core/list/delegate/ListItemProviderDelegate.ts:39</li>
 							</ul>
 						</aside>
 					</section>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
 						<a name="default_options.itemperrequest" class="tsd-anchor"></a>
 						<h3>item<wbr>Per<wbr>Request</h3>
-						<div class="tsd-signature tsd-kind-icon">item<wbr>Per<wbr>Request<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
+						<div class="tsd-signature tsd-kind-icon">item<wbr>Per<wbr>Request<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> =&nbsp;undefined</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/core/list/ListBase.ts:7</li>
+								<li>Defined in src/core/list/delegate/ListItemProviderDelegate.ts:40</li>
 							</ul>
 						</aside>
 					</section>
@@ -822,6 +818,9 @@
 					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-external">
 						<a href="../classes/fx.sharepoint.client.defaultfieldsconfigparser.html" class="tsd-kind-icon">Default<wbr>Fields<wbr>Config<wbr>Parser</a>
 					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="../classes/fx.sharepoint.client.defervalue.html" class="tsd-kind-icon">Defer<wbr>Value</a>
+					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="../classes/fx.sharepoint.client.exception.html" class="tsd-kind-icon">Exception</a>
 					</li>
@@ -845,9 +844,6 @@
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="../classes/fx.sharepoint.client.list.html" class="tsd-kind-icon">List</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/fx.sharepoint.client.listbase.html" class="tsd-kind-icon">List<wbr>Base</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="../classes/fx.sharepoint.client.listconfig.html" class="tsd-kind-icon">List<wbr>Config</a>
@@ -913,6 +909,9 @@
 						<a href="../classes/fx.sharepoint.client.listitemprivatedata.html" class="tsd-kind-icon">List<wbr>Item<wbr>Private<wbr>Data</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/fx.sharepoint.client.listitemproviderdelegate.html" class="tsd-kind-icon">List<wbr>Item<wbr>Provider<wbr>Delegate</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="../classes/fx.sharepoint.client.listitemupdatecommitoperation.html" class="tsd-kind-icon">List<wbr>Item<wbr>Update<wbr>Commit<wbr>Operation</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
@@ -920,6 +919,9 @@
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="../classes/fx.sharepoint.client.listviewaggregation.html" class="tsd-kind-icon">List<wbr>View<wbr>Aggregation</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/fx.sharepoint.client.listviewproviderdelegate.html" class="tsd-kind-icon">List<wbr>View<wbr>Provider<wbr>Delegate</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="../classes/fx.sharepoint.client.logger.html" class="tsd-kind-icon">Logger</a>
@@ -947,6 +949,9 @@
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-external">
 						<a href="../classes/fx.sharepoint.client.userfieldsconfigparser.html" class="tsd-kind-icon">User<wbr>Fields<wbr>Config<wbr>Parser</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/fx.sharepoint.client.utils.html" class="tsd-kind-icon">Utils</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="../interfaces/fx.sharepoint.client.iappfactory.html" class="tsd-kind-icon">IApp<wbr>Factory</a>
@@ -977,6 +982,9 @@
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="../interfaces/fx.sharepoint.client.igetlistitemsessioncontext.html" class="tsd-kind-icon">IGet<wbr>List<wbr>Item<wbr>Session<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/fx.sharepoint.client.iidlistitemliteral.html" class="tsd-kind-icon">IId<wbr>List<wbr>Item<wbr>Literal</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="../interfaces/fx.sharepoint.client.ilist.html" class="tsd-kind-icon">IList</a>
@@ -1054,10 +1062,16 @@
 						<a href="../interfaces/fx.sharepoint.client.ilistitemcreationliteral.html" class="tsd-kind-icon">IList<wbr>Item<wbr>Creation<wbr>Literal</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/fx.sharepoint.client.ilistitemliteral.html" class="tsd-kind-icon">IList<wbr>Item<wbr>Literal</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="../interfaces/fx.sharepoint.client.ilistitemprivatedata.html" class="tsd-kind-icon">IList<wbr>Item<wbr>Private<wbr>Data</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="../interfaces/fx.sharepoint.client.ilistitemprovider.html" class="tsd-kind-icon">IList<wbr>Item<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/fx.sharepoint.client.ilistitemproviderdelegate.html" class="tsd-kind-icon">IList<wbr>Item<wbr>Provider<wbr>Delegate</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="../interfaces/fx.sharepoint.client.ilistoperationoptions.html" class="tsd-kind-icon">IList<wbr>Operation<wbr>Options</a>
@@ -1070,6 +1084,9 @@
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="../interfaces/fx.sharepoint.client.ilistviewprovider.html" class="tsd-kind-icon">IList<wbr>View<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/fx.sharepoint.client.ilistviewproviderdelegate.html" class="tsd-kind-icon">IList<wbr>View<wbr>Provider<wbr>Delegate</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="../interfaces/fx.sharepoint.client.ilogoptions.html" class="tsd-kind-icon">ILog<wbr>Options</a>
@@ -1106,9 +1123,6 @@
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="fx.sharepoint.client.html#aggregationtype" class="tsd-kind-icon">Aggregation<wbr>Type</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-is-not-exported">
-						<a href="fx.sharepoint.client.html#parsefn" class="tsd-kind-icon">Parse<wbr>Fn</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="fx.sharepoint.client.html#tfieldconfig" class="tsd-kind-icon">TField<wbr>Config</a>
@@ -1268,7 +1282,7 @@
 	</div>
 </footer>
 <div class="container tsd-generator">
-	<p>Generated using <a href="http://typedoc.io" target="_blank">TypeDoc</a></p>
+	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
 <script src="../assets/js/main.js"></script>

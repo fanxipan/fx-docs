@@ -3,11 +3,10 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ListItemPrivateData | fx.sharepoint.lists.typed</title>
+	<title>ListItemPrivateData | fx.sharepoint.lists.jsom</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
-	<script src="../assets/js/modernizr.js"></script>
 </head>
 <body>
 <header>
@@ -23,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">fx.sharepoint.lists.typed</a>
+					<a href="../index.html" class="title">fx.sharepoint.lists.jsom</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -112,15 +111,10 @@
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
-							<h3>Accessors</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="fx.sharepoint.client.listitemprivatedata.html#alllistfields" class="tsd-kind-icon">all<wbr>List<wbr>Fields</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fx.sharepoint.client.listitemprivatedata.html#cleardata" class="tsd-kind-icon">clear<wbr>Data</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fx.sharepoint.client.listitemprivatedata.html#getalllistfields" class="tsd-kind-icon">get<wbr>All<wbr>List<wbr>Fields</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="fx.sharepoint.client.listitemprivatedata.html#getcloneifpossible" class="tsd-kind-icon">get<wbr>Clone<wbr>IfPossible</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fx.sharepoint.client.listitemprivatedata.html#getdata" class="tsd-kind-icon">get<wbr>Data</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fx.sharepoint.client.listitemprivatedata.html#getoriginaldata" class="tsd-kind-icon">get<wbr>Original<wbr>Data</a></li>
@@ -228,26 +222,6 @@
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Accessors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
-					<a name="alllistfields" class="tsd-anchor"></a>
-					<h3>all<wbr>List<wbr>Fields</h3>
-					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> allListFields<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/fx.sharepoint.client.ilistfieldcollection.html" class="tsd-signature-type">IListFieldCollection</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in src/core/item/ListItemPrivateData.ts:52</li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/fx.sharepoint.client.ilistfieldcollection.html" class="tsd-signature-type">IListFieldCollection</a></h4>
-						</li>
-					</ul>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="cleardata" class="tsd-anchor"></a>
@@ -260,10 +234,28 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilistitemprivatedata.html">IListItemPrivateData</a>.<a href="../interfaces/fx.sharepoint.client.ilistitemprivatedata.html#cleardata">clearData</a></p>
 								<ul>
-									<li>Defined in src/core/item/ListItemPrivateData.ts:79</li>
+									<li>Defined in src/core/item/ListItemPrivateData.ts:78</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getalllistfields" class="tsd-anchor"></a>
+					<h3>get<wbr>All<wbr>List<wbr>Fields</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>All<wbr>List<wbr>Fields<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IPromise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/fx.sharepoint.client.ilistfieldcollection.html" class="tsd-signature-type">IListFieldCollection</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilistitemprivatedata.html">IListItemPrivateData</a>.<a href="../interfaces/fx.sharepoint.client.ilistitemprivatedata.html#getalllistfields">getAllListFields</a></p>
+								<ul>
+									<li>Defined in src/core/item/ListItemPrivateData.ts:74</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IPromise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/fx.sharepoint.client.ilistfieldcollection.html" class="tsd-signature-type">IListFieldCollection</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -301,7 +293,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilistitemprivatedata.html">IListItemPrivateData</a>.<a href="../interfaces/fx.sharepoint.client.ilistitemprivatedata.html#getdata">getData</a></p>
 								<ul>
-									<li>Defined in src/core/item/ListItemPrivateData.ts:57</li>
+									<li>Defined in src/core/item/ListItemPrivateData.ts:52</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -325,7 +317,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilistitemprivatedata.html">IListItemPrivateData</a>.<a href="../interfaces/fx.sharepoint.client.ilistitemprivatedata.html#getoriginaldata">getOriginalData</a></p>
 								<ul>
-									<li>Defined in src/core/item/ListItemPrivateData.ts:71</li>
+									<li>Defined in src/core/item/ListItemPrivateData.ts:66</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -349,7 +341,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilistitemprivatedata.html">IListItemPrivateData</a>.<a href="../interfaces/fx.sharepoint.client.ilistitemprivatedata.html#setdata">setData</a></p>
 								<ul>
-									<li>Defined in src/core/item/ListItemPrivateData.ts:67</li>
+									<li>Defined in src/core/item/ListItemPrivateData.ts:62</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -376,7 +368,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilistitemprivatedata.html">IListItemPrivateData</a>.<a href="../interfaces/fx.sharepoint.client.ilistitemprivatedata.html#setoriginaldata">setOriginalData</a></p>
 								<ul>
-									<li>Defined in src/core/item/ListItemPrivateData.ts:75</li>
+									<li>Defined in src/core/item/ListItemPrivateData.ts:70</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -454,11 +446,11 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="fx.sharepoint.client.listitemprivatedata.html#state" class="tsd-kind-icon">state</a>
 							</li>
-							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
-								<a href="fx.sharepoint.client.listitemprivatedata.html#alllistfields" class="tsd-kind-icon">all<wbr>List<wbr>Fields</a>
-							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="fx.sharepoint.client.listitemprivatedata.html#cleardata" class="tsd-kind-icon">clear<wbr>Data</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="fx.sharepoint.client.listitemprivatedata.html#getalllistfields" class="tsd-kind-icon">get<wbr>All<wbr>List<wbr>Fields</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
 								<a href="fx.sharepoint.client.listitemprivatedata.html#getcloneifpossible" class="tsd-kind-icon">get<wbr>Clone<wbr>IfPossible</a>
@@ -544,7 +536,7 @@
 	</div>
 </footer>
 <div class="container tsd-generator">
-	<p>Generated using <a href="http://typedoc.io" target="_blank">TypeDoc</a></p>
+	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
 <script src="../assets/js/main.js"></script>

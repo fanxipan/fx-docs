@@ -3,11 +3,10 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>AppFactory | fx.sharepoint.lists.typed</title>
+	<title>AppFactory | fx.sharepoint.lists.jsom</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
-	<script src="../assets/js/modernizr.js"></script>
 </head>
 <body>
 <header>
@@ -23,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">fx.sharepoint.lists.typed</a>
+					<a href="../index.html" class="title">fx.sharepoint.lists.jsom</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -98,7 +97,9 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fx.sharepoint.client.appfactory.html#createarrayfieldconfig" class="tsd-kind-icon">create<wbr>Array<wbr>Field<wbr>Config</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fx.sharepoint.client.appfactory.html#createclientlistitem" class="tsd-kind-icon">create<wbr>Client<wbr>List<wbr>Item</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fx.sharepoint.client.appfactory.html#createdefaultfieldsconfigparser" class="tsd-kind-icon">create<wbr>Default<wbr>Fields<wbr>Config<wbr>Parser</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="fx.sharepoint.client.appfactory.html#createdefervalue" class="tsd-kind-icon">create<wbr>Defer<wbr>Value</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fx.sharepoint.client.appfactory.html#createfieldconfig" class="tsd-kind-icon">create<wbr>Field<wbr>Config</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fx.sharepoint.client.appfactory.html#creategetlistitemsessioncontext" class="tsd-kind-icon">create<wbr>Get<wbr>List<wbr>Item<wbr>Session<wbr>Context</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fx.sharepoint.client.appfactory.html#createhashfieldconfig" class="tsd-kind-icon">create<wbr>Hash<wbr>Field<wbr>Config</a></li>
@@ -113,8 +114,10 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fx.sharepoint.client.appfactory.html#createlistfielduservalueprivatedata" class="tsd-kind-icon">create<wbr>List<wbr>Field<wbr>User<wbr>Value<wbr>Private<wbr>Data</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fx.sharepoint.client.appfactory.html#createlistitem" class="tsd-kind-icon">create<wbr>List<wbr>Item</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fx.sharepoint.client.appfactory.html#createlistitemprivatedata" class="tsd-kind-icon">create<wbr>List<wbr>Item<wbr>Private<wbr>Data</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fx.sharepoint.client.appfactory.html#createlistitemproviderdelegate" class="tsd-kind-icon">create<wbr>List<wbr>Item<wbr>Provider<wbr>Delegate</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fx.sharepoint.client.appfactory.html#createlistview" class="tsd-kind-icon">create<wbr>List<wbr>View</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fx.sharepoint.client.appfactory.html#createlistviewaggregation" class="tsd-kind-icon">create<wbr>List<wbr>View<wbr>Aggregation</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fx.sharepoint.client.appfactory.html#createlistviewproviderdelegate" class="tsd-kind-icon">create<wbr>List<wbr>View<wbr>Provider<wbr>Delegate</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fx.sharepoint.client.appfactory.html#createlogger" class="tsd-kind-icon">create<wbr>Logger</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fx.sharepoint.client.appfactory.html#createmergedfieldsconfigparser" class="tsd-kind-icon">create<wbr>Merged<wbr>Fields<wbr>Config<wbr>Parser</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fx.sharepoint.client.appfactory.html#creatependingoperation" class="tsd-kind-icon">create<wbr>Pending<wbr>Operation</a></li>
@@ -145,7 +148,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.iappfactory.html">IAppFactory</a>.<a href="../interfaces/fx.sharepoint.client.iappfactory.html#createarrayfieldconfig">createArrayFieldConfig</a></p>
 								<ul>
-									<li>Defined in src/factory/AppFactory.ts:218</li>
+									<li>Defined in src/factory/AppFactory.ts:229</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -162,6 +165,33 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="createclientlistitem" class="tsd-anchor"></a>
+					<h3>create<wbr>Client<wbr>List<wbr>Item</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Client<wbr>List<wbr>Item<span class="tsd-signature-symbol">(</span>spItem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ListItem</span>, list<span class="tsd-signature-symbol">: </span><a href="../interfaces/fx.sharepoint.client.ilist.html" class="tsd-signature-type">IList</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/fx.sharepoint.client.ilistitem.html" class="tsd-signature-type">IListItem</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.iappfactory.html">IAppFactory</a>.<a href="../interfaces/fx.sharepoint.client.iappfactory.html#createclientlistitem">createClientListItem</a></p>
+								<ul>
+									<li>Defined in src/factory/AppFactory.ts:32</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>spItem: <span class="tsd-signature-type">ListItem</span></h5>
+								</li>
+								<li>
+									<h5>list: <a href="../interfaces/fx.sharepoint.client.ilist.html" class="tsd-signature-type">IList</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/fx.sharepoint.client.ilistitem.html" class="tsd-signature-type">IListItem</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="createdefaultfieldsconfigparser" class="tsd-anchor"></a>
 					<h3>create<wbr>Default<wbr>Fields<wbr>Config<wbr>Parser</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -172,7 +202,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.iappfactory.html">IAppFactory</a>.<a href="../interfaces/fx.sharepoint.client.iappfactory.html#createdefaultfieldsconfigparser">createDefaultFieldsConfigParser</a></p>
 								<ul>
-									<li>Defined in src/factory/AppFactory.ts:297</li>
+									<li>Defined in src/factory/AppFactory.ts:308</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -191,6 +221,36 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
+					<a name="createdefervalue" class="tsd-anchor"></a>
+					<h3>create<wbr>Defer<wbr>Value</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Defer<wbr>Value&lt;T&gt;<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/fx.sharepoint.client.idefervalue.html" class="tsd-signature-type">IDeferValue</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.iappfactory.html">IAppFactory</a>.<a href="../interfaces/fx.sharepoint.client.iappfactory.html#createdefervalue">createDeferValue</a></p>
+								<ul>
+									<li>Defined in src/factory/AppFactory.ts:97</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><a href="../interfaces/fx.sharepoint.client.ilistitem.html" class="tsd-signature-type">IListItem</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/fx.sharepoint.client.ilistitemcollection.html" class="tsd-signature-type">IListItemCollection</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">T</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/fx.sharepoint.client.idefervalue.html" class="tsd-signature-type">IDeferValue</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="createfieldconfig" class="tsd-anchor"></a>
 					<h3>create<wbr>Field<wbr>Config</h3>
@@ -202,7 +262,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.iappfactory.html">IAppFactory</a>.<a href="../interfaces/fx.sharepoint.client.iappfactory.html#createfieldconfig">createFieldConfig</a></p>
 								<ul>
-									<li>Defined in src/factory/AppFactory.ts:192</li>
+									<li>Defined in src/factory/AppFactory.ts:203</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -233,7 +293,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.iappfactory.html">IAppFactory</a>.<a href="../interfaces/fx.sharepoint.client.iappfactory.html#creategetlistitemsessioncontext">createGetListItemSessionContext</a></p>
 								<ul>
-									<li>Defined in src/factory/AppFactory.ts:81</li>
+									<li>Defined in src/factory/AppFactory.ts:88</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -260,7 +320,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.iappfactory.html">IAppFactory</a>.<a href="../interfaces/fx.sharepoint.client.iappfactory.html#createhashfieldconfig">createHashFieldConfig</a></p>
 								<ul>
-									<li>Defined in src/factory/AppFactory.ts:233</li>
+									<li>Defined in src/factory/AppFactory.ts:244</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -318,7 +378,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.iappfactory.html">IAppFactory</a>.<a href="../interfaces/fx.sharepoint.client.iappfactory.html#createlistconfig">createListConfig</a></p>
 								<ul>
-									<li>Defined in src/factory/AppFactory.ts:37</li>
+									<li>Defined in src/factory/AppFactory.ts:44</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -349,7 +409,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.iappfactory.html">IAppFactory</a>.<a href="../interfaces/fx.sharepoint.client.iappfactory.html#createlistfield">createListField</a></p>
 								<ul>
-									<li>Defined in src/factory/AppFactory.ts:98</li>
+									<li>Defined in src/factory/AppFactory.ts:109</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -383,7 +443,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.iappfactory.html">IAppFactory</a>.<a href="../interfaces/fx.sharepoint.client.iappfactory.html#createlistfieldlookupvalue">createListFieldLookupValue</a></p>
 								<ul>
-									<li>Defined in src/factory/AppFactory.ts:130</li>
+									<li>Defined in src/factory/AppFactory.ts:141</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -413,7 +473,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.iappfactory.html">IAppFactory</a>.<a href="../interfaces/fx.sharepoint.client.iappfactory.html#createlistfieldlookupvalueprivatedata">createListFieldLookupValuePrivateData</a></p>
 								<ul>
-									<li>Defined in src/factory/AppFactory.ts:138</li>
+									<li>Defined in src/factory/AppFactory.ts:149</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -443,7 +503,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.iappfactory.html">IAppFactory</a>.<a href="../interfaces/fx.sharepoint.client.iappfactory.html#createlistfieldurlvalue">createListFieldUrlValue</a></p>
 								<ul>
-									<li>Defined in src/factory/AppFactory.ts:165</li>
+									<li>Defined in src/factory/AppFactory.ts:176</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -473,7 +533,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.iappfactory.html">IAppFactory</a>.<a href="../interfaces/fx.sharepoint.client.iappfactory.html#createlistfieldurlvalueprivatedata">createListFieldUrlValuePrivateData</a></p>
 								<ul>
-									<li>Defined in src/factory/AppFactory.ts:174</li>
+									<li>Defined in src/factory/AppFactory.ts:185</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -503,7 +563,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.iappfactory.html">IAppFactory</a>.<a href="../interfaces/fx.sharepoint.client.iappfactory.html#createlistfielduservalue">createListFieldUserValue</a></p>
 								<ul>
-									<li>Defined in src/factory/AppFactory.ts:147</li>
+									<li>Defined in src/factory/AppFactory.ts:158</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -533,7 +593,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.iappfactory.html">IAppFactory</a>.<a href="../interfaces/fx.sharepoint.client.iappfactory.html#createlistfielduservalueprivatedata">createListFieldUserValuePrivateData</a></p>
 								<ul>
-									<li>Defined in src/factory/AppFactory.ts:156</li>
+									<li>Defined in src/factory/AppFactory.ts:167</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -594,7 +654,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.iappfactory.html">IAppFactory</a>.<a href="../interfaces/fx.sharepoint.client.iappfactory.html#createlistitemprivatedata">createListItemPrivateData</a></p>
 								<ul>
-									<li>Defined in src/factory/AppFactory.ts:54</li>
+									<li>Defined in src/factory/AppFactory.ts:61</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -615,6 +675,30 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="createlistitemproviderdelegate" class="tsd-anchor"></a>
+					<h3>create<wbr>List<wbr>Item<wbr>Provider<wbr>Delegate</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>List<wbr>Item<wbr>Provider<wbr>Delegate<span class="tsd-signature-symbol">(</span>list<span class="tsd-signature-symbol">: </span><a href="../interfaces/fx.sharepoint.client.ilist.html" class="tsd-signature-type">IList</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/fx.sharepoint.client.ilistitemproviderdelegate.html" class="tsd-signature-type">IListItemProviderDelegate</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.iappfactory.html">IAppFactory</a>.<a href="../interfaces/fx.sharepoint.client.iappfactory.html#createlistitemproviderdelegate">createListItemProviderDelegate</a></p>
+								<ul>
+									<li>Defined in src/factory/AppFactory.ts:320</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>list: <a href="../interfaces/fx.sharepoint.client.ilist.html" class="tsd-signature-type">IList</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/fx.sharepoint.client.ilistitemproviderdelegate.html" class="tsd-signature-type">IListItemProviderDelegate</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="createlistview" class="tsd-anchor"></a>
 					<h3>create<wbr>List<wbr>View</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -625,7 +709,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.iappfactory.html">IAppFactory</a>.<a href="../interfaces/fx.sharepoint.client.iappfactory.html#createlistview">createListView</a></p>
 								<ul>
-									<li>Defined in src/factory/AppFactory.ts:309</li>
+									<li>Defined in src/factory/AppFactory.ts:332</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -649,7 +733,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.iappfactory.html">IAppFactory</a>.<a href="../interfaces/fx.sharepoint.client.iappfactory.html#createlistviewaggregation">createListViewAggregation</a></p>
 								<ul>
-									<li>Defined in src/factory/AppFactory.ts:313</li>
+									<li>Defined in src/factory/AppFactory.ts:336</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -659,6 +743,30 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/fx.sharepoint.client.ilistviewaggregation.html" class="tsd-signature-type">IListViewAggregation</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="createlistviewproviderdelegate" class="tsd-anchor"></a>
+					<h3>create<wbr>List<wbr>View<wbr>Provider<wbr>Delegate</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>List<wbr>View<wbr>Provider<wbr>Delegate<span class="tsd-signature-symbol">(</span>list<span class="tsd-signature-symbol">: </span><a href="../interfaces/fx.sharepoint.client.ilist.html" class="tsd-signature-type">IList</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/fx.sharepoint.client.ilistviewproviderdelegate.html" class="tsd-signature-type">IListViewProviderDelegate</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.iappfactory.html">IAppFactory</a>.<a href="../interfaces/fx.sharepoint.client.iappfactory.html#createlistviewproviderdelegate">createListViewProviderDelegate</a></p>
+								<ul>
+									<li>Defined in src/factory/AppFactory.ts:324</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>list: <a href="../interfaces/fx.sharepoint.client.ilist.html" class="tsd-signature-type">IList</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/fx.sharepoint.client.ilistviewproviderdelegate.html" class="tsd-signature-type">IListViewProviderDelegate</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -673,7 +781,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.iappfactory.html">IAppFactory</a>.<a href="../interfaces/fx.sharepoint.client.iappfactory.html#createlogger">createLogger</a></p>
 								<ul>
-									<li>Defined in src/factory/AppFactory.ts:45</li>
+									<li>Defined in src/factory/AppFactory.ts:52</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -694,14 +802,14 @@
 					<a name="createmergedfieldsconfigparser" class="tsd-anchor"></a>
 					<h3>create<wbr>Merged<wbr>Fields<wbr>Config<wbr>Parser</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Merged<wbr>Fields<wbr>Config<wbr>Parser<span class="tsd-signature-symbol">(</span>spFields<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Field</span><span class="tsd-signature-symbol">[]</span>, fields<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><a href="../modules/fx.sharepoint.client.html#tfieldconfig" class="tsd-signature-type">TFieldConfig</a>, list<span class="tsd-signature-symbol">: </span><a href="../interfaces/fx.sharepoint.client.ilist.html" class="tsd-signature-type">IList</a>, defaultFieldsConfigParser<span class="tsd-signature-symbol">: </span><a href="../interfaces/fx.sharepoint.client.idefaultfieldsconfigparser.html" class="tsd-signature-type">IDefaultFieldsConfigParser</a>, userFieldsConfigParser<span class="tsd-signature-symbol">: </span><a href="../interfaces/fx.sharepoint.client.iuserfieldsconfigparser.html" class="tsd-signature-type">IUserFieldsConfigParser</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/fx.sharepoint.client.imergedfieldsconfigparser.html" class="tsd-signature-type">IMergedFieldsConfigParser</a></li>
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Merged<wbr>Fields<wbr>Config<wbr>Parser<span class="tsd-signature-symbol">(</span>spFields<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Field</span><span class="tsd-signature-symbol">[]</span>, fields<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../modules/fx.sharepoint.client.html#tfieldconfig" class="tsd-signature-type">TFieldConfig</a>, list<span class="tsd-signature-symbol">: </span><a href="../interfaces/fx.sharepoint.client.ilist.html" class="tsd-signature-type">IList</a>, defaultFieldsConfigParser<span class="tsd-signature-symbol">: </span><a href="../interfaces/fx.sharepoint.client.idefaultfieldsconfigparser.html" class="tsd-signature-type">IDefaultFieldsConfigParser</a>, userFieldsConfigParser<span class="tsd-signature-symbol">: </span><a href="../interfaces/fx.sharepoint.client.iuserfieldsconfigparser.html" class="tsd-signature-type">IUserFieldsConfigParser</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/fx.sharepoint.client.imergedfieldsconfigparser.html" class="tsd-signature-type">IMergedFieldsConfigParser</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.iappfactory.html">IAppFactory</a>.<a href="../interfaces/fx.sharepoint.client.iappfactory.html#createmergedfieldsconfigparser">createMergedFieldsConfigParser</a></p>
 								<ul>
-									<li>Defined in src/factory/AppFactory.ts:273</li>
+									<li>Defined in src/factory/AppFactory.ts:284</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -710,7 +818,7 @@
 									<h5>spFields: <span class="tsd-signature-type">Field</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 								<li>
-									<h5>fields: <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><a href="../modules/fx.sharepoint.client.html#tfieldconfig" class="tsd-signature-type">TFieldConfig</a></h5>
+									<h5>fields: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../modules/fx.sharepoint.client.html#tfieldconfig" class="tsd-signature-type">TFieldConfig</a></h5>
 								</li>
 								<li>
 									<h5>list: <a href="../interfaces/fx.sharepoint.client.ilist.html" class="tsd-signature-type">IList</a></h5>
@@ -737,7 +845,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.iappfactory.html">IAppFactory</a>.<a href="../interfaces/fx.sharepoint.client.iappfactory.html#creatependingoperation">createPendingOperation</a></p>
 								<ul>
-									<li>Defined in src/factory/AppFactory.ts:65</li>
+									<li>Defined in src/factory/AppFactory.ts:72</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -761,7 +869,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.iappfactory.html">IAppFactory</a>.<a href="../interfaces/fx.sharepoint.client.iappfactory.html#creatependingqueue">createPendingQueue</a></p>
 								<ul>
-									<li>Defined in src/factory/AppFactory.ts:61</li>
+									<li>Defined in src/factory/AppFactory.ts:68</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/fx.sharepoint.client.ipendingqueue.html" class="tsd-signature-type">IPendingQueue</a></h4>
@@ -779,7 +887,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.iappfactory.html">IAppFactory</a>.<a href="../interfaces/fx.sharepoint.client.iappfactory.html#createspcamlquery">createSPCamlQuery</a></p>
 								<ul>
-									<li>Defined in src/factory/AppFactory.ts:326</li>
+									<li>Defined in src/factory/AppFactory.ts:349</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">CamlQuery</span></h4>
@@ -797,7 +905,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.iappfactory.html">IAppFactory</a>.<a href="../interfaces/fx.sharepoint.client.iappfactory.html#createspclientcontext">createSPClientContext</a></p>
 								<ul>
-									<li>Defined in src/factory/AppFactory.ts:322</li>
+									<li>Defined in src/factory/AppFactory.ts:345</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -821,7 +929,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.iappfactory.html">IAppFactory</a>.<a href="../interfaces/fx.sharepoint.client.iappfactory.html#createspfieldurlvalue">createSPFieldUrlValue</a></p>
 								<ul>
-									<li>Defined in src/factory/AppFactory.ts:330</li>
+									<li>Defined in src/factory/AppFactory.ts:353</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -848,7 +956,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.iappfactory.html">IAppFactory</a>.<a href="../interfaces/fx.sharepoint.client.iappfactory.html#createspfielduservalue">createSPFieldUserValue</a></p>
 								<ul>
-									<li>Defined in src/factory/AppFactory.ts:339</li>
+									<li>Defined in src/factory/AppFactory.ts:362</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -900,7 +1008,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.iappfactory.html">IAppFactory</a>.<a href="../interfaces/fx.sharepoint.client.iappfactory.html#createsessioncontextmanager">createSessionContextManager</a></p>
 								<ul>
-									<li>Defined in src/factory/AppFactory.ts:77</li>
+									<li>Defined in src/factory/AppFactory.ts:84</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -924,7 +1032,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.iappfactory.html">IAppFactory</a>.<a href="../interfaces/fx.sharepoint.client.iappfactory.html#createsinglefieldconfig">createSingleFieldConfig</a></p>
 								<ul>
-									<li>Defined in src/factory/AppFactory.ts:201</li>
+									<li>Defined in src/factory/AppFactory.ts:212</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -955,7 +1063,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.iappfactory.html">IAppFactory</a>.<a href="../interfaces/fx.sharepoint.client.iappfactory.html#createuserfieldsconfigparser">createUserFieldsConfigParser</a></p>
 								<ul>
-									<li>Defined in src/factory/AppFactory.ts:289</li>
+									<li>Defined in src/factory/AppFactory.ts:300</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1019,7 +1127,13 @@
 								<a href="fx.sharepoint.client.appfactory.html#createarrayfieldconfig" class="tsd-kind-icon">create<wbr>Array<wbr>Field<wbr>Config</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="fx.sharepoint.client.appfactory.html#createclientlistitem" class="tsd-kind-icon">create<wbr>Client<wbr>List<wbr>Item</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="fx.sharepoint.client.appfactory.html#createdefaultfieldsconfigparser" class="tsd-kind-icon">create<wbr>Default<wbr>Fields<wbr>Config<wbr>Parser</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
+								<a href="fx.sharepoint.client.appfactory.html#createdefervalue" class="tsd-kind-icon">create<wbr>Defer<wbr>Value</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="fx.sharepoint.client.appfactory.html#createfieldconfig" class="tsd-kind-icon">create<wbr>Field<wbr>Config</a>
@@ -1064,10 +1178,16 @@
 								<a href="fx.sharepoint.client.appfactory.html#createlistitemprivatedata" class="tsd-kind-icon">create<wbr>List<wbr>Item<wbr>Private<wbr>Data</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="fx.sharepoint.client.appfactory.html#createlistitemproviderdelegate" class="tsd-kind-icon">create<wbr>List<wbr>Item<wbr>Provider<wbr>Delegate</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="fx.sharepoint.client.appfactory.html#createlistview" class="tsd-kind-icon">create<wbr>List<wbr>View</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="fx.sharepoint.client.appfactory.html#createlistviewaggregation" class="tsd-kind-icon">create<wbr>List<wbr>View<wbr>Aggregation</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="fx.sharepoint.client.appfactory.html#createlistviewproviderdelegate" class="tsd-kind-icon">create<wbr>List<wbr>View<wbr>Provider<wbr>Delegate</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="fx.sharepoint.client.appfactory.html#createlogger" class="tsd-kind-icon">create<wbr>Logger</a>
@@ -1174,7 +1294,7 @@
 	</div>
 </footer>
 <div class="container tsd-generator">
-	<p>Generated using <a href="http://typedoc.io" target="_blank">TypeDoc</a></p>
+	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
 <script src="../assets/js/main.js"></script>
