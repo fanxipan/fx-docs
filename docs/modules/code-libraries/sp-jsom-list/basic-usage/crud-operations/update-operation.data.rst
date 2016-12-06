@@ -121,7 +121,13 @@ Cách 6:
 
 Sử dụng hàm |ServiceContext.commitChanges|:
 
+.. code-block:: javascript
+   :linenos:
 
+   customer.customerName = "New customer name"; // not 'Jubei' anymore
+   serviceContext.commitChanges().then(function() {
+      console.log("All changes have been commited to server!");
+   });
 
 .. note::
    

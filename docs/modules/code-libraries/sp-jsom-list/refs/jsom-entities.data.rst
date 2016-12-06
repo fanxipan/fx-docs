@@ -10,6 +10,7 @@
 .. |List.getManyItemsAsync| replace:: :jsom-class-member:`Fx.SharePoint.Client.List#getManyItemsAsync`
 .. |List.createItemAsync| replace:: :jsom-class-member:`Fx.SharePoint.Client.List#createItemAsync`
 .. |List.updateItemAsync| replace:: :jsom-class-member:`Fx.SharePoint.Client.List#updateItemAsync`
+.. |List.saveItemAsync| replace:: :jsom-class-member:`Fx.SharePoint.Client.List#saveItemAsync`
 .. |List.deleteItemAsync| replace:: :jsom-class-member:`Fx.SharePoint.Client.List#deleteItemAsync`
 
 .. |List.defaultFieldsLiteral| replace:: :jsom-class-member:`Fx.SharePoint.Client.List#defaultFieldsLiteral`
