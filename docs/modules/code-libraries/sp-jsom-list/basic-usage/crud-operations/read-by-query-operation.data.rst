@@ -26,6 +26,20 @@ Lấy item theo |caml-query|_
          })
       });
 
+   Với đoạn code trên, khi gọi ``query.toString()`` sẽ được kết quả như sau:
+
+   .. code-block:: xml
+      :linenos:
+
+      <Query>
+         <Where>
+            <Leq>
+               <FieldRef Name="ID" />
+               <Value Type="Integer">2</Value>
+            </Leq>
+         </Where>
+      </Query>
+
 2. Gọi hàm |List.getManyItemsAsync| và truyền đối tượng ``query`` ở trên vào:
    
    .. code-block:: javascript
