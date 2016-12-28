@@ -90,8 +90,9 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="fx.sharepoint.client.ilistoperationoptions.html#defer" class="tsd-kind-icon">defer</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="fx.sharepoint.client.ilistoperationoptions.html#currentposition" class="tsd-kind-icon">current<wbr>Position</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="fx.sharepoint.client.ilistoperationoptions.html#itemperrequest" class="tsd-kind-icon">item<wbr>Per<wbr>Request</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="fx.sharepoint.client.ilistoperationoptions.html#previouspositions" class="tsd-kind-icon">previous<wbr>Positions</a></li>
 							</ul>
 						</section>
 					</div>
@@ -100,19 +101,19 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="defer" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> defer</h3>
-					<div class="tsd-signature tsd-kind-icon">defer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<a name="currentposition" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> current<wbr>Position</h3>
+					<div class="tsd-signature tsd-kind-icon">current<wbr>Position<span class="tsd-signature-symbol">:</span> <a href="../modules/fx.sharepoint.client.html#tlistitemcollectioncurrentposition" class="tsd-signature-type">TListItemCollectionCurrentPosition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/core/list/IListOperationOptions.ts:8</li>
+							<li>Defined in src/core/list/IListOperationOptions.ts:24</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>If true, push this request operation to a queue.
-							Default: false</p>
+							<p>Thông tin về vị trí bắt đầu lấy item cho request hiện tại.</p>
 						</div>
+						<p>Default: undefined -&gt; lấy <code>itemPerRequest</code> item đầu tiên của list.</p>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -121,7 +122,7 @@
 					<div class="tsd-signature tsd-kind-icon">item<wbr>Per<wbr>Request<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/core/list/IListOperationOptions.ts:14</li>
+							<li>Defined in src/core/list/IListOperationOptions.ts:17</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -129,6 +130,30 @@
 							<p>Số lượng tối đa item sẽ được lấy về mỗi request. Giá trị này sẽ được gán vào
 							<em>RowLimit</em> của Caml Query.</p>
 						</div>
+						<p>Default: undefined -&gt; số lượng item lấy về phụ thuộc vào config của SharePoint.</p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="previouspositions" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> previous<wbr>Positions</h3>
+					<div class="tsd-signature tsd-kind-icon">previous<wbr>Positions<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ListItemCollectionPosition</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in src/core/list/IListOperationOptions.ts:38</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Thông tin về vị trí lấy item của các request trước. Sử dụng
+							để cài đặt paging.</p>
+						</div>
+						<ul>
+							<li>Gọi getManyItemsAsync() -&gt; để trường này = undefined -&gt; ListItemCollectionPrivateData tự set nó thành []</li>
+							<li>getNextAsync() sẽ tự set trường này.</li>
+						</ul>
+						<p><em>.first(previousPositions) = null &lt;- lần đầu lấy ko cần gán position
+						</em>.last(previousPositions) = items ở ngay page trước</p>
+						<p>Default: undefined</p>
 					</div>
 				</section>
 			</section>
@@ -173,10 +198,13 @@
 						<a href="fx.sharepoint.client.ilistoperationoptions.html" class="tsd-kind-icon">IList<wbr>Operation<wbr>Options</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="fx.sharepoint.client.ilistoperationoptions.html#defer" class="tsd-kind-icon">defer</a>
+								<a href="fx.sharepoint.client.ilistoperationoptions.html#currentposition" class="tsd-kind-icon">current<wbr>Position</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="fx.sharepoint.client.ilistoperationoptions.html#itemperrequest" class="tsd-kind-icon">item<wbr>Per<wbr>Request</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="fx.sharepoint.client.ilistoperationoptions.html#previouspositions" class="tsd-kind-icon">previous<wbr>Positions</a>
 							</li>
 						</ul>
 					</li>

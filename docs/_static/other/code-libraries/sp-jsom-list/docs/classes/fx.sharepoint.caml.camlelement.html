@@ -189,6 +189,7 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="fx.sharepoint.caml.camlelement.html#clone" class="tsd-kind-icon">clone</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fx.sharepoint.caml.camlelement.html#tostring" class="tsd-kind-icon">to<wbr>String</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="fx.sharepoint.caml.camlelement.html#from" class="tsd-kind-icon">from</a></li>
 							</ul>
@@ -231,7 +232,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/fx.sharepoint.caml.icamlelement.html">ICamlElement</a>.<a href="../interfaces/fx.sharepoint.caml.icamlelement.html#attrs">attrs</a></p>
 						<ul>
-							<li>Defined in src/caml/CamlElement.ts:108</li>
+							<li>Defined in src/caml/CamlElement.ts:117</li>
 						</ul>
 					</aside>
 				</section>
@@ -242,7 +243,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/fx.sharepoint.caml.icamlelement.html">ICamlElement</a>.<a href="../interfaces/fx.sharepoint.caml.icamlelement.html#content">content</a></p>
 						<ul>
-							<li>Defined in src/caml/CamlElement.ts:109</li>
+							<li>Defined in src/caml/CamlElement.ts:118</li>
 						</ul>
 					</aside>
 				</section>
@@ -253,7 +254,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/fx.sharepoint.caml.icamlelement.html">ICamlElement</a>.<a href="../interfaces/fx.sharepoint.caml.icamlelement.html#parent">parent</a></p>
 						<ul>
-							<li>Defined in src/caml/CamlElement.ts:107</li>
+							<li>Defined in src/caml/CamlElement.ts:116</li>
 						</ul>
 					</aside>
 				</section>
@@ -280,6 +281,34 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
+					<a name="clone" class="tsd-anchor"></a>
+					<h3>clone</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">clone&lt;T&gt;<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in src/caml/CamlElement.ts:94</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Clone from another element.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><a href="../modules/fx.sharepoint.caml.html#celement" class="tsd-signature-type">CElement</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="tostring" class="tsd-anchor"></a>
 					<h3>to<wbr>String</h3>
@@ -302,13 +331,13 @@
 					<a name="from" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> from</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">from<span class="tsd-signature-symbol">(</span>_data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">JQuery</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="fx.sharepoint.caml.camlelement.html" class="tsd-signature-type">CamlElement</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/fx.sharepoint.caml.icamlelement.html" class="tsd-signature-type">ICamlElement</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/fx.sharepoint.caml.ielementattrs.html" class="tsd-signature-type">IElementAttrs</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/fx.sharepoint.caml.ielementcontent.html" class="tsd-signature-type">IElementContent</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon">from<span class="tsd-signature-symbol">(</span>_data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">JQuery</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/fx.sharepoint.caml.html#celement" class="tsd-signature-type">CElement</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/caml/CamlElement.ts:99</li>
+									<li>Defined in src/caml/CamlElement.ts:108</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -322,7 +351,7 @@
 									<h5>_data: <span class="tsd-signature-type">JQuery</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="fx.sharepoint.caml.camlelement.html" class="tsd-signature-type">CamlElement</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/fx.sharepoint.caml.icamlelement.html" class="tsd-signature-type">ICamlElement</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/fx.sharepoint.caml.ielementattrs.html" class="tsd-signature-type">IElementAttrs</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/fx.sharepoint.caml.ielementcontent.html" class="tsd-signature-type">IElementContent</a><span class="tsd-signature-symbol">&gt;</span>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/fx.sharepoint.caml.html#celement" class="tsd-signature-type">CElement</a>
 								<span class="tsd-signature-symbol"> | </span>
 								<span class="tsd-signature-type">undefined</span>
 							</h4>
@@ -384,6 +413,9 @@
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-protected">
 								<a href="fx.sharepoint.caml.camlelement.html#classname" class="tsd-kind-icon">class<wbr>Name</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
+								<a href="fx.sharepoint.caml.camlelement.html#clone" class="tsd-kind-icon">clone</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="fx.sharepoint.caml.camlelement.html#tostring" class="tsd-kind-icon">to<wbr>String</a>

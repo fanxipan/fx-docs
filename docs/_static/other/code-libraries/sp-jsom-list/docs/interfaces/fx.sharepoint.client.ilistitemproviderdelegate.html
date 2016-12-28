@@ -126,7 +126,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="fx.sharepoint.client.ilistitemprovider.html">IListItemProvider</a>.<a href="fx.sharepoint.client.ilistitemprovider.html#createitem">createItem</a></p>
 								<ul>
-									<li>Defined in src/core/list/IListItemProvider.ts:16</li>
+									<li>Defined in src/core/list/IListItemProvider.ts:25</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -157,7 +157,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="fx.sharepoint.client.ilistitemprovider.html">IListItemProvider</a>.<a href="fx.sharepoint.client.ilistitemprovider.html#createitemasync">createItemAsync</a></p>
 								<ul>
-									<li>Defined in src/core/list/IListItemProvider.ts:17</li>
+									<li>Defined in src/core/list/IListItemProvider.ts:26</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -181,7 +181,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="fx.sharepoint.client.ilistitemprovider.html">IListItemProvider</a>.<a href="fx.sharepoint.client.ilistitemprovider.html#deleteitemasync">deleteItemAsync</a></p>
 								<ul>
-									<li>Defined in src/core/list/IListItemProvider.ts:36</li>
+									<li>Defined in src/core/list/IListItemProvider.ts:45</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -225,6 +225,7 @@
 					<a name="getmanyitemsasync" class="tsd-anchor"></a>
 					<h3>get<wbr>Many<wbr>Items<wbr>Async</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Many<wbr>Items<wbr>Async<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><a href="fx.sharepoint.client.ilistoperationoptions.html" class="tsd-signature-type">IListOperationOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IPromise</span><span class="tsd-signature-symbol">&lt;</span><a href="fx.sharepoint.client.ilistitemcollection.html" class="tsd-signature-type">IListItemCollection</a><span class="tsd-signature-symbol">&gt;</span></li>
 						<li class="tsd-signature tsd-kind-icon">get<wbr>Many<wbr>Items<wbr>Async<span class="tsd-signature-symbol">(</span>query<span class="tsd-signature-symbol">: </span><a href="../classes/fx.sharepoint.caml.lists.query.html" class="tsd-signature-type">Query</a>, options<span class="tsd-signature-symbol">?: </span><a href="fx.sharepoint.client.ilistoperationoptions.html" class="tsd-signature-type">IListOperationOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IPromise</span><span class="tsd-signature-symbol">&lt;</span><a href="fx.sharepoint.client.ilistitemcollection.html" class="tsd-signature-type">IListItemCollection</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
@@ -232,9 +233,34 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="fx.sharepoint.client.ilistitemprovider.html">IListItemProvider</a>.<a href="fx.sharepoint.client.ilistitemprovider.html#getmanyitemsasync">getManyItemsAsync</a></p>
 								<ul>
-									<li>Defined in src/core/list/IListItemProvider.ts:9</li>
+									<li>Defined in src/core/list/IListItemProvider.ts:13</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Lấy item theo query mặc định (lấy tất cả item).</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="fx.sharepoint.client.ilistoperationoptions.html" class="tsd-signature-type">IListOperationOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IPromise</span><span class="tsd-signature-symbol">&lt;</span><a href="fx.sharepoint.client.ilistitemcollection.html" class="tsd-signature-type">IListItemCollection</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="fx.sharepoint.client.ilistitemprovider.html">IListItemProvider</a>.<a href="fx.sharepoint.client.ilistitemprovider.html#getmanyitemsasync">getManyItemsAsync</a></p>
+								<ul>
+									<li>Defined in src/core/list/IListItemProvider.ts:18</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Lấy item theo query.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -261,7 +287,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="fx.sharepoint.client.ilistitemprovider.html">IListItemProvider</a>.<a href="fx.sharepoint.client.ilistitemprovider.html#saveitemasync">saveItemAsync</a></p>
 								<ul>
-									<li>Defined in src/core/list/IListItemProvider.ts:26</li>
+									<li>Defined in src/core/list/IListItemProvider.ts:35</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -281,7 +307,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="fx.sharepoint.client.ilistitemprovider.html">IListItemProvider</a>.<a href="fx.sharepoint.client.ilistitemprovider.html#saveitemasync">saveItemAsync</a></p>
 								<ul>
-									<li>Defined in src/core/list/IListItemProvider.ts:30</li>
+									<li>Defined in src/core/list/IListItemProvider.ts:39</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -301,7 +327,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="fx.sharepoint.client.ilistitemprovider.html">IListItemProvider</a>.<a href="fx.sharepoint.client.ilistitemprovider.html#saveitemasync">saveItemAsync</a></p>
 								<ul>
-									<li>Defined in src/core/list/IListItemProvider.ts:34</li>
+									<li>Defined in src/core/list/IListItemProvider.ts:43</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -332,7 +358,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="fx.sharepoint.client.ilistitemprovider.html">IListItemProvider</a>.<a href="fx.sharepoint.client.ilistitemprovider.html#updateitemasync">updateItemAsync</a></p>
 								<ul>
-									<li>Defined in src/core/list/IListItemProvider.ts:19</li>
+									<li>Defined in src/core/list/IListItemProvider.ts:28</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -350,7 +376,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="fx.sharepoint.client.ilistitemprovider.html">IListItemProvider</a>.<a href="fx.sharepoint.client.ilistitemprovider.html#updateitemasync">updateItemAsync</a></p>
 								<ul>
-									<li>Defined in src/core/list/IListItemProvider.ts:20</li>
+									<li>Defined in src/core/list/IListItemProvider.ts:29</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -368,7 +394,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="fx.sharepoint.client.ilistitemprovider.html">IListItemProvider</a>.<a href="fx.sharepoint.client.ilistitemprovider.html#updateitemasync">updateItemAsync</a></p>
 								<ul>
-									<li>Defined in src/core/list/IListItemProvider.ts:21</li>
+									<li>Defined in src/core/list/IListItemProvider.ts:30</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
