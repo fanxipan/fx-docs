@@ -75,14 +75,6 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>0 &lt;= pageIndex
-						1 &lt;= itemIndex</p>
-					</div>
-				</div>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -100,12 +92,6 @@
 			<section class="tsd-panel tsd-kind-interface tsd-parent-kind-module">
 				<h3 class="tsd-before-signature">Indexable</h3>
 				<div class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">[</span>index: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]: </span><a href="fx.sharepoint.client.ilistitem.html" class="tsd-signature-type">IListItem</a></div>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>0 &lt;= pageIndex
-						1 &lt;= itemIndex</p>
-					</div>
-				</div>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
@@ -144,7 +130,7 @@
 					<div class="tsd-signature tsd-kind-icon">has<wbr>Next<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/core/item/collection/IListItemCollection.ts:20</li>
+							<li>Defined in src/core/item/collection/IListItemCollection.ts:16</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -159,7 +145,7 @@
 					<div class="tsd-signature tsd-kind-icon">has<wbr>Previous<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/core/item/collection/IListItemCollection.ts:25</li>
+							<li>Defined in src/core/item/collection/IListItemCollection.ts:21</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -174,7 +160,7 @@
 					<div class="tsd-signature tsd-kind-icon">item<wbr>Index<wbr>End<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/core/item/collection/IListItemCollection.ts:37</li>
+							<li>Defined in src/core/item/collection/IListItemCollection.ts:33</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -190,7 +176,7 @@
 					<div class="tsd-signature tsd-kind-icon">item<wbr>Index<wbr>Start<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/core/item/collection/IListItemCollection.ts:31</li>
+							<li>Defined in src/core/item/collection/IListItemCollection.ts:27</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -206,7 +192,7 @@
 					<div class="tsd-signature tsd-kind-icon">length<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/core/item/collection/IListItemCollection.ts:9</li>
+							<li>Defined in src/core/item/collection/IListItemCollection.ts:5</li>
 						</ul>
 					</aside>
 				</section>
@@ -216,12 +202,13 @@
 					<div class="tsd-signature tsd-kind-icon">page<wbr>Index<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/core/item/collection/IListItemCollection.ts:42</li>
+							<li>Defined in src/core/item/collection/IListItemCollection.ts:39</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Bắt đầu từ 0.</p>
+							<p>Vị trí của page hiện tại.
+							Bắt đầu từ 0.</p>
 						</div>
 					</div>
 				</section>
@@ -231,7 +218,7 @@
 					<div class="tsd-signature tsd-kind-icon">page<wbr>Size<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/core/item/collection/IListItemCollection.ts:47</li>
+							<li>Defined in src/core/item/collection/IListItemCollection.ts:44</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -253,7 +240,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/core/item/collection/IListItemCollection.ts:15</li>
+									<li>Defined in src/core/item/collection/IListItemCollection.ts:11</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -275,12 +262,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/core/item/collection/IListItemCollection.ts:52</li>
+									<li>Defined in src/core/item/collection/IListItemCollection.ts:53</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Lấy item ở page tiếp theo (nếu có).</p>
+									<p>Lấy item ở page tiếp theo.<br />
+										Nếu không còn item ở page tiếp theo thì trả về rỗng.<br />
+										Gọi nhiều lần hàm này của collection rỗng luôn trả về rỗng (1), nhưng
+										gọi <a href="fx.sharepoint.client.ilistitemcollection.html#getpreviousasync">getPreviousAsync</a> của bất kì collection rỗng nào ở (1) luôn
+									trả về items ở page cuối cùng.</p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IPromise</span><span class="tsd-signature-symbol">&lt;</span><a href="fx.sharepoint.client.ilistitemcollection.html" class="tsd-signature-type">IListItemCollection</a><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -297,12 +288,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/core/item/collection/IListItemCollection.ts:57</li>
+									<li>Defined in src/core/item/collection/IListItemCollection.ts:62</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Lấy item ở page trước (nếu có).</p>
+									<p>Lấy item ở page trước.<br />
+										Nếu không còn item ở page trước thì trả về rỗng.<br />
+										Gọi nhiều lần hàm này của collection rỗng luôn trả về rỗng (1), nhưng
+										gọi <a href="fx.sharepoint.client.ilistitemcollection.html#getnextasync">getNextAsync</a> của bất kì collection rỗng nào ở (1) luôn
+									trả về items ở page đầu tiên.</p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IPromise</span><span class="tsd-signature-symbol">&lt;</span><a href="fx.sharepoint.client.ilistitemcollection.html" class="tsd-signature-type">IListItemCollection</a><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -319,12 +314,12 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/core/item/collection/IListItemCollection.ts:62</li>
+									<li>Defined in src/core/item/collection/IListItemCollection.ts:68</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Convert this collection to JavaScript array.</p>
+									<p>Chuyển collection object này sang JavaScript array.</p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <a href="fx.sharepoint.client.ilistitem.html" class="tsd-signature-type">IListItem</a><span class="tsd-signature-symbol">[]</span></h4>
@@ -341,13 +336,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/core/item/collection/IListItemCollection.ts:68</li>
+									<li>Defined in src/core/item/collection/IListItemCollection.ts:74</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Convert this collection to JavaScript array and each item
-									to plain JavaScript object.</p>
+									<p>Chuyển collection object này sang JavaScript array và chuyển tất cả
+									object <a href="fx.sharepoint.client.ilistitem.html">IListItem</a> có trong collection này sang plain JavaScript object.</p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">[]</span></h4>
