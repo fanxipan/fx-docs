@@ -88,18 +88,12 @@
 				<ul class="tsd-hierarchy">
 					<li>
 						<span class="target">IQueue</span>
-						<ul class="tsd-hierarchy">
-							<li>
-								<a href="fx.sharepoint.client.ipendingqueue.html" class="tsd-signature-type">IPendingQueue</a>
-							</li>
-						</ul>
 					</li>
 				</ul>
 			</section>
 			<section class="tsd-panel">
 				<h3>Implemented by</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../classes/fx.sharepoint.client.pendingqueue.html" class="tsd-signature-type">PendingQueue</a></li>
 					<li><a href="../classes/fx.sharepoint.client.queue.html" class="tsd-signature-type">Queue</a></li>
 				</ul>
 			</section>
@@ -223,7 +217,7 @@
 					<a name="peek" class="tsd-anchor"></a>
 					<h3>peek</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">peek<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
+						<li class="tsd-signature tsd-kind-icon">peek<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -237,7 +231,10 @@
 									<p>Get the first item of the queue but not remove it from the queue.</p>
 								</div>
 							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span>
+								<span class="tsd-signature-symbol"> | </span>
+								<span class="tsd-signature-type">undefined</span>
+							</h4>
 						</li>
 					</ul>
 				</section>

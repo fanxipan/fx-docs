@@ -102,11 +102,13 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="fx.sharepoint.client.iservicecontext.html#addpending" class="tsd-kind-icon">add<wbr>Pending</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="fx.sharepoint.client.iservicecontext.html#commitchanges" class="tsd-kind-icon">commit<wbr>Changes</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="fx.sharepoint.client.iservicecontext.html#finalizesession" class="tsd-kind-icon">finalize<wbr>Session</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="fx.sharepoint.client.iservicecontext.html#getgetlistitemsessioncontext" class="tsd-kind-icon">get<wbr>Get<wbr>List<wbr>Item<wbr>Session<wbr>Context</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="fx.sharepoint.client.iservicecontext.html#createisolatedcontext" class="tsd-kind-icon">create<wbr>Isolated<wbr>Context</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter"><a href="fx.sharepoint.client.iservicecontext.html#enqueueaction" class="tsd-kind-icon">enqueue<wbr>Action</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="fx.sharepoint.client.iservicecontext.html#getlist" class="tsd-kind-icon">get<wbr>List</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="fx.sharepoint.client.iservicecontext.html#markdirtylistitem" class="tsd-kind-icon">mark<wbr>Dirty<wbr>List<wbr>Item</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="fx.sharepoint.client.iservicecontext.html#removedirtylistitem" class="tsd-kind-icon">remove<wbr>Dirty<wbr>List<wbr>Item</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter"><a href="fx.sharepoint.client.iservicecontext.html#runinisolatedcontext" class="tsd-kind-icon">run<wbr>InIsolated<wbr>Context</a></li>
 							</ul>
 						</section>
 					</div>
@@ -128,120 +130,91 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="addpending" class="tsd-anchor"></a>
-					<h3>add<wbr>Pending</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Pending<span class="tsd-signature-symbol">(</span>listItem<span class="tsd-signature-symbol">: </span><a href="fx.sharepoint.client.ilistitem.html" class="tsd-signature-type">IListItem</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in src/core/IServiceContext.ts:25</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Add list item to pending queue.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>listItem: <a href="fx.sharepoint.client.ilistitem.html" class="tsd-signature-type">IListItem</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
 					<a name="commitchanges" class="tsd-anchor"></a>
 					<h3>commit<wbr>Changes</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">commit<wbr>Changes<span class="tsd-signature-symbol">(</span>invokeQueue<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IPromise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">commit<wbr>Changes<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IPromise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/core/IServiceContext.ts:20</li>
+									<li>Defined in src/core/IServiceContext.ts:28</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Commit any changes since last change.</p>
+									<ul>
+										<li>Cập nhật tất cả các thông tin đang chờ lên server.<br/></li>
+										<li>Với mỗi lần gọi <a href="fx.sharepoint.client.iservicecontext.html#commitchanges">commitChanges</a> chỉ có duy 1 request gọi lên server
+										(không tính đến các yếu tố khác có thể gọi request).<br/></li>
+										<li>Các lần gọi commitChanges giữa các context được đưa vào hàng đợi, commit sau phải đợi
+										commit trước gọi executeQueryAsync() xong rồi mới đến lượt.</li>
+									</ul>
 								</div>
 							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> invokeQueue: <span class="tsd-signature-type">boolean</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<pre><code> Default: <span class="hljs-literal">true</span>
- Invoke <span class="hljs-literal">all</span> pending request <span class="hljs-keyword">in</span> <span class="hljs-built_in">queue</span>
-</code></pre>
-									</div>
-								</li>
-							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IPromise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="finalizesession" class="tsd-anchor"></a>
-					<h3>finalize<wbr>Session</h3>
+					<a name="createisolatedcontext" class="tsd-anchor"></a>
+					<h3>create<wbr>Isolated<wbr>Context</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">finalize<wbr>Session<span class="tsd-signature-symbol">(</span>session<span class="tsd-signature-symbol">: </span><a href="fx.sharepoint.client.isessioncontext.html" class="tsd-signature-type">ISessionContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Isolated<wbr>Context<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="fx.sharepoint.client.iservicecontext.html" class="tsd-signature-type">IServiceContext</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/core/IServiceContext.ts:30</li>
+									<li>Defined in src/core/IServiceContext.ts:34</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Remove this session from session list (default behavior).</p>
+									<p>Tạo 1 service context dùng chung SP.ClientContext với context này nhưng không dùng
+									chung pending queue.</p>
 								</div>
 							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>session: <a href="fx.sharepoint.client.isessioncontext.html" class="tsd-signature-type">ISessionContext</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="fx.sharepoint.client.iservicecontext.html" class="tsd-signature-type">IServiceContext</a></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="getgetlistitemsessioncontext" class="tsd-anchor"></a>
-					<h3>get<wbr>Get<wbr>List<wbr>Item<wbr>Session<wbr>Context</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Get<wbr>List<wbr>Item<wbr>Session<wbr>Context<span class="tsd-signature-symbol">(</span>listItem<span class="tsd-signature-symbol">: </span><a href="fx.sharepoint.client.ilistitem.html" class="tsd-signature-type">IListItem</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="fx.sharepoint.client.igetlistitemsessioncontext.html" class="tsd-signature-type">IGetListItemSessionContext</a></li>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter">
+					<a name="enqueueaction" class="tsd-anchor"></a>
+					<h3>enqueue<wbr>Action</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">enqueue<wbr>Action&lt;T&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><a href="fx.sharepoint.client.ipendingactioncallback.html" class="tsd-signature-type">IPendingActionCallback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IPromise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/core/IServiceContext.ts:36</li>
+									<li>Defined in src/core/IServiceContext.ts:19</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Get an GetListItemSessionContext for specified list item.
-									Create a new one if not existed.</p>
+									<ul>
+										<li>Thêm hàm vào pending queue. Hàm này sẽ được gọi bởi <a href="fx.sharepoint.client.iservicecontext.html#commitchanges">commitChanges</a>.<br/></li>
+										<li><a href="fx.sharepoint.client.iservicecontext.html#commitchanges">commitChanges</a> sẽ đợi fn thực hiện xong nếu nó trả về promise.</li>
+									</ul>
 								</div>
 							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>listItem: <a href="fx.sharepoint.client.ilistitem.html" class="tsd-signature-type">IListItem</a></h5>
+									<h5>fn: <a href="fx.sharepoint.client.ipendingactioncallback.html" class="tsd-signature-type">IPendingActionCallback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="fx.sharepoint.client.igetlistitemsessioncontext.html" class="tsd-signature-type">IGetListItemSessionContext</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IPromise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Promise resolve ra kết quả của <em>fn</em>.</p>
 						</li>
 					</ul>
 				</section>
@@ -275,6 +248,108 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="fx.sharepoint.client.ilist.html" class="tsd-signature-type">IList</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="markdirtylistitem" class="tsd-anchor"></a>
+					<h3>mark<wbr>Dirty<wbr>List<wbr>Item</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">mark<wbr>Dirty<wbr>List<wbr>Item<span class="tsd-signature-symbol">(</span>listItem<span class="tsd-signature-symbol">: </span><a href="fx.sharepoint.client.ilistitem.html" class="tsd-signature-type">IListItem</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in src/core/IServiceContext.ts:51</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<ul>
+										<li>Context của item sẽ được chuyển sang object <a href="fx.sharepoint.client.iservicecontext.html">IServiceContext</a> này.<br/></li>
+										<li>Đánh dấu item cần update khi <a href="fx.sharepoint.client.iservicecontext.html#commitchanges">commitChanges</a> của context này được gọi.<br/></li>
+										<li>Context cũ của item sẽ được gán lại khi gọi <a href="fx.sharepoint.client.iservicecontext.html#removedirtylistitem">removeDirtyListItem</a>
+										(hàm <a href="fx.sharepoint.client.iservicecontext.html#commitchanges">commitChanges</a> sẽ chủ động gọi hoặc item này được chuyển sang context khác).</li>
+									</ul>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>listItem: <a href="fx.sharepoint.client.ilistitem.html" class="tsd-signature-type">IListItem</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="removedirtylistitem" class="tsd-anchor"></a>
+					<h3>remove<wbr>Dirty<wbr>List<wbr>Item</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Dirty<wbr>List<wbr>Item<span class="tsd-signature-symbol">(</span>listItem<span class="tsd-signature-symbol">: </span><a href="fx.sharepoint.client.ilistitem.html" class="tsd-signature-type">IListItem</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in src/core/IServiceContext.ts:57</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<ul>
+										<li>Bỏ đánh dấu item cần update khi <a href="fx.sharepoint.client.iservicecontext.html#commitchanges">commitChanges</a> của context này được gọi.<br/></li>
+										<li>Không bỏ được <code>dirty</code> nếu context đã bắt đầu thực hiện <a href="fx.sharepoint.client.iservicecontext.html#commitchanges">commitChanges</a>.<br/></li>
+									</ul>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>listItem: <a href="fx.sharepoint.client.ilistitem.html" class="tsd-signature-type">IListItem</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter">
+					<a name="runinisolatedcontext" class="tsd-anchor"></a>
+					<h3>run<wbr>InIsolated<wbr>Context</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">run<wbr>InIsolated<wbr>Context&lt;T&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><a href="fx.sharepoint.client.ipendingactioncallback.html" class="tsd-signature-type">IPendingActionCallback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IPromise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in src/core/IServiceContext.ts:43</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Tạo 1 isolated service context và gọi <code>fn</code> trên context đó.
+										<code>fn</code> sẽ được truyền vào isoliated service context hiện tại.
+										Mọi thao tác nên chỉ thực hiện trên context đó.
+										Sau khi kết thúc <code>fn</code>, <a href="fx.sharepoint.client.iservicecontext.html#commitchanges">commitChanges</a> của isolated service context
+									sẽ được gọi.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fn: <a href="fx.sharepoint.client.ipendingactioncallback.html" class="tsd-signature-type">IPendingActionCallback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IPromise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -323,19 +398,25 @@
 								<a href="fx.sharepoint.client.iservicecontext.html#clientcontext" class="tsd-kind-icon">client<wbr>Context</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="fx.sharepoint.client.iservicecontext.html#addpending" class="tsd-kind-icon">add<wbr>Pending</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="fx.sharepoint.client.iservicecontext.html#commitchanges" class="tsd-kind-icon">commit<wbr>Changes</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="fx.sharepoint.client.iservicecontext.html#finalizesession" class="tsd-kind-icon">finalize<wbr>Session</a>
+								<a href="fx.sharepoint.client.iservicecontext.html#createisolatedcontext" class="tsd-kind-icon">create<wbr>Isolated<wbr>Context</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="fx.sharepoint.client.iservicecontext.html#getgetlistitemsessioncontext" class="tsd-kind-icon">get<wbr>Get<wbr>List<wbr>Item<wbr>Session<wbr>Context</a>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter">
+								<a href="fx.sharepoint.client.iservicecontext.html#enqueueaction" class="tsd-kind-icon">enqueue<wbr>Action</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="fx.sharepoint.client.iservicecontext.html#getlist" class="tsd-kind-icon">get<wbr>List</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="fx.sharepoint.client.iservicecontext.html#markdirtylistitem" class="tsd-kind-icon">mark<wbr>Dirty<wbr>List<wbr>Item</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="fx.sharepoint.client.iservicecontext.html#removedirtylistitem" class="tsd-kind-icon">remove<wbr>Dirty<wbr>List<wbr>Item</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter">
+								<a href="fx.sharepoint.client.iservicecontext.html#runinisolatedcontext" class="tsd-kind-icon">run<wbr>InIsolated<wbr>Context</a>
 							</li>
 						</ul>
 					</li>

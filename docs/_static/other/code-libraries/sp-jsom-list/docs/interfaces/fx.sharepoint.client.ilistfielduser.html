@@ -103,9 +103,11 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="fx.sharepoint.client.ilistfielduser.html#allowmultiplevalues" class="tsd-kind-icon">allow<wbr>Multiple<wbr>Values</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="fx.sharepoint.client.ilistfielduser.html#displayname" class="tsd-kind-icon">display<wbr>Name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="fx.sharepoint.client.ilistfielduser.html#fieldconfig" class="tsd-kind-icon">field<wbr>Config</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="fx.sharepoint.client.ilistfielduser.html#frombasetype" class="tsd-kind-icon">from<wbr>Base<wbr>Type</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="fx.sharepoint.client.ilistfielduser.html#id" class="tsd-kind-icon">id</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="fx.sharepoint.client.ilistfielduser.html#internalname" class="tsd-kind-icon">internal<wbr>Name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="fx.sharepoint.client.ilistfielduser.html#list" class="tsd-kind-icon">list</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="fx.sharepoint.client.ilistfielduser.html#lookupfield" class="tsd-kind-icon">lookup<wbr>Field</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="fx.sharepoint.client.ilistfielduser.html#lookuplist" class="tsd-kind-icon">lookup<wbr>List</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="fx.sharepoint.client.ilistfielduser.html#normname" class="tsd-kind-icon">norm<wbr>Name</a></li>
@@ -118,8 +120,6 @@
 						<section class="tsd-index-section tsd-is-inherited">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="fx.sharepoint.client.ilistfielduser.html#get_fieldconfig" class="tsd-kind-icon">get_<wbr>field<wbr>Config</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="fx.sharepoint.client.ilistfielduser.html#get_list" class="tsd-kind-icon">get_<wbr>list</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="fx.sharepoint.client.ilistfielduser.html#parserequest" class="tsd-kind-icon">parse<wbr>Request</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="fx.sharepoint.client.ilistfielduser.html#parseresponse" class="tsd-kind-icon">parse<wbr>Response</a></li>
 							</ul>
@@ -156,6 +156,17 @@
 							Eg: &quot;My Title&quot; instead of internal name &quot;Title&quot;.</p>
 						</div>
 					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="fieldconfig" class="tsd-anchor"></a>
+					<h3>field<wbr>Config</h3>
+					<div class="tsd-signature tsd-kind-icon">field<wbr>Config<span class="tsd-signature-symbol">:</span> <a href="fx.sharepoint.client.ifieldconfig.html" class="tsd-signature-type">IFieldConfig</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="fx.sharepoint.client.ilistfield.html">IListField</a>.<a href="fx.sharepoint.client.ilistfield.html#fieldconfig">fieldConfig</a></p>
+						<ul>
+							<li>Defined in src/core/field/type/IListField.ts:6</li>
+						</ul>
+					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="frombasetype" class="tsd-anchor"></a>
@@ -195,6 +206,17 @@
 							Eg: &#39;Title&#39;.</p>
 						</div>
 					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="list" class="tsd-anchor"></a>
+					<h3>list</h3>
+					<div class="tsd-signature tsd-kind-icon">list<span class="tsd-signature-symbol">:</span> <a href="fx.sharepoint.client.ilist.html" class="tsd-signature-type">IList</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="fx.sharepoint.client.ilistfield.html">IListField</a>.<a href="fx.sharepoint.client.ilistfield.html#list">list</a></p>
+						<ul>
+							<li>Defined in src/core/field/type/IListField.ts:5</li>
+						</ul>
+					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="lookupfield" class="tsd-anchor"></a>
@@ -242,8 +264,10 @@
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Tên sẽ được gán vào object list item.
-							Vd: internalName == &#39;Title&#39; -&gt; normName == &#39;title&#39; -&gt; list item: &#39;{ title: &quot;Some title&quot; }&#39;.</p>
+							<ul>
+								<li>Tên sẽ được gán vào object list item.<br/></li>
+								<li>Vd: internalName == &#39;Title&#39; -&gt; normName == &#39;title&#39; -&gt; list item: &#39;{ title: &quot;Some title&quot; }&#39;.</li>
+							</ul>
 						</div>
 					</div>
 				</section>
@@ -293,42 +317,6 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
 				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-					<a name="get_fieldconfig" class="tsd-anchor"></a>
-					<h3>get_<wbr>field<wbr>Config</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">get_<wbr>field<wbr>Config<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="fx.sharepoint.client.ifieldconfig.html" class="tsd-signature-type">IFieldConfig</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="fx.sharepoint.client.ilistfield.html">IListField</a>.<a href="fx.sharepoint.client.ilistfield.html#get_fieldconfig">get_fieldConfig</a></p>
-								<ul>
-									<li>Defined in src/core/field/type/IListField.ts:6</li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="fx.sharepoint.client.ifieldconfig.html" class="tsd-signature-type">IFieldConfig</a></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-					<a name="get_list" class="tsd-anchor"></a>
-					<h3>get_<wbr>list</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">get_<wbr>list<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="fx.sharepoint.client.ilist.html" class="tsd-signature-type">IList</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="fx.sharepoint.client.ilistfield.html">IListField</a>.<a href="fx.sharepoint.client.ilistfield.html#get_list">get_list</a></p>
-								<ul>
-									<li>Defined in src/core/field/type/IListField.ts:5</li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="fx.sharepoint.client.ilist.html" class="tsd-signature-type">IList</a></h4>
-						</li>
-					</ul>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
 					<a name="parserequest" class="tsd-anchor"></a>
 					<h3>parse<wbr>Request</h3>
@@ -435,6 +423,9 @@
 								<a href="fx.sharepoint.client.ilistfielduser.html#displayname" class="tsd-kind-icon">display<wbr>Name</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="fx.sharepoint.client.ilistfielduser.html#fieldconfig" class="tsd-kind-icon">field<wbr>Config</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="fx.sharepoint.client.ilistfielduser.html#frombasetype" class="tsd-kind-icon">from<wbr>Base<wbr>Type</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
@@ -442,6 +433,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="fx.sharepoint.client.ilistfielduser.html#internalname" class="tsd-kind-icon">internal<wbr>Name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="fx.sharepoint.client.ilistfielduser.html#list" class="tsd-kind-icon">list</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="fx.sharepoint.client.ilistfielduser.html#lookupfield" class="tsd-kind-icon">lookup<wbr>Field</a>
@@ -463,12 +457,6 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="fx.sharepoint.client.ilistfielduser.html#selectionmode" class="tsd-kind-icon">selection<wbr>Mode</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="fx.sharepoint.client.ilistfielduser.html#get_fieldconfig" class="tsd-kind-icon">get_<wbr>field<wbr>Config</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="fx.sharepoint.client.ilistfielduser.html#get_list" class="tsd-kind-icon">get_<wbr>list</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
 								<a href="fx.sharepoint.client.ilistfielduser.html#parserequest" class="tsd-kind-icon">parse<wbr>Request</a>

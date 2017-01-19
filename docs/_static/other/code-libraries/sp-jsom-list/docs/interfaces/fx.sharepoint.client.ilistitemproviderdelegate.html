@@ -101,7 +101,6 @@
 						<section class="tsd-index-section tsd-is-inherited">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="fx.sharepoint.client.ilistitemproviderdelegate.html#createitem" class="tsd-kind-icon">create<wbr>Item</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="fx.sharepoint.client.ilistitemproviderdelegate.html#createitemasync" class="tsd-kind-icon">create<wbr>Item<wbr>Async</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="fx.sharepoint.client.ilistitemproviderdelegate.html#deleteitemasync" class="tsd-kind-icon">delete<wbr>Item<wbr>Async</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="fx.sharepoint.client.ilistitemproviderdelegate.html#getitembyidasync" class="tsd-kind-icon">get<wbr>Item<wbr>ById<wbr>Async</a></li>
@@ -116,37 +115,6 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-					<a name="createitem" class="tsd-anchor"></a>
-					<h3>create<wbr>Item</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Item<span class="tsd-signature-symbol">(</span>itemData<span class="tsd-signature-symbol">?: </span><a href="fx.sharepoint.client.ilistitemcreationliteral.html" class="tsd-signature-type">IListItemCreationLiteral</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="fx.sharepoint.client.idefervalue.html" class="tsd-signature-type">IDeferValue</a><span class="tsd-signature-symbol">&lt;</span><a href="fx.sharepoint.client.ilistitem.html" class="tsd-signature-type">IListItem</a><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="fx.sharepoint.client.ilistitemprovider.html">IListItemProvider</a>.<a href="fx.sharepoint.client.ilistitemprovider.html#createitem">createItem</a></p>
-								<ul>
-									<li>Defined in src/core/list/IListItemProvider.ts:25</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Tạo list item nhưng chưa lưu lên server. Dùng <a href="fx.sharepoint.client.idefervalue.html#value">IDeferValue.value</a> để
-										lấy object <a href="fx.sharepoint.client.ilistitem.html">IListItem</a>. Tất cả thay đổi trên object <a href="fx.sharepoint.client.ilistitem.html">IListItem</a> này
-									sẽ được lưu lên server sau khi gọi hàm <a href="fx.sharepoint.client.iservicecontext.html#commitchanges">IServiceContext.commitChanges</a>.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> itemData: <a href="fx.sharepoint.client.ilistitemcreationliteral.html" class="tsd-signature-type">IListItemCreationLiteral</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="fx.sharepoint.client.idefervalue.html" class="tsd-signature-type">IDeferValue</a><span class="tsd-signature-symbol">&lt;</span><a href="fx.sharepoint.client.ilistitem.html" class="tsd-signature-type">IListItem</a><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
 					<a name="createitemasync" class="tsd-anchor"></a>
 					<h3>create<wbr>Item<wbr>Async</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
@@ -157,7 +125,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="fx.sharepoint.client.ilistitemprovider.html">IListItemProvider</a>.<a href="fx.sharepoint.client.ilistitemprovider.html#createitemasync">createItemAsync</a></p>
 								<ul>
-									<li>Defined in src/core/list/IListItemProvider.ts:26</li>
+									<li>Defined in src/core/list/IListItemProvider.ts:20</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -181,7 +149,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="fx.sharepoint.client.ilistitemprovider.html">IListItemProvider</a>.<a href="fx.sharepoint.client.ilistitemprovider.html#deleteitemasync">deleteItemAsync</a></p>
 								<ul>
-									<li>Defined in src/core/list/IListItemProvider.ts:45</li>
+									<li>Defined in src/core/list/IListItemProvider.ts:39</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -287,7 +255,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="fx.sharepoint.client.ilistitemprovider.html">IListItemProvider</a>.<a href="fx.sharepoint.client.ilistitemprovider.html#saveitemasync">saveItemAsync</a></p>
 								<ul>
-									<li>Defined in src/core/list/IListItemProvider.ts:35</li>
+									<li>Defined in src/core/list/IListItemProvider.ts:29</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -307,7 +275,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="fx.sharepoint.client.ilistitemprovider.html">IListItemProvider</a>.<a href="fx.sharepoint.client.ilistitemprovider.html#saveitemasync">saveItemAsync</a></p>
 								<ul>
-									<li>Defined in src/core/list/IListItemProvider.ts:39</li>
+									<li>Defined in src/core/list/IListItemProvider.ts:33</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -327,7 +295,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="fx.sharepoint.client.ilistitemprovider.html">IListItemProvider</a>.<a href="fx.sharepoint.client.ilistitemprovider.html#saveitemasync">saveItemAsync</a></p>
 								<ul>
-									<li>Defined in src/core/list/IListItemProvider.ts:43</li>
+									<li>Defined in src/core/list/IListItemProvider.ts:37</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -358,7 +326,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="fx.sharepoint.client.ilistitemprovider.html">IListItemProvider</a>.<a href="fx.sharepoint.client.ilistitemprovider.html#updateitemasync">updateItemAsync</a></p>
 								<ul>
-									<li>Defined in src/core/list/IListItemProvider.ts:28</li>
+									<li>Defined in src/core/list/IListItemProvider.ts:22</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -376,7 +344,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="fx.sharepoint.client.ilistitemprovider.html">IListItemProvider</a>.<a href="fx.sharepoint.client.ilistitemprovider.html#updateitemasync">updateItemAsync</a></p>
 								<ul>
-									<li>Defined in src/core/list/IListItemProvider.ts:29</li>
+									<li>Defined in src/core/list/IListItemProvider.ts:23</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -394,7 +362,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="fx.sharepoint.client.ilistitemprovider.html">IListItemProvider</a>.<a href="fx.sharepoint.client.ilistitemprovider.html#updateitemasync">updateItemAsync</a></p>
 								<ul>
-									<li>Defined in src/core/list/IListItemProvider.ts:30</li>
+									<li>Defined in src/core/list/IListItemProvider.ts:24</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -448,9 +416,6 @@
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
 						<a href="fx.sharepoint.client.ilistitemproviderdelegate.html" class="tsd-kind-icon">IList<wbr>Item<wbr>Provider<wbr>Delegate</a>
 						<ul>
-							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="fx.sharepoint.client.ilistitemproviderdelegate.html#createitem" class="tsd-kind-icon">create<wbr>Item</a>
-							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
 								<a href="fx.sharepoint.client.ilistitemproviderdelegate.html#createitemasync" class="tsd-kind-icon">create<wbr>Item<wbr>Async</a>
 							</li>

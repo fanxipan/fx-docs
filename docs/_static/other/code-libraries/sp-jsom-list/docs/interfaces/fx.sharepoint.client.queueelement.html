@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>SessionContext | fx.sharepoint.lists.jsom</title>
+	<title>QueueElement | fx.sharepoint.lists.jsom</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -65,137 +65,78 @@
 					<a href="../modules/fx.sharepoint.client.html">Client</a>
 				</li>
 				<li>
-					<a href="fx.sharepoint.client.sessioncontext.html">SessionContext</a>
+					<a href="fx.sharepoint.client.queueelement.html">QueueElement</a>
 				</li>
 			</ul>
-			<h1>Class SessionContext</h1>
+			<h1>Interface QueueElement&lt;T&gt;</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-type-parameters">
+				<h3>Type parameters</h3>
+				<ul class="tsd-type-parameters">
+					<li>
+						<h4>T</h4>
+					</li>
+				</ul>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">SessionContext</span>
-						<ul class="tsd-hierarchy">
-							<li>
-								<a href="fx.sharepoint.client.getlistitemsessioncontext.html" class="tsd-signature-type">GetListItemSessionContext</a>
-							</li>
-						</ul>
+						<span class="target">QueueElement</span>
 					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel">
-				<h3>Implements</h3>
-				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/fx.sharepoint.client.isessioncontext.html" class="tsd-signature-type">ISessionContext</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
-							<h3>Constructors</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="fx.sharepoint.client.sessioncontext.html#constructor" class="tsd-kind-icon">constructor</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
+						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="fx.sharepoint.client.sessioncontext.html#servicecontext" class="tsd-kind-icon">service<wbr>Context</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Methods</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fx.sharepoint.client.sessioncontext.html#finalize" class="tsd-kind-icon">finalize</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fx.sharepoint.client.sessioncontext.html#get_servicecontext" class="tsd-kind-icon">get_<wbr>service<wbr>Context</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="fx.sharepoint.client.queueelement.html#defer" class="tsd-kind-icon">defer</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="fx.sharepoint.client.queueelement.html#fn" class="tsd-kind-icon">fn</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="fx.sharepoint.client.queueelement.html#result" class="tsd-kind-icon">result</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Constructors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
-					<a name="constructor" class="tsd-anchor"></a>
-					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Session<wbr>Context<span class="tsd-signature-symbol">(</span>serviceContext<span class="tsd-signature-symbol">: </span><a href="../interfaces/fx.sharepoint.client.iservicecontext.html" class="tsd-signature-type">IServiceContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="fx.sharepoint.client.sessioncontext.html" class="tsd-signature-type">SessionContext</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in src/core/context/session/SessionContext.ts:3</li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>serviceContext: <a href="../interfaces/fx.sharepoint.client.iservicecontext.html" class="tsd-signature-type">IServiceContext</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="fx.sharepoint.client.sessioncontext.html" class="tsd-signature-type">SessionContext</a></h4>
-						</li>
-					</ul>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="servicecontext" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> service<wbr>Context</h3>
-					<div class="tsd-signature tsd-kind-icon">service<wbr>Context<span class="tsd-signature-symbol">:</span> <a href="../interfaces/fx.sharepoint.client.iservicecontext.html" class="tsd-signature-type">IServiceContext</a></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="defer" class="tsd-anchor"></a>
+					<h3>defer</h3>
+					<div class="tsd-signature tsd-kind-icon">defer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">IDeferred</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/core/context/session/SessionContext.ts:7</li>
+							<li>Defined in src/core/ServiceContext.ts:6</li>
 						</ul>
 					</aside>
 				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="finalize" class="tsd-anchor"></a>
-					<h3>finalize</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">finalize<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.isessioncontext.html">ISessionContext</a>.<a href="../interfaces/fx.sharepoint.client.isessioncontext.html#finalize">finalize</a></p>
-								<ul>
-									<li>Defined in src/core/context/session/SessionContext.ts:19</li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="fn" class="tsd-anchor"></a>
+					<h3>fn</h3>
+					<div class="tsd-signature tsd-kind-icon">fn<span class="tsd-signature-symbol">:</span> <a href="fx.sharepoint.client.ipendingactioncallback.html" class="tsd-signature-type">IPendingActionCallback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in src/core/ServiceContext.ts:7</li>
+						</ul>
+					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="get_servicecontext" class="tsd-anchor"></a>
-					<h3>get_<wbr>service<wbr>Context</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get_<wbr>service<wbr>Context<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/fx.sharepoint.client.iservicecontext.html" class="tsd-signature-type">IServiceContext</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.isessioncontext.html">ISessionContext</a>.<a href="../interfaces/fx.sharepoint.client.isessioncontext.html#get_servicecontext">get_serviceContext</a></p>
-								<ul>
-									<li>Defined in src/core/context/session/SessionContext.ts:15</li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/fx.sharepoint.client.iservicecontext.html" class="tsd-signature-type">IServiceContext</a></h4>
-						</li>
-					</ul>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="result" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> result</h3>
+					<div class="tsd-signature tsd-kind-icon">result<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">T</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in src/core/ServiceContext.ts:8</li>
+						</ul>
+					</aside>
 				</section>
 			</section>
 		</div>
@@ -235,20 +176,17 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class tsd-parent-kind-module">
-						<a href="fx.sharepoint.client.sessioncontext.html" class="tsd-kind-icon">Session<wbr>Context</a>
+					<li class="current tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="fx.sharepoint.client.queueelement.html" class="tsd-kind-icon">Queue<wbr>Element</a>
 						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="fx.sharepoint.client.sessioncontext.html#constructor" class="tsd-kind-icon">constructor</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="fx.sharepoint.client.queueelement.html#defer" class="tsd-kind-icon">defer</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="fx.sharepoint.client.sessioncontext.html#servicecontext" class="tsd-kind-icon">service<wbr>Context</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="fx.sharepoint.client.queueelement.html#fn" class="tsd-kind-icon">fn</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="fx.sharepoint.client.sessioncontext.html#finalize" class="tsd-kind-icon">finalize</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="fx.sharepoint.client.sessioncontext.html#get_servicecontext" class="tsd-kind-icon">get_<wbr>service<wbr>Context</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="fx.sharepoint.client.queueelement.html#result" class="tsd-kind-icon">result</a>
 							</li>
 						</ul>
 					</li>

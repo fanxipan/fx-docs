@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ISessionContextManager | fx.sharepoint.lists.jsom</title>
+	<title>IDirtyListItem | fx.sharepoint.lists.jsom</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -65,10 +65,10 @@
 					<a href="../modules/fx.sharepoint.client.html">Client</a>
 				</li>
 				<li>
-					<a href="fx.sharepoint.client.isessioncontextmanager.html">ISessionContextManager</a>
+					<a href="fx.sharepoint.client.idirtylistitem.html">IDirtyListItem</a>
 				</li>
 			</ul>
-			<h1>Interface ISessionContextManager</h1>
+			<h1>Interface IDirtyListItem</h1>
 		</div>
 	</div>
 </header>
@@ -79,14 +79,8 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">ISessionContextManager</span>
+						<span class="target">IDirtyListItem</span>
 					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel">
-				<h3>Implemented by</h3>
-				<ul class="tsd-hierarchy">
-					<li><a href="../classes/fx.sharepoint.client.sessioncontextmanager.html" class="tsd-signature-type">SessionContextManager</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -94,62 +88,46 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Methods</h3>
+							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="fx.sharepoint.client.isessioncontextmanager.html#finalize" class="tsd-kind-icon">finalize</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="fx.sharepoint.client.isessioncontextmanager.html#getgetlistitemsession" class="tsd-kind-icon">get<wbr>Get<wbr>List<wbr>Item<wbr>Session</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="fx.sharepoint.client.idirtylistitem.html#currentcontext" class="tsd-kind-icon">current<wbr>Context</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="fx.sharepoint.client.idirtylistitem.html#listitem" class="tsd-kind-icon">list<wbr>Item</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="finalize" class="tsd-anchor"></a>
-					<h3>finalize</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">finalize<span class="tsd-signature-symbol">(</span>session<span class="tsd-signature-symbol">: </span><a href="fx.sharepoint.client.isessioncontext.html" class="tsd-signature-type">ISessionContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in src/core/context/session/ISessionContextManager.ts:7</li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>session: <a href="fx.sharepoint.client.isessioncontext.html" class="tsd-signature-type">ISessionContext</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="currentcontext" class="tsd-anchor"></a>
+					<h3>current<wbr>Context</h3>
+					<div class="tsd-signature tsd-kind-icon">current<wbr>Context<span class="tsd-signature-symbol">:</span> <a href="fx.sharepoint.client.iservicecontext.html" class="tsd-signature-type">IServiceContext</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in src/core/context/IDirtyListItem.ts:12</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Context của list item TRƯỚC KHI <a href="fx.sharepoint.client.iservicecontext.html#markdirtylistitem">IServiceContext.markDirtyListItem</a> được gọi.</p>
+						</div>
+					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="getgetlistitemsession" class="tsd-anchor"></a>
-					<h3>get<wbr>Get<wbr>List<wbr>Item<wbr>Session</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Get<wbr>List<wbr>Item<wbr>Session<span class="tsd-signature-symbol">(</span>listItem<span class="tsd-signature-symbol">: </span><a href="fx.sharepoint.client.ilistitem.html" class="tsd-signature-type">IListItem</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="fx.sharepoint.client.igetlistitemsessioncontext.html" class="tsd-signature-type">IGetListItemSessionContext</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in src/core/context/session/ISessionContextManager.ts:5</li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>listItem: <a href="fx.sharepoint.client.ilistitem.html" class="tsd-signature-type">IListItem</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="fx.sharepoint.client.igetlistitemsessioncontext.html" class="tsd-signature-type">IGetListItemSessionContext</a></h4>
-						</li>
-					</ul>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="listitem" class="tsd-anchor"></a>
+					<h3>list<wbr>Item</h3>
+					<div class="tsd-signature tsd-kind-icon">list<wbr>Item<span class="tsd-signature-symbol">:</span> <a href="fx.sharepoint.client.ilistitem.html" class="tsd-signature-type">IListItem</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in src/core/context/IDirtyListItem.ts:7</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Đối tượng list được gán dirty.</p>
+						</div>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -190,13 +168,13 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="fx.sharepoint.client.isessioncontextmanager.html" class="tsd-kind-icon">ISession<wbr>Context<wbr>Manager</a>
+						<a href="fx.sharepoint.client.idirtylistitem.html" class="tsd-kind-icon">IDirty<wbr>List<wbr>Item</a>
 						<ul>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="fx.sharepoint.client.isessioncontextmanager.html#finalize" class="tsd-kind-icon">finalize</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="fx.sharepoint.client.idirtylistitem.html#currentcontext" class="tsd-kind-icon">current<wbr>Context</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="fx.sharepoint.client.isessioncontextmanager.html#getgetlistitemsession" class="tsd-kind-icon">get<wbr>Get<wbr>List<wbr>Item<wbr>Session</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="fx.sharepoint.client.idirtylistitem.html#listitem" class="tsd-kind-icon">list<wbr>Item</a>
 							</li>
 						</ul>
 					</li>

@@ -117,7 +117,6 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="fx.sharepoint.client.listitemproviderdelegate.html#createcamlquery" class="tsd-kind-icon">create<wbr>Caml<wbr>Query</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fx.sharepoint.client.listitemproviderdelegate.html#createitem" class="tsd-kind-icon">create<wbr>Item</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fx.sharepoint.client.listitemproviderdelegate.html#createitemasync" class="tsd-kind-icon">create<wbr>Item<wbr>Async</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fx.sharepoint.client.listitemproviderdelegate.html#deleteitemasync" class="tsd-kind-icon">delete<wbr>Item<wbr>Async</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fx.sharepoint.client.listitemproviderdelegate.html#getitembyidasync" class="tsd-kind-icon">get<wbr>Item<wbr>ById<wbr>Async</a></li>
@@ -230,7 +229,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/core/list/delegate/ListItemProviderDelegate.ts:106</li>
+									<li>Defined in src/core/list/delegate/ListItemProviderDelegate.ts:157</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -247,30 +246,6 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="createitem" class="tsd-anchor"></a>
-					<h3>create<wbr>Item</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Item<span class="tsd-signature-symbol">(</span>itemData<span class="tsd-signature-symbol">?: </span><a href="../interfaces/fx.sharepoint.client.ilistitemcreationliteral.html" class="tsd-signature-type">IListItemCreationLiteral</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/fx.sharepoint.client.idefervalue.html" class="tsd-signature-type">IDeferValue</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/fx.sharepoint.client.ilistitem.html" class="tsd-signature-type">IListItem</a><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilistitemproviderdelegate.html">IListItemProviderDelegate</a>.<a href="../interfaces/fx.sharepoint.client.ilistitemproviderdelegate.html#createitem">createItem</a></p>
-								<ul>
-									<li>Defined in src/core/list/delegate/ListItemProviderDelegate.ts:235</li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> itemData: <a href="../interfaces/fx.sharepoint.client.ilistitemcreationliteral.html" class="tsd-signature-type">IListItemCreationLiteral</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/fx.sharepoint.client.idefervalue.html" class="tsd-signature-type">IDeferValue</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/fx.sharepoint.client.ilistitem.html" class="tsd-signature-type">IListItem</a><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="createitemasync" class="tsd-anchor"></a>
 					<h3>create<wbr>Item<wbr>Async</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -281,7 +256,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilistitemproviderdelegate.html">IListItemProviderDelegate</a>.<a href="../interfaces/fx.sharepoint.client.ilistitemproviderdelegate.html#createitemasync">createItemAsync</a></p>
 								<ul>
-									<li>Defined in src/core/list/delegate/ListItemProviderDelegate.ts:246</li>
+									<li>Defined in src/core/list/delegate/ListItemProviderDelegate.ts:242</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -305,7 +280,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilistitemproviderdelegate.html">IListItemProviderDelegate</a>.<a href="../interfaces/fx.sharepoint.client.ilistitemproviderdelegate.html#deleteitemasync">deleteItemAsync</a></p>
 								<ul>
-									<li>Defined in src/core/list/delegate/ListItemProviderDelegate.ts:317</li>
+									<li>Defined in src/core/list/delegate/ListItemProviderDelegate.ts:336</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -329,7 +304,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilistitemproviderdelegate.html">IListItemProviderDelegate</a>.<a href="../interfaces/fx.sharepoint.client.ilistitemproviderdelegate.html#getitembyidasync">getItemByIdAsync</a></p>
 								<ul>
-									<li>Defined in src/core/list/delegate/ListItemProviderDelegate.ts:189</li>
+									<li>Defined in src/core/list/delegate/ListItemProviderDelegate.ts:194</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -349,22 +324,39 @@
 					<a name="getmanyitemsasync" class="tsd-anchor"></a>
 					<h3>get<wbr>Many<wbr>Items<wbr>Async</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Many<wbr>Items<wbr>Async<span class="tsd-signature-symbol">(</span>query<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IPromise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/fx.sharepoint.client.ilistitemcollection.html" class="tsd-signature-type">IListItemCollection</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Many<wbr>Items<wbr>Async<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/fx.sharepoint.client.ilistoperationoptions.html" class="tsd-signature-type">IListOperationOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IPromise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/fx.sharepoint.client.ilistitemcollection.html" class="tsd-signature-type">IListItemCollection</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Many<wbr>Items<wbr>Async<span class="tsd-signature-symbol">(</span>query<span class="tsd-signature-symbol">: </span><a href="fx.sharepoint.caml.lists.query.html" class="tsd-signature-type">Query</a>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/fx.sharepoint.client.ilistoperationoptions.html" class="tsd-signature-type">IListOperationOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IPromise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/fx.sharepoint.client.ilistitemcollection.html" class="tsd-signature-type">IListItemCollection</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilistitemproviderdelegate.html">IListItemProviderDelegate</a>.<a href="../interfaces/fx.sharepoint.client.ilistitemproviderdelegate.html#getmanyitemsasync">getManyItemsAsync</a></p>
 								<ul>
-									<li>Defined in src/core/list/delegate/ListItemProviderDelegate.ts:217</li>
+									<li>Defined in src/core/list/delegate/ListItemProviderDelegate.ts:222</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> query: <span class="tsd-signature-type">any</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../interfaces/fx.sharepoint.client.ilistoperationoptions.html" class="tsd-signature-type">IListOperationOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IPromise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/fx.sharepoint.client.ilistitemcollection.html" class="tsd-signature-type">IListItemCollection</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilistitemproviderdelegate.html">IListItemProviderDelegate</a>.<a href="../interfaces/fx.sharepoint.client.ilistitemproviderdelegate.html#getmanyitemsasync">getManyItemsAsync</a></p>
+								<ul>
+									<li>Defined in src/core/list/delegate/ListItemProviderDelegate.ts:223</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>query: <a href="fx.sharepoint.caml.lists.query.html" class="tsd-signature-type">Query</a></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">any</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../interfaces/fx.sharepoint.client.ilistoperationoptions.html" class="tsd-signature-type">IListOperationOptions</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IPromise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/fx.sharepoint.client.ilistitemcollection.html" class="tsd-signature-type">IListItemCollection</a><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -410,7 +402,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilistitemproviderdelegate.html">IListItemProviderDelegate</a>.<a href="../interfaces/fx.sharepoint.client.ilistitemproviderdelegate.html#saveitemasync">saveItemAsync</a></p>
 								<ul>
-									<li>Defined in src/core/list/delegate/ListItemProviderDelegate.ts:296</li>
+									<li>Defined in src/core/list/delegate/ListItemProviderDelegate.ts:315</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -425,7 +417,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilistitemproviderdelegate.html">IListItemProviderDelegate</a>.<a href="../interfaces/fx.sharepoint.client.ilistitemproviderdelegate.html#saveitemasync">saveItemAsync</a></p>
 								<ul>
-									<li>Defined in src/core/list/delegate/ListItemProviderDelegate.ts:297</li>
+									<li>Defined in src/core/list/delegate/ListItemProviderDelegate.ts:316</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -440,7 +432,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilistitemproviderdelegate.html">IListItemProviderDelegate</a>.<a href="../interfaces/fx.sharepoint.client.ilistitemproviderdelegate.html#saveitemasync">saveItemAsync</a></p>
 								<ul>
-									<li>Defined in src/core/list/delegate/ListItemProviderDelegate.ts:298</li>
+									<li>Defined in src/core/list/delegate/ListItemProviderDelegate.ts:317</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -463,7 +455,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/core/list/delegate/ListItemProviderDelegate.ts:173</li>
+									<li>Defined in src/core/list/delegate/ListItemProviderDelegate.ts:147</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -494,7 +486,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/core/list/delegate/ListItemProviderDelegate.ts:139</li>
+									<li>Defined in src/core/list/delegate/ListItemProviderDelegate.ts:107</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -523,7 +515,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilistitemproviderdelegate.html">IListItemProviderDelegate</a>.<a href="../interfaces/fx.sharepoint.client.ilistitemproviderdelegate.html#updateitemasync">updateItemAsync</a></p>
 								<ul>
-									<li>Defined in src/core/list/delegate/ListItemProviderDelegate.ts:271</li>
+									<li>Defined in src/core/list/delegate/ListItemProviderDelegate.ts:290</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -541,7 +533,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilistitemproviderdelegate.html">IListItemProviderDelegate</a>.<a href="../interfaces/fx.sharepoint.client.ilistitemproviderdelegate.html#updateitemasync">updateItemAsync</a></p>
 								<ul>
-									<li>Defined in src/core/list/delegate/ListItemProviderDelegate.ts:272</li>
+									<li>Defined in src/core/list/delegate/ListItemProviderDelegate.ts:291</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -559,7 +551,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilistitemproviderdelegate.html">IListItemProviderDelegate</a>.<a href="../interfaces/fx.sharepoint.client.ilistitemproviderdelegate.html#updateitemasync">updateItemAsync</a></p>
 								<ul>
-									<li>Defined in src/core/list/delegate/ListItemProviderDelegate.ts:273</li>
+									<li>Defined in src/core/list/delegate/ListItemProviderDelegate.ts:292</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -630,9 +622,6 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
 								<a href="fx.sharepoint.client.listitemproviderdelegate.html#createcamlquery" class="tsd-kind-icon">create<wbr>Caml<wbr>Query</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="fx.sharepoint.client.listitemproviderdelegate.html#createitem" class="tsd-kind-icon">create<wbr>Item</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="fx.sharepoint.client.listitemproviderdelegate.html#createitemasync" class="tsd-kind-icon">create<wbr>Item<wbr>Async</a>

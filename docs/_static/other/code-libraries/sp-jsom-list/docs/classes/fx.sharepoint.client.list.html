@@ -89,13 +89,19 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">List</span>
+						<a href="fx.sharepoint.client.clientobject.html" class="tsd-signature-type">ClientObject</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">List</span>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
+					<li><a href="../interfaces/fx.sharepoint.client.iclientobject.html" class="tsd-signature-type">IClientObject</a></li>
 					<li><a href="../interfaces/fx.sharepoint.client.ilist.html" class="tsd-signature-type">IList</a></li>
 				</ul>
 			</section>
@@ -106,7 +112,7 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="fx.sharepoint.client.list.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="fx.sharepoint.client.list.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -118,7 +124,6 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="fx.sharepoint.client.list.html#listitemdelegate" class="tsd-kind-icon">list<wbr>Item<wbr>Delegate</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="fx.sharepoint.client.list.html#listviewdelegate" class="tsd-kind-icon">list<wbr>View<wbr>Delegate</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="fx.sharepoint.client.list.html#logger" class="tsd-kind-icon">logger</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="fx.sharepoint.client.list.html#servicecontext" class="tsd-kind-icon">service<wbr>Context</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="fx.sharepoint.client.list.html#spfields" class="tsd-kind-icon">sp<wbr>Fields</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="fx.sharepoint.client.list.html#splist" class="tsd-kind-icon">sp<wbr>List</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="fx.sharepoint.client.list.html#defaultfieldsliteral" class="tsd-kind-icon">default<wbr>Fields<wbr>Literal</a></li>
@@ -134,7 +139,6 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fx.sharepoint.client.list.html#createitem" class="tsd-kind-icon">create<wbr>Item</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fx.sharepoint.client.list.html#createitemasync" class="tsd-kind-icon">create<wbr>Item<wbr>Async</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fx.sharepoint.client.list.html#deleteitemasync" class="tsd-kind-icon">delete<wbr>Item<wbr>Async</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fx.sharepoint.client.list.html#getallviewsasync" class="tsd-kind-icon">get<wbr>All<wbr>Views<wbr>Async</a></li>
@@ -146,8 +150,10 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fx.sharepoint.client.list.html#getmanyitemsasync" class="tsd-kind-icon">get<wbr>Many<wbr>Items<wbr>Async</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fx.sharepoint.client.list.html#getsplist" class="tsd-kind-icon">getSPList</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fx.sharepoint.client.list.html#getviewbyidasync" class="tsd-kind-icon">get<wbr>View<wbr>ById<wbr>Async</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="fx.sharepoint.client.list.html#get_servicecontext" class="tsd-kind-icon">get_<wbr>service<wbr>Context</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="fx.sharepoint.client.list.html#initfields" class="tsd-kind-icon">init<wbr>Fields</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fx.sharepoint.client.list.html#saveitemasync" class="tsd-kind-icon">save<wbr>Item<wbr>Async</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="fx.sharepoint.client.list.html#set_servicecontext" class="tsd-kind-icon">set_<wbr>service<wbr>Context</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fx.sharepoint.client.list.html#updateitemasync" class="tsd-kind-icon">update<wbr>Item<wbr>Async</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="fx.sharepoint.client.list.html#getdefaultfields" class="tsd-kind-icon">get<wbr>Default<wbr>Fields</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="fx.sharepoint.client.list.html#setdefaultfields" class="tsd-kind-icon">set<wbr>Default<wbr>Fields</a></li>
@@ -158,15 +164,16 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Constructors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
 						<li class="tsd-signature tsd-kind-icon">new <wbr>List<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="../interfaces/fx.sharepoint.client.ilistconfigliteral.html" class="tsd-signature-type">IListConfigLiteral</a>, serviceContext<span class="tsd-signature-symbol">: </span><a href="../interfaces/fx.sharepoint.client.iservicecontext.html" class="tsd-signature-type">IServiceContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="fx.sharepoint.client.list.html" class="tsd-signature-type">List</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Overrides <a href="fx.sharepoint.client.clientobject.html">ClientObject</a>.<a href="fx.sharepoint.client.clientobject.html#constructor">constructor</a></p>
 								<ul>
 									<li>Defined in src/core/list/List.ts:53</li>
 								</ul>
@@ -280,17 +287,6 @@
 						</div>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="servicecontext" class="tsd-anchor"></a>
-					<h3>service<wbr>Context</h3>
-					<div class="tsd-signature tsd-kind-icon">service<wbr>Context<span class="tsd-signature-symbol">:</span> <a href="../interfaces/fx.sharepoint.client.iservicecontext.html" class="tsd-signature-type">IServiceContext</a></div>
-					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilist.html">IList</a>.<a href="../interfaces/fx.sharepoint.client.ilist.html#servicecontext">serviceContext</a></p>
-						<ul>
-							<li>Defined in src/core/list/List.ts:62</li>
-						</ul>
-					</aside>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="spfields" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> sp<wbr>Fields</h3>
@@ -329,7 +325,7 @@
 					<div class="tsd-signature tsd-kind-icon">default<wbr>Fields<wbr>Literal<span class="tsd-signature-symbol">:</span> <a href="../modules/fx.sharepoint.client.html#tindexdedfieldconfigliteral" class="tsd-signature-type">TIndexdedFieldConfigLiteral</a><span class="tsd-signature-symbol"> =&nbsp;[&quot;Title&quot;,&quot;Author&quot;,&quot;Editor&quot;,&quot;Created&quot;,&quot;Modified&quot;,&quot;UniqueId&quot;]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/core/list/List.ts:110</li>
+							<li>Defined in src/core/list/List.ts:111</li>
 						</ul>
 					</aside>
 				</section>
@@ -346,7 +342,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/core/list/List.ts:81</li>
+									<li>Defined in src/core/list/List.ts:82</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ClientContext</span></h4>
@@ -363,7 +359,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/core/list/List.ts:88</li>
+									<li>Defined in src/core/list/List.ts:89</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -379,30 +375,6 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="createitem" class="tsd-anchor"></a>
-					<h3>create<wbr>Item</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Item<span class="tsd-signature-symbol">(</span>itemData<span class="tsd-signature-symbol">?: </span><a href="../interfaces/fx.sharepoint.client.ilistitemcreationliteral.html" class="tsd-signature-type">IListItemCreationLiteral</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/fx.sharepoint.client.idefervalue.html" class="tsd-signature-type">IDeferValue</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/fx.sharepoint.client.ilistitem.html" class="tsd-signature-type">IListItem</a><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilist.html">IList</a>.<a href="../interfaces/fx.sharepoint.client.ilist.html#createitem">createItem</a></p>
-								<ul>
-									<li>Defined in src/core/list/List.ts:228</li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> itemData: <a href="../interfaces/fx.sharepoint.client.ilistitemcreationliteral.html" class="tsd-signature-type">IListItemCreationLiteral</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/fx.sharepoint.client.idefervalue.html" class="tsd-signature-type">IDeferValue</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/fx.sharepoint.client.ilistitem.html" class="tsd-signature-type">IListItem</a><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="createitemasync" class="tsd-anchor"></a>
 					<h3>create<wbr>Item<wbr>Async</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -413,7 +385,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilist.html">IList</a>.<a href="../interfaces/fx.sharepoint.client.ilist.html#createitemasync">createItemAsync</a></p>
 								<ul>
-									<li>Defined in src/core/list/List.ts:232</li>
+									<li>Defined in src/core/list/List.ts:231</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -437,7 +409,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilist.html">IList</a>.<a href="../interfaces/fx.sharepoint.client.ilist.html#deleteitemasync">deleteItemAsync</a></p>
 								<ul>
-									<li>Defined in src/core/list/List.ts:261</li>
+									<li>Defined in src/core/list/List.ts:260</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -461,7 +433,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilist.html">IList</a>.<a href="../interfaces/fx.sharepoint.client.ilist.html#getallviewsasync">getAllViewsAsync</a></p>
 								<ul>
-									<li>Defined in src/core/list/List.ts:279</li>
+									<li>Defined in src/core/list/List.ts:278</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IPromise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/fx.sharepoint.client.ilistview.html" class="tsd-signature-type">IListView</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -479,7 +451,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilist.html">IList</a>.<a href="../interfaces/fx.sharepoint.client.ilist.html#getdefaultviewasync">getDefaultViewAsync</a></p>
 								<ul>
-									<li>Defined in src/core/list/List.ts:271</li>
+									<li>Defined in src/core/list/List.ts:270</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IPromise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/fx.sharepoint.client.ilistview.html" class="tsd-signature-type">IListView</a><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -497,7 +469,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilist.html">IList</a>.<a href="../interfaces/fx.sharepoint.client.ilist.html#getfieldbyname">getFieldByName</a></p>
 								<ul>
-									<li>Defined in src/core/list/List.ts:189</li>
+									<li>Defined in src/core/list/List.ts:192</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -525,7 +497,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/core/list/List.ts:161</li>
+									<li>Defined in src/core/list/List.ts:164</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/fx.sharepoint.client.ifieldconfig.html" class="tsd-signature-type">IFieldConfig</a><span class="tsd-signature-symbol">[]</span></h4>
@@ -543,7 +515,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilist.html">IList</a>.<a href="../interfaces/fx.sharepoint.client.ilist.html#getfields">getFields</a></p>
 								<ul>
-									<li>Defined in src/core/list/List.ts:197</li>
+									<li>Defined in src/core/list/List.ts:200</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IPromise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/fx.sharepoint.client.ilistfieldcollection.html" class="tsd-signature-type">IListFieldCollection</a><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -561,7 +533,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilist.html">IList</a>.<a href="../interfaces/fx.sharepoint.client.ilist.html#getitembyidasync">getItemByIdAsync</a></p>
 								<ul>
-									<li>Defined in src/core/list/List.ts:212</li>
+									<li>Defined in src/core/list/List.ts:215</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -594,7 +566,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/core/list/List.ts:220</li>
+									<li>Defined in src/core/list/List.ts:223</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -626,7 +598,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilist.html">IList</a>.<a href="../interfaces/fx.sharepoint.client.ilist.html#getsplist">getSPList</a></p>
 								<ul>
-									<li>Defined in src/core/list/List.ts:193</li>
+									<li>Defined in src/core/list/List.ts:196</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IPromise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">List</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -644,7 +616,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilist.html">IList</a>.<a href="../interfaces/fx.sharepoint.client.ilist.html#getviewbyidasync">getViewByIdAsync</a></p>
 								<ul>
-									<li>Defined in src/core/list/List.ts:275</li>
+									<li>Defined in src/core/list/List.ts:274</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -654,6 +626,25 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IPromise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/fx.sharepoint.client.ilistview.html" class="tsd-signature-type">IListView</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="get_servicecontext" class="tsd-anchor"></a>
+					<h3>get_<wbr>service<wbr>Context</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">get_<wbr>service<wbr>Context<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/fx.sharepoint.client.iservicecontext.html" class="tsd-signature-type">IServiceContext</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilist.html">IList</a>.<a href="../interfaces/fx.sharepoint.client.ilist.html#get_servicecontext">get_serviceContext</a></p>
+								<p>Inherited from <a href="fx.sharepoint.client.clientobject.html">ClientObject</a>.<a href="fx.sharepoint.client.clientobject.html#get_servicecontext">get_serviceContext</a></p>
+								<ul>
+									<li>Defined in src/core/ClientObject.ts:27</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/fx.sharepoint.client.iservicecontext.html" class="tsd-signature-type">IServiceContext</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -667,7 +658,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/core/list/List.ts:138</li>
+									<li>Defined in src/core/list/List.ts:139</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -692,7 +683,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilist.html">IList</a>.<a href="../interfaces/fx.sharepoint.client.ilist.html#saveitemasync">saveItemAsync</a></p>
 								<ul>
-									<li>Defined in src/core/list/List.ts:250</li>
+									<li>Defined in src/core/list/List.ts:249</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -707,7 +698,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilist.html">IList</a>.<a href="../interfaces/fx.sharepoint.client.ilist.html#saveitemasync">saveItemAsync</a></p>
 								<ul>
-									<li>Defined in src/core/list/List.ts:251</li>
+									<li>Defined in src/core/list/List.ts:250</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -722,7 +713,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilist.html">IList</a>.<a href="../interfaces/fx.sharepoint.client.ilist.html#saveitemasync">saveItemAsync</a></p>
 								<ul>
-									<li>Defined in src/core/list/List.ts:252</li>
+									<li>Defined in src/core/list/List.ts:251</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -732,6 +723,31 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IPromise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/fx.sharepoint.client.ilistitem.html" class="tsd-signature-type">IListItem</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="set_servicecontext" class="tsd-anchor"></a>
+					<h3>set_<wbr>service<wbr>Context</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">set_<wbr>service<wbr>Context<span class="tsd-signature-symbol">(</span>newContext<span class="tsd-signature-symbol">: </span><a href="../interfaces/fx.sharepoint.client.iservicecontext.html" class="tsd-signature-type">IServiceContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilist.html">IList</a>.<a href="../interfaces/fx.sharepoint.client.ilist.html#set_servicecontext">set_serviceContext</a></p>
+								<p>Inherited from <a href="fx.sharepoint.client.clientobject.html">ClientObject</a>.<a href="fx.sharepoint.client.clientobject.html#set_servicecontext">set_serviceContext</a></p>
+								<ul>
+									<li>Defined in src/core/ClientObject.ts:31</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>newContext: <a href="../interfaces/fx.sharepoint.client.iservicecontext.html" class="tsd-signature-type">IServiceContext</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -748,7 +764,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilist.html">IList</a>.<a href="../interfaces/fx.sharepoint.client.ilist.html#updateitemasync">updateItemAsync</a></p>
 								<ul>
-									<li>Defined in src/core/list/List.ts:240</li>
+									<li>Defined in src/core/list/List.ts:239</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -766,7 +782,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilist.html">IList</a>.<a href="../interfaces/fx.sharepoint.client.ilist.html#updateitemasync">updateItemAsync</a></p>
 								<ul>
-									<li>Defined in src/core/list/List.ts:241</li>
+									<li>Defined in src/core/list/List.ts:240</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -784,7 +800,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/fx.sharepoint.client.ilist.html">IList</a>.<a href="../interfaces/fx.sharepoint.client.ilist.html#updateitemasync">updateItemAsync</a></p>
 								<ul>
-									<li>Defined in src/core/list/List.ts:242</li>
+									<li>Defined in src/core/list/List.ts:241</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -807,7 +823,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/core/list/List.ts:127</li>
+									<li>Defined in src/core/list/List.ts:128</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../modules/fx.sharepoint.client.html#tindexdedfieldconfigliteral" class="tsd-signature-type">TIndexdedFieldConfigLiteral</a></h4>
@@ -824,7 +840,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/core/list/List.ts:123</li>
+									<li>Defined in src/core/list/List.ts:124</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -878,7 +894,7 @@
 					<li class="current tsd-kind-class tsd-parent-kind-module">
 						<a href="fx.sharepoint.client.list.html" class="tsd-kind-icon">List</a>
 						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
 								<a href="fx.sharepoint.client.list.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
@@ -899,9 +915,6 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="fx.sharepoint.client.list.html#logger" class="tsd-kind-icon">logger</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="fx.sharepoint.client.list.html#servicecontext" class="tsd-kind-icon">service<wbr>Context</a>
-							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="fx.sharepoint.client.list.html#spfields" class="tsd-kind-icon">sp<wbr>Fields</a>
 							</li>
@@ -916,9 +929,6 @@
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
 								<a href="fx.sharepoint.client.list.html#defaultfieldconfigs" class="tsd-kind-icon">default<wbr>Field<wbr>Configs</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="fx.sharepoint.client.list.html#createitem" class="tsd-kind-icon">create<wbr>Item</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="fx.sharepoint.client.list.html#createitemasync" class="tsd-kind-icon">create<wbr>Item<wbr>Async</a>
@@ -953,11 +963,17 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="fx.sharepoint.client.list.html#getviewbyidasync" class="tsd-kind-icon">get<wbr>View<wbr>ById<wbr>Async</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="fx.sharepoint.client.list.html#get_servicecontext" class="tsd-kind-icon">get_<wbr>service<wbr>Context</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
 								<a href="fx.sharepoint.client.list.html#initfields" class="tsd-kind-icon">init<wbr>Fields</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="fx.sharepoint.client.list.html#saveitemasync" class="tsd-kind-icon">save<wbr>Item<wbr>Async</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="fx.sharepoint.client.list.html#set_servicecontext" class="tsd-kind-icon">set_<wbr>service<wbr>Context</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="fx.sharepoint.client.list.html#updateitemasync" class="tsd-kind-icon">update<wbr>Item<wbr>Async</a>

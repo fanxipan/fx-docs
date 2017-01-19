@@ -83,6 +83,9 @@
 					</li>
 					<li>
 						<a href="fx.sharepoint.client.ilistviewprovider.html" class="tsd-signature-type">IListViewProvider</a>
+					</li>
+					<li>
+						<a href="fx.sharepoint.client.iclientobject.html" class="tsd-signature-type">IClientObject</a>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">IList</span>
@@ -108,14 +111,12 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="fx.sharepoint.client.ilist.html#initpromise" class="tsd-kind-icon">init<wbr>Promise</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="fx.sharepoint.client.ilist.html#listconfig" class="tsd-kind-icon">list<wbr>Config</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="fx.sharepoint.client.ilist.html#logger" class="tsd-kind-icon">logger</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="fx.sharepoint.client.ilist.html#servicecontext" class="tsd-kind-icon">service<wbr>Context</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="fx.sharepoint.client.ilist.html#splist" class="tsd-kind-icon">sp<wbr>List</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="fx.sharepoint.client.ilist.html#createitem" class="tsd-kind-icon">create<wbr>Item</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="fx.sharepoint.client.ilist.html#createitemasync" class="tsd-kind-icon">create<wbr>Item<wbr>Async</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="fx.sharepoint.client.ilist.html#deleteitemasync" class="tsd-kind-icon">delete<wbr>Item<wbr>Async</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="fx.sharepoint.client.ilist.html#getallviewsasync" class="tsd-kind-icon">get<wbr>All<wbr>Views<wbr>Async</a></li>
@@ -126,7 +127,9 @@
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="fx.sharepoint.client.ilist.html#getmanyitemsasync" class="tsd-kind-icon">get<wbr>Many<wbr>Items<wbr>Async</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="fx.sharepoint.client.ilist.html#getsplist" class="tsd-kind-icon">getSPList</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="fx.sharepoint.client.ilist.html#getviewbyidasync" class="tsd-kind-icon">get<wbr>View<wbr>ById<wbr>Async</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="fx.sharepoint.client.ilist.html#get_servicecontext" class="tsd-kind-icon">get_<wbr>service<wbr>Context</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="fx.sharepoint.client.ilist.html#saveitemasync" class="tsd-kind-icon">save<wbr>Item<wbr>Async</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="fx.sharepoint.client.ilist.html#set_servicecontext" class="tsd-kind-icon">set_<wbr>service<wbr>Context</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="fx.sharepoint.client.ilist.html#updateitemasync" class="tsd-kind-icon">update<wbr>Item<wbr>Async</a></li>
 							</ul>
 						</section>
@@ -141,7 +144,7 @@
 					<div class="tsd-signature tsd-kind-icon">default<wbr>Field<wbr>Configs<span class="tsd-signature-symbol">:</span> <a href="fx.sharepoint.client.ifieldconfig.html" class="tsd-signature-type">IFieldConfig</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/core/list/IList.ts:23</li>
+							<li>Defined in src/core/list/IList.ts:18</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -156,7 +159,7 @@
 					<div class="tsd-signature tsd-kind-icon">init<wbr>Promise<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">IPromise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/core/list/IList.ts:13</li>
+							<li>Defined in src/core/list/IList.ts:8</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -171,7 +174,7 @@
 					<div class="tsd-signature tsd-kind-icon">list<wbr>Config<span class="tsd-signature-symbol">:</span> <a href="fx.sharepoint.client.ilistconfig.html" class="tsd-signature-type">IListConfig</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/core/list/IList.ts:18</li>
+							<li>Defined in src/core/list/IList.ts:13</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -186,7 +189,7 @@
 					<div class="tsd-signature tsd-kind-icon">logger<span class="tsd-signature-symbol">:</span> <a href="fx.sharepoint.client.ilogger.html" class="tsd-signature-type">ILogger</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/core/list/IList.ts:34</li>
+							<li>Defined in src/core/list/IList.ts:29</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -196,27 +199,12 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="servicecontext" class="tsd-anchor"></a>
-					<h3>service<wbr>Context</h3>
-					<div class="tsd-signature tsd-kind-icon">service<wbr>Context<span class="tsd-signature-symbol">:</span> <a href="fx.sharepoint.client.iservicecontext.html" class="tsd-signature-type">IServiceContext</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in src/core/list/IList.ts:8</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p><a href="../classes/fx.sharepoint.client.servicecontext.html">ServiceContext</a> object quản lý object list này.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="splist" class="tsd-anchor"></a>
 					<h3>sp<wbr>List</h3>
 					<div class="tsd-signature tsd-kind-icon">sp<wbr>List<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">List</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/core/list/IList.ts:29</li>
+							<li>Defined in src/core/list/IList.ts:24</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -230,37 +218,6 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-					<a name="createitem" class="tsd-anchor"></a>
-					<h3>create<wbr>Item</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Item<span class="tsd-signature-symbol">(</span>itemData<span class="tsd-signature-symbol">?: </span><a href="fx.sharepoint.client.ilistitemcreationliteral.html" class="tsd-signature-type">IListItemCreationLiteral</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="fx.sharepoint.client.idefervalue.html" class="tsd-signature-type">IDeferValue</a><span class="tsd-signature-symbol">&lt;</span><a href="fx.sharepoint.client.ilistitem.html" class="tsd-signature-type">IListItem</a><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="fx.sharepoint.client.ilistitemprovider.html">IListItemProvider</a>.<a href="fx.sharepoint.client.ilistitemprovider.html#createitem">createItem</a></p>
-								<ul>
-									<li>Defined in src/core/list/IListItemProvider.ts:25</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Tạo list item nhưng chưa lưu lên server. Dùng <a href="fx.sharepoint.client.idefervalue.html#value">IDeferValue.value</a> để
-										lấy object <a href="fx.sharepoint.client.ilistitem.html">IListItem</a>. Tất cả thay đổi trên object <a href="fx.sharepoint.client.ilistitem.html">IListItem</a> này
-									sẽ được lưu lên server sau khi gọi hàm <a href="fx.sharepoint.client.iservicecontext.html#commitchanges">IServiceContext.commitChanges</a>.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> itemData: <a href="fx.sharepoint.client.ilistitemcreationliteral.html" class="tsd-signature-type">IListItemCreationLiteral</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="fx.sharepoint.client.idefervalue.html" class="tsd-signature-type">IDeferValue</a><span class="tsd-signature-symbol">&lt;</span><a href="fx.sharepoint.client.ilistitem.html" class="tsd-signature-type">IListItem</a><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
 					<a name="createitemasync" class="tsd-anchor"></a>
 					<h3>create<wbr>Item<wbr>Async</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
@@ -271,7 +228,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="fx.sharepoint.client.ilistitemprovider.html">IListItemProvider</a>.<a href="fx.sharepoint.client.ilistitemprovider.html#createitemasync">createItemAsync</a></p>
 								<ul>
-									<li>Defined in src/core/list/IListItemProvider.ts:26</li>
+									<li>Defined in src/core/list/IListItemProvider.ts:20</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -295,7 +252,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="fx.sharepoint.client.ilistitemprovider.html">IListItemProvider</a>.<a href="fx.sharepoint.client.ilistitemprovider.html#deleteitemasync">deleteItemAsync</a></p>
 								<ul>
-									<li>Defined in src/core/list/IListItemProvider.ts:45</li>
+									<li>Defined in src/core/list/IListItemProvider.ts:39</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -364,7 +321,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/core/list/IList.ts:50</li>
+									<li>Defined in src/core/list/IList.ts:45</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -392,7 +349,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/core/list/IList.ts:45</li>
+									<li>Defined in src/core/list/IList.ts:40</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -494,7 +451,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/core/list/IList.ts:40</li>
+									<li>Defined in src/core/list/IList.ts:35</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -537,6 +494,24 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+					<a name="get_servicecontext" class="tsd-anchor"></a>
+					<h3>get_<wbr>service<wbr>Context</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">get_<wbr>service<wbr>Context<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="fx.sharepoint.client.iservicecontext.html" class="tsd-signature-type">IServiceContext</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="fx.sharepoint.client.iclientobject.html">IClientObject</a>.<a href="fx.sharepoint.client.iclientobject.html#get_servicecontext">get_serviceContext</a></p>
+								<ul>
+									<li>Defined in src/core/IClientObject.ts:10</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="fx.sharepoint.client.iservicecontext.html" class="tsd-signature-type">IServiceContext</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
 					<a name="saveitemasync" class="tsd-anchor"></a>
 					<h3>save<wbr>Item<wbr>Async</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
@@ -549,7 +524,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="fx.sharepoint.client.ilistitemprovider.html">IListItemProvider</a>.<a href="fx.sharepoint.client.ilistitemprovider.html#saveitemasync">saveItemAsync</a></p>
 								<ul>
-									<li>Defined in src/core/list/IListItemProvider.ts:35</li>
+									<li>Defined in src/core/list/IListItemProvider.ts:29</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -569,7 +544,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="fx.sharepoint.client.ilistitemprovider.html">IListItemProvider</a>.<a href="fx.sharepoint.client.ilistitemprovider.html#saveitemasync">saveItemAsync</a></p>
 								<ul>
-									<li>Defined in src/core/list/IListItemProvider.ts:39</li>
+									<li>Defined in src/core/list/IListItemProvider.ts:33</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -589,7 +564,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="fx.sharepoint.client.ilistitemprovider.html">IListItemProvider</a>.<a href="fx.sharepoint.client.ilistitemprovider.html#saveitemasync">saveItemAsync</a></p>
 								<ul>
-									<li>Defined in src/core/list/IListItemProvider.ts:43</li>
+									<li>Defined in src/core/list/IListItemProvider.ts:37</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -608,6 +583,30 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+					<a name="set_servicecontext" class="tsd-anchor"></a>
+					<h3>set_<wbr>service<wbr>Context</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">set_<wbr>service<wbr>Context<span class="tsd-signature-symbol">(</span>newContext<span class="tsd-signature-symbol">: </span><a href="fx.sharepoint.client.iservicecontext.html" class="tsd-signature-type">IServiceContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="fx.sharepoint.client.iclientobject.html">IClientObject</a>.<a href="fx.sharepoint.client.iclientobject.html#set_servicecontext">set_serviceContext</a></p>
+								<ul>
+									<li>Defined in src/core/IClientObject.ts:11</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>newContext: <a href="fx.sharepoint.client.iservicecontext.html" class="tsd-signature-type">IServiceContext</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
 					<a name="updateitemasync" class="tsd-anchor"></a>
 					<h3>update<wbr>Item<wbr>Async</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
@@ -620,7 +619,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="fx.sharepoint.client.ilistitemprovider.html">IListItemProvider</a>.<a href="fx.sharepoint.client.ilistitemprovider.html#updateitemasync">updateItemAsync</a></p>
 								<ul>
-									<li>Defined in src/core/list/IListItemProvider.ts:28</li>
+									<li>Defined in src/core/list/IListItemProvider.ts:22</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -638,7 +637,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="fx.sharepoint.client.ilistitemprovider.html">IListItemProvider</a>.<a href="fx.sharepoint.client.ilistitemprovider.html#updateitemasync">updateItemAsync</a></p>
 								<ul>
-									<li>Defined in src/core/list/IListItemProvider.ts:29</li>
+									<li>Defined in src/core/list/IListItemProvider.ts:23</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -656,7 +655,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="fx.sharepoint.client.ilistitemprovider.html">IListItemProvider</a>.<a href="fx.sharepoint.client.ilistitemprovider.html#updateitemasync">updateItemAsync</a></p>
 								<ul>
-									<li>Defined in src/core/list/IListItemProvider.ts:30</li>
+									<li>Defined in src/core/list/IListItemProvider.ts:24</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -723,13 +722,7 @@
 								<a href="fx.sharepoint.client.ilist.html#logger" class="tsd-kind-icon">logger</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="fx.sharepoint.client.ilist.html#servicecontext" class="tsd-kind-icon">service<wbr>Context</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="fx.sharepoint.client.ilist.html#splist" class="tsd-kind-icon">sp<wbr>List</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="fx.sharepoint.client.ilist.html#createitem" class="tsd-kind-icon">create<wbr>Item</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
 								<a href="fx.sharepoint.client.ilist.html#createitemasync" class="tsd-kind-icon">create<wbr>Item<wbr>Async</a>
@@ -762,7 +755,13 @@
 								<a href="fx.sharepoint.client.ilist.html#getviewbyidasync" class="tsd-kind-icon">get<wbr>View<wbr>ById<wbr>Async</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+								<a href="fx.sharepoint.client.ilist.html#get_servicecontext" class="tsd-kind-icon">get_<wbr>service<wbr>Context</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
 								<a href="fx.sharepoint.client.ilist.html#saveitemasync" class="tsd-kind-icon">save<wbr>Item<wbr>Async</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+								<a href="fx.sharepoint.client.ilist.html#set_servicecontext" class="tsd-kind-icon">set_<wbr>service<wbr>Context</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
 								<a href="fx.sharepoint.client.ilist.html#updateitemasync" class="tsd-kind-icon">update<wbr>Item<wbr>Async</a>
