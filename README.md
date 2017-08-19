@@ -1,6 +1,9 @@
 # fx-docs
 Fx documentations
 
-#build
+## build
+
+```
 cd ./docs
 sphinx-autobuild . _build
+```
