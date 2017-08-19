@@ -28,3 +28,4 @@ Tài liệu phát triển phần mềm của FANXIPAN.
    :caption: Công nghệ
 
    modules/technology/microsoft-azure/index.rst
+   modules/technology/microsoft-graph/index.rst
